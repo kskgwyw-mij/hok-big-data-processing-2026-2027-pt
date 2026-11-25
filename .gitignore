@@ -19,3 +19,6 @@ session-*/teacher/
 # Python bytecode
 __pycache__/
 *.pyc
+
+llm-wiki-v3/wiki/.obsidian/
+llm-wiki-v3/.obsidian/
