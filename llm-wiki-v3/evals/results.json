@@ -1,0 +1,101 @@
+{
+  "faithfulness": {
+    "claims_checked": 1104,
+    "missing_text": 0,
+    "pages": 99,
+    "superseded_as_current": 0,
+    "unknown_claims": 0
+  },
+  "generated_at": "2026-11-25T09:51:53Z",
+  "governance": [
+    {
+      "check": "audit log is written",
+      "detail": "events=1",
+      "pass": true
+    },
+    {
+      "check": "every transition has an actor and an operation",
+      "detail": "invalid=0",
+      "pass": true
+    },
+    {
+      "check": "every claim has provenance",
+      "detail": "claims without source=0",
+      "pass": true
+    },
+    {
+      "check": "raw copies match their recorded hash",
+      "detail": "mismatches=0",
+      "pass": true
+    },
+    {
+      "check": "no private claims are rendered into shared pages",
+      "detail": "private claims=0",
+      "pass": true
+    }
+  ],
+  "retrieval": {
+    "mrr": 0.707,
+    "queries": 80,
+    "recall_at_1": 0.575,
+    "recall_at_10": 0.938,
+    "recall_at_5": 0.85
+  },
+  "state_cases": [
+    {
+      "case": "support raises a new claim above the prior",
+      "detail": "probability=0.8151",
+      "pass": true
+    },
+    {
+      "case": "independent support accumulates",
+      "detail": "0.82 -> 0.95",
+      "pass": true
+    },
+    {
+      "case": "same-source evidence does not double count",
+      "detail": "0.95 -> 0.95",
+      "pass": true
+    },
+    {
+      "case": "contradiction lowers probability",
+      "detail": "0.95 -> 0.82",
+      "pass": true
+    },
+    {
+      "case": "contradiction opens a conflict",
+      "detail": "conflicts=1",
+      "pass": true
+    },
+    {
+      "case": "contradicted claim is disputed",
+      "detail": "status=disputed",
+      "pass": true
+    },
+    {
+      "case": "supersession keeps the old claim",
+      "detail": "superseded=1",
+      "pass": true
+    },
+    {
+      "case": "supersession links old and new",
+      "detail": "superseded_by set",
+      "pass": true
+    },
+    {
+      "case": "superseded claim loses probability",
+      "detail": "p=0.25",
+      "pass": true
+    },
+    {
+      "case": "decay lowers an unconfirmed claim",
+      "detail": "0.95 -> 0.73, freshness 0.2567",
+      "pass": true
+    },
+    {
+      "case": "transitions are written",
+      "detail": "transitions=3",
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{"case_id": "regression_001", "expected_transition": "support_update", "input": "Same claim restated by a second source", "not_expected": "new_claim"}
+{"case_id": "regression_002", "expected_transition": "contradiction_update", "input": "Negated restatement of an active claim", "not_expected": "support_update"}
+{"case_id": "regression_003", "expected_transition": "supersession", "input": "Newer exam file renames a station and rewrites its questions", "not_expected": "contradiction_update"}
+{"case_id": "regression_004", "expected_transition": "evidence_attached", "input": "Same source repeats its own claim", "not_expected": "support_update"}

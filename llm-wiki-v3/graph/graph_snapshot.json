@@ -1,0 +1,17 @@
+{
+  "claims": 461,
+  "edge_types": {
+    "compares_with": 7,
+    "has": 4,
+    "is_a": 1,
+    "mentions": 679,
+    "produces": 3,
+    "requires": 5,
+    "runs_on": 3,
+    "uses": 3
+  },
+  "edges": 705,
+  "entities": 74,
+  "generated_at": "2026-11-25T09:51:47Z",
+  "nodes": 535
+}

@@ -1,0 +1,273 @@
+{"locator": "session-04/01_python_environments.md:103", "reason": "too_short_or_boilerplate", "source_id": "src_1a3d69f8", "text": "macOS / Linux:"}
+{"locator": "session-04/01_python_environments.md:104", "reason": "too_few_content_tokens", "source_id": "src_1a3d69f8", "text": "python3.12 -m venv .venv-pd2"}
+{"locator": "session-04/01_python_environments.md:110", "reason": "too_few_content_tokens", "source_id": "src_1a3d69f8", "text": "Windows (PowerShell):"}
+{"locator": "session-04/01_python_environments.md:111", "reason": "too_few_content_tokens", "source_id": "src_1a3d69f8", "text": "py -3.12 -m venv .venv-pd2"}
+{"locator": "session-04/01_python_environments.md:118", "reason": "too_few_content_tokens", "source_id": "src_1a3d69f8", "text": "Which one is \"right\"?"}
+{"locator": "session-04/01_python_environments.md:127", "reason": "fragment_or_lead_in", "source_id": "src_1a3d69f8", "text": "Install uv (one binary, no admin rights needed):"}
+{"locator": "session-04/01_python_environments.md:135", "reason": "too_few_content_tokens", "source_id": "src_1a3d69f8", "text": "Open a new terminal, then:"}
+{"locator": "session-04/01_python_environments.md:141", "reason": "too_few_content_tokens", "source_id": "src_1a3d69f8", "text": "(Your numbers: pip [__ s], uv [__ s].)"}
+{"locator": "session-04/01_python_environments.md:144", "reason": "fragment_or_lead_in", "source_id": "src_1a3d69f8", "text": "Optional – a project with a real lock file:"}
+{"locator": "session-04/01_python_environments.md:42", "reason": "too_short_or_boilerplate", "source_id": "src_1a3d69f8", "text": "macOS / Linux:"}
+{"locator": "session-04/01_python_environments.md:43", "reason": "too_few_content_tokens", "source_id": "src_1a3d69f8", "text": "python3 --version ; python3 session-04/check_env.py"}
+{"locator": "session-04/01_python_environments.md:48", "reason": "too_few_content_tokens", "source_id": "src_1a3d69f8", "text": "Windows (PowerShell):"}
+{"locator": "session-04/01_python_environments.md:64", "reason": "too_short_or_boilerplate", "source_id": "src_1a3d69f8", "text": "macOS / Linux:"}
+{"locator": "session-04/01_python_environments.md:71", "reason": "too_few_content_tokens", "source_id": "src_1a3d69f8", "text": "Windows (PowerShell):"}
+{"locator": "session-04/01_python_environments.md:88", "reason": "too_few_content_tokens", "source_id": "src_1a3d69f8", "text": "Freeze what you installed:"}
+{"locator": "session-04/01_python_environments.md:89", "reason": "too_few_content_tokens", "source_id": "src_1a3d69f8", "text": "pip freeze > requirements-lock.txt"}
+{"locator": "session-04/01_python_environments.md:92", "reason": "too_few_content_tokens", "source_id": "src_1a3d69f8", "text": "Why is it much longer than requirements.txt?"}
+{"locator": "session-04/01_python_environments.md:92", "reason": "too_short_or_boilerplate", "source_id": "src_1a3d69f8", "text": "Open the file."}
+{"locator": "session-04/01_python_environments.md:94", "reason": "too_few_content_tokens", "source_id": "src_1a3d69f8", "text": ".venv/ is in .gitignore."}
+{"locator": "session-01/01_do_you_need_a_cluster.ipynb#cell-0:3", "reason": "fragment_or_lead_in", "source_id": "src_46087206", "text": "We run the same analysis on NYC Yellow Taxi data with three engines:"}
+{"locator": "session-01/01_do_you_need_a_cluster.ipynb#cell-14", "reason": "too_few_content_tokens", "source_id": "src_46087206", "text": "Same answer from all three engines?"}
+{"locator": "session-01/01_do_you_need_a_cluster.ipynb#cell-15:2", "reason": "too_few_content_tokens", "source_id": "src_46087206", "text": "CSV is none of that."}
+{"locator": "session-01/01_do_you_need_a_cluster.ipynb#cell-19", "reason": "code_fragment", "source_id": "src_46087206", "text": "How much RAM would pandas need? Measure one month, then extrapolate."}
+{"locator": "session-01/01_do_you_need_a_cluster.ipynb#cell-4", "reason": "code_fragment", "source_id": "src_46087206", "text": "A tiny timing helper we reuse everywhere"}
+{"locator": "session-01/01_do_you_need_a_cluster.ipynb#cell-7:1", "reason": "too_few_content_tokens", "source_id": "src_46087206", "text": "Try pd.read_parquet(f, columns=[...])."}
+{"locator": "session-01/01_do_you_need_a_cluster.ipynb#cell-7:1", "reason": "too_short_or_boilerplate", "source_id": "src_46087206", "text": "What changes?"}
+{"locator": "session-04/04_spark_fundamentals_and_ml.ipynb#cell-0:11", "reason": "too_few_content_tokens", "source_id": "src_47132aab", "text": "Setup on Kaggle (once, 3 min):"}
+{"locator": "session-04/04_spark_fundamentals_and_ml.ipynb#cell-16", "reason": "code_fragment", "source_id": "src_47132aab", "text": "select: choose and rename columns"}
+{"locator": "session-04/04_spark_fundamentals_and_ml.ipynb#cell-17", "reason": "code_fragment", "source_id": "src_47132aab", "text": "filter: keep only plausible trips"}
+{"locator": "session-04/04_spark_fundamentals_and_ml.ipynb#cell-27:1", "reason": "too_few_content_tokens", "source_id": "src_47132aab", "text": "Does it add an Exchange?"}
+{"locator": "session-04/04_spark_fundamentals_and_ml.ipynb#cell-28", "reason": "code_fragment", "source_id": "src_47132aab", "text": "DANGEROUS on big data: df.collect() / df.toPandas() pull ALL rows into the driver. SAFE: aggregate and limit first, then convert the small result."}
+{"locator": "session-04/04_spark_fundamentals_and_ml.ipynb#cell-31:1", "reason": "too_few_content_tokens", "source_id": "src_47132aab", "text": "How many \"waves\" of tasks does that make?"}
+{"locator": "session-04/04_spark_fundamentals_and_ml.ipynb#cell-32", "reason": "code_fragment", "source_id": "src_47132aab", "text": "total size of all files in a folder (a Parquet \"file\" is a folder of part files)"}
+{"locator": "session-04/04_spark_fundamentals_and_ml.ipynb#cell-38:2", "reason": "too_few_content_tokens", "source_id": "src_47132aab", "text": "Only use information that is known when the passenger gets in."}
+{"locator": "session-04/04_spark_fundamentals_and_ml.ipynb#cell-39", "reason": "code_fragment", "source_id": "src_47132aab", "text": "TODO: build the formula with F.radians, F.sin, F.cos, F.asin, F.sqrt lat1, lon1, ... are column NAMES (strings) -> use F.col(lat1)"}
+{"locator": "session-04/04_spark_fundamentals_and_ml.ipynb#cell-4", "reason": "code_fragment", "source_id": "src_47132aab", "text": "Download url to path once; skip if the file is already there"}
+{"locator": "session-04/04_spark_fundamentals_and_ml.ipynb#cell-41:1", "reason": "too_few_content_tokens", "source_id": "src_47132aab", "text": "Why not a Python function (UDF)?"}
+{"locator": "session-04/04_spark_fundamentals_and_ml.ipynb#cell-41:4", "reason": "too_few_content_tokens", "source_id": "src_47132aab", "text": "Why is fare_amount not a feature?"}
+{"locator": "session-04/04_spark_fundamentals_and_ml.ipynb#cell-41:6", "reason": "fragment_or_lead_in", "source_id": "src_47132aab", "text": "It is the metered distance, so strictly it is only known at the end of the ride."}
+{"locator": "session-04/04_spark_fundamentals_and_ml.ipynb#cell-41:6", "reason": "fragment_or_lead_in", "source_id": "src_47132aab", "text": "(Homework: train without trip_distance and compare.)"}
+{"locator": "session-04/04_spark_fundamentals_and_ml.ipynb#cell-41:6", "reason": "too_few_content_tokens", "source_id": "src_47132aab", "text": "Grey zone: trip_distance."}
+{"locator": "session-04/04_spark_fundamentals_and_ml.ipynb#cell-57:28", "reason": "too_few_content_tokens", "source_id": "src_47132aab", "text": "Finish Part 2 if you did not get there in class."}
+{"locator": "session-04/04_spark_fundamentals_and_ml.ipynb#cell-6", "reason": "code_fragment", "source_id": "src_47132aab", "text": "Stopwatch: run fn(), print how long it took, return its result. Call it with a lambda: timed(\"count\", lambda: df.count())"}
+{"locator": "session-04/04_spark_fundamentals_and_ml.ipynb#cell-9:1", "reason": "too_few_content_tokens", "source_id": "src_47132aab", "text": "When you are back, everybody should see ✓ converted."}
+{"locator": "session-04/04_spark_fundamentals_and_ml.ipynb#cell-9:1", "reason": "too_short_or_boilerplate", "source_id": "src_47132aab", "text": "Break."}
+{"locator": "session-06/docker-compose.yml:13", "reason": "too_few_content_tokens", "source_id": "src_6002d48d", "text": "broker image is apache/kafka:4.4.0"}
+{"locator": "session-06/docker-compose.yml:14", "reason": "too_few_content_tokens", "source_id": "src_6002d48d", "text": "broker container_name is broker"}
+{"locator": "session-06/docker-compose.yml:19", "reason": "too_few_content_tokens", "source_id": "src_6002d48d", "text": "broker KAFKA_NODE_ID is 1"}
+{"locator": "session-06/docker-compose.yml:20", "reason": "too_few_content_tokens", "source_id": "src_6002d48d", "text": "broker KAFKA_PROCESS_ROLES is broker,controller"}
+{"locator": "session-06/docker-compose.yml:21", "reason": "too_few_content_tokens", "source_id": "src_6002d48d", "text": "broker KAFKA_CONTROLLER_LISTENER_NAMES is CONTROLLER"}
+{"locator": "session-06/docker-compose.yml:27", "reason": "too_few_content_tokens", "source_id": "src_6002d48d", "text": "broker KAFKA_INTER_BROKER_LISTENER_NAME is PLAINTEXT"}
+{"locator": "session-06/docker-compose.yml:31", "reason": "too_few_content_tokens", "source_id": "src_6002d48d", "text": "broker KAFKA_LOG_DIRS is /tmp/kafka-logs"}
+{"locator": "session-06/docker-compose.yml:34", "reason": "too_few_content_tokens", "source_id": "src_6002d48d", "text": "broker KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR is 1"}
+{"locator": "session-06/docker-compose.yml:35", "reason": "too_few_content_tokens", "source_id": "src_6002d48d", "text": "broker KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR is 1"}
+{"locator": "session-06/docker-compose.yml:36", "reason": "too_few_content_tokens", "source_id": "src_6002d48d", "text": "broker KAFKA_TRANSACTION_STATE_LOG_MIN_ISR is 1"}
+{"locator": "session-06/docker-compose.yml:37", "reason": "too_few_content_tokens", "source_id": "src_6002d48d", "text": "broker KAFKA_SHARE_COORDINATOR_STATE_TOPIC_REPLICATION_FACTOR is 1"}
+{"locator": "session-06/docker-compose.yml:38", "reason": "too_few_content_tokens", "source_id": "src_6002d48d", "text": "broker KAFKA_SHARE_COORDINATOR_STATE_TOPIC_MIN_ISR is 1"}
+{"locator": "session-06/docker-compose.yml:39", "reason": "too_few_content_tokens", "source_id": "src_6002d48d", "text": "broker KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS is 0"}
+{"locator": "session-06/docker-compose.yml:43", "reason": "too_few_content_tokens", "source_id": "src_6002d48d", "text": "broker KAFKA_NUM_PARTITIONS is 1"}
+{"locator": "session-06/docker-compose.yml:47", "reason": "too_few_content_tokens", "source_id": "src_6002d48d", "text": "broker image is kafbat/kafka-ui:v1.5.0"}
+{"locator": "session-06/docker-compose.yml:48", "reason": "too_few_content_tokens", "source_id": "src_6002d48d", "text": "broker container_name is kafka-ui"}
+{"locator": "session-06/docker-compose.yml:49", "reason": "too_few_content_tokens", "source_id": "src_6002d48d", "text": "broker profiles is [\"ui\"]"}
+{"locator": "session-06/docker-compose.yml:53", "reason": "too_few_content_tokens", "source_id": "src_6002d48d", "text": "broker KAFKA_CLUSTERS_0_NAME is local"}
+{"locator": "session-06/docker-compose.yml:54", "reason": "too_few_content_tokens", "source_id": "src_6002d48d", "text": "broker KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS is broker:19092"}
+{"locator": "session-04/README.md:13", "reason": "too_few_content_tokens", "source_id": "src_6494d099", "text": "The exam is without AI."}
+{"locator": "session-04/README.md:31", "reason": "too_few_content_tokens", "source_id": "src_6494d099", "text": "Check in a new terminal:"}
+{"locator": "session-04/README.md:39", "reason": "too_few_content_tokens", "source_id": "src_6494d099", "text": "Then on your laptop:"}
+{"locator": "session-04/README.md:54", "reason": "too_few_content_tokens", "source_id": "src_6494d099", "text": "Sign up at kaggle.com (free)."}
+{"locator": "session-04/03_duckdb_database.ipynb#cell-10", "reason": "code_fragment", "source_id": "src_6e2e5684", "text": "TODO: one query, one pass over the table, four counts"}
+{"locator": "session-04/03_duckdb_database.ipynb#cell-11:2", "reason": "fragment_or_lead_in", "source_id": "src_6e2e5684", "text": "It is always up to date and costs no disk space."}
+{"locator": "session-04/03_duckdb_database.ipynb#cell-21:2", "reason": "too_few_content_tokens", "source_id": "src_6e2e5684", "text": "Results convert with .df(), .pl() or .arrow()."}
+{"locator": "session-04/03_duckdb_database.ipynb#cell-23:2", "reason": "too_short_or_boilerplate", "source_id": "src_6e2e5684", "text": "(FORMAT parquet)."}
+{"locator": "session-04/03_duckdb_database.ipynb#cell-25", "reason": "code_fragment", "source_id": "src_6e2e5684", "text": "The database lives in data/, which git ignores. Delete it when you no longer need it: DB.unlink()"}
+{"locator": "session-04/03_duckdb_database.ipynb#cell-2:2", "reason": "fragment_or_lead_in", "source_id": "src_6e2e5684", "text": "There is no server to install and no CREATE DATABASE statement: connecting to a file that does not exist creates it."}
+{"locator": "session-04/03_duckdb_database.ipynb#cell-4:2", "reason": "too_short_or_boilerplate", "source_id": "src_6e2e5684", "text": "CREATE TABLE ..."}
+{"locator": "session-04/03_duckdb_database.ipynb#cell-9:1", "reason": "fragment_or_lead_in", "source_id": "src_6e2e5684", "text": "Write one query that counts, in a single pass over trips:"}
+{"locator": "session-04/03_duckdb_database.ipynb#cell-9:3", "reason": "too_few_content_tokens", "source_id": "src_6e2e5684", "text": "trips with duration_min <= 0,"}
+{"locator": "session-04/03_duckdb_database.ipynb#cell-9:4", "reason": "too_few_content_tokens", "source_id": "src_6e2e5684", "text": "trips with trip_distance = 0,"}
+{"locator": "session-04/03_duckdb_database.ipynb#cell-9:5", "reason": "too_few_content_tokens", "source_id": "src_6e2e5684", "text": "trips with total_amount < 0,"}
+{"locator": "session-04/03_duckdb_database.ipynb#cell-9:6", "reason": "too_few_content_tokens", "source_id": "src_6e2e5684", "text": "trips with passenger_count missing."}
+{"locator": "session-04/03_duckdb_database.ipynb#cell-9:8", "reason": "too_short_or_boilerplate", "source_id": "src_6e2e5684", "text": "THEN 1 ELSE 0 END)."}
+{"locator": "session-06/02_kafka_python.ipynb#cell-0:6", "reason": "too_short_or_boilerplate", "source_id": "src_799c8bd7", "text": "What you learn:"}
+{"locator": "session-06/02_kafka_python.ipynb#cell-0:8", "reason": "too_few_content_tokens", "source_id": "src_799c8bd7", "text": "what a serializer does,"}
+{"locator": "session-06/02_kafka_python.ipynb#cell-13:1", "reason": "fragment_or_lead_in", "source_id": "src_799c8bd7", "text": "(How exactly it spreads them depends on the client library; the Java client fills one partition for a while, then switches.)"}
+{"locator": "session-06/02_kafka_python.ipynb#cell-17:1", "reason": "fragment_or_lead_in", "source_id": "src_799c8bd7", "text": "(If you see 0 here, run sections 4 and 5 again – with few messages it can happen by chance.)"}
+{"locator": "session-06/02_kafka_python.ipynb#cell-17:7", "reason": "too_few_content_tokens", "source_id": "src_799c8bd7", "text": "Read with the same group again."}
+{"locator": "session-06/02_kafka_python.ipynb#cell-17:7", "reason": "too_few_content_tokens", "source_id": "src_799c8bd7", "text": "Predict: how many records do you get?"}
+{"locator": "session-06/02_kafka_python.ipynb#cell-21:2", "reason": "too_few_content_tokens", "source_id": "src_799c8bd7", "text": "The total must be 5 – why?"}
+{"locator": "session-06/02_kafka_python.ipynb#cell-22", "reason": "code_fragment", "source_id": "src_799c8bd7", "text": "TODO: lag[partition number] = end offset - committed offset"}
+{"locator": "session-06/02_kafka_python.ipynb#cell-23:25", "reason": "too_few_content_tokens", "source_id": "src_799c8bd7", "text": "Predict first: will C2 get copies of all messages, or a part?"}
+{"locator": "session-06/02_kafka_python.ipynb#cell-23:29", "reason": "fragment_or_lead_in", "source_id": "src_799c8bd7", "text": "Then look at the assignment from the broker's view:"}
+{"locator": "session-06/02_kafka_python.ipynb#cell-23:35", "reason": "too_few_content_tokens", "source_id": "src_799c8bd7", "text": "Now start C3 and C4 in the same group."}
+{"locator": "session-06/02_kafka_python.ipynb#cell-23:35", "reason": "too_few_content_tokens", "source_id": "src_799c8bd7", "text": "With 3 partitions – what does C4 do?"}
+{"locator": "session-06/02_kafka_python.ipynb#cell-23:38", "reason": "too_few_content_tokens", "source_id": "src_799c8bd7", "text": "Predict: what does B1 receive?"}
+{"locator": "session-04/02_file_formats_and_pickle.ipynb#cell-0:11", "reason": "too_few_content_tokens", "source_id": "src_8e87808f", "text": "and whether opening it is safe."}
+{"locator": "session-04/02_file_formats_and_pickle.ipynb#cell-0:6", "reason": "too_few_content_tokens", "source_id": "src_8e87808f", "text": "The file format decides"}
+{"locator": "session-04/02_file_formats_and_pickle.ipynb#cell-0:7", "reason": "too_few_content_tokens", "source_id": "src_8e87808f", "text": "how fast you can write and read it,"}
+{"locator": "session-04/02_file_formats_and_pickle.ipynb#cell-0:8", "reason": "too_few_content_tokens", "source_id": "src_8e87808f", "text": "how much disk it uses,"}
+{"locator": "session-04/02_file_formats_and_pickle.ipynb#cell-10", "reason": "code_fragment", "source_id": "src_8e87808f", "text": "TODO: use the parameters index_col=... and parse_dates=[...] of pd.read_csv"}
+{"locator": "session-04/02_file_formats_and_pickle.ipynb#cell-13:1", "reason": "too_few_content_tokens", "source_id": "src_8e87808f", "text": "We spent effort on these dtypes."}
+{"locator": "session-04/02_file_formats_and_pickle.ipynb#cell-13:1", "reason": "too_few_content_tokens", "source_id": "src_8e87808f", "text": "A good file format should keep them."}
+{"locator": "session-04/02_file_formats_and_pickle.ipynb#cell-17:2", "reason": "too_few_content_tokens", "source_id": "src_8e87808f", "text": "You know Parquet from Session 1."}
+{"locator": "session-04/02_file_formats_and_pickle.ipynb#cell-21", "reason": "code_fragment", "source_id": "src_8e87808f", "text": "TODO 1: time pd.read_parquet(...) with the parameters columns=... and filters=[(...)] TODO 2: time pd.read_pickle(...) followed by a pandas filter on payment_ty"}
+{"locator": "session-04/02_file_formats_and_pickle.ipynb#cell-22:16", "reason": "too_few_content_tokens", "source_id": "src_8e87808f", "text": "So why does pickle exist at all?"}
+{"locator": "session-04/02_file_formats_and_pickle.ipynb#cell-22:16", "reason": "too_few_content_tokens", "source_id": "src_8e87808f", "text": "Because some things are not tables."}
+{"locator": "session-04/02_file_formats_and_pickle.ipynb#cell-22:16", "reason": "too_short_or_boilerplate", "source_id": "src_8e87808f", "text": "Data → Parquet."}
+{"locator": "session-04/02_file_formats_and_pickle.ipynb#cell-26", "reason": "code_fragment", "source_id": "src_8e87808f", "text": "TODO: joblib.dump(..., compress=3), then joblib.load and compare predictions"}
+{"locator": "session-04/02_file_formats_and_pickle.ipynb#cell-27:2", "reason": "too_few_content_tokens", "source_id": "src_8e87808f", "text": "This is exactly why Lab A matters."}
+{"locator": "session-04/02_file_formats_and_pickle.ipynb#cell-31:1", "reason": "too_short_or_boilerplate", "source_id": "src_8e87808f", "text": "Rules of thumb:"}
+{"locator": "session-04/02_file_formats_and_pickle.ipynb#cell-31:7", "reason": "fragment_or_lead_in", "source_id": "src_8e87808f", "text": "Clean up the scratch files when you're done:"}
+{"locator": "session-04/02_file_formats_and_pickle.ipynb#cell-7:1", "reason": "too_few_content_tokens", "source_id": "src_8e87808f", "text": "Look closely at the result:"}
+{"locator": "session-04/02_file_formats_and_pickle.ipynb#cell-7:2", "reason": "fragment_or_lead_in", "source_id": "src_8e87808f", "text": "There is a new column Unnamed: 0. Where does it come from? (Hint: to_csv(..., index=False).)"}
+{"locator": "session-04/02_file_formats_and_pickle.ipynb#cell-7:3", "reason": "too_few_content_tokens", "source_id": "src_8e87808f", "text": "Compare the dtypes before and after:"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-0:10", "reason": "too_few_content_tokens", "source_id": "src_96e79681", "text": "Today you will run all of it."}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-0:12", "reason": "too_few_content_tokens", "source_id": "src_96e79681", "text": "By the end you will be able to:"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-0:13", "reason": "too_few_content_tokens", "source_id": "src_96e79681", "text": "Create a SparkSession and explain what it does."}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-0:6", "reason": "too_few_content_tokens", "source_id": "src_96e79681", "text": "No Java on your laptop?"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-10", "reason": "code_fragment", "source_id": "src_96e79681", "text": "Basic statistics for numeric columns"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-11:5", "reason": "too_few_content_tokens", "source_id": "src_96e79681", "text": "Rule: Spark is lazy."}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-12", "reason": "code_fragment", "source_id": "src_96e79681", "text": "Now run it and check the Spark UI after each line"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-13:1", "reason": "too_few_content_tokens", "source_id": "src_96e79681", "text": "Check the Spark UI now."}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-13:1", "reason": "too_few_content_tokens", "source_id": "src_96e79681", "text": "You should see one completed job."}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-14", "reason": "code_fragment", "source_id": "src_96e79681", "text": "Same logic, written as a chain – identical result, identical plan"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-15:5", "reason": "too_few_content_tokens", "source_id": "src_96e79681", "text": "Work through these cells one by one."}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-16", "reason": "code_fragment", "source_id": "src_96e79681", "text": "--- 4.1 select: choose and rename columns ---"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-2", "reason": "too_few_content_tokens", "source_id": "src_96e79681", "text": "Pre-flight: data check"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-20", "reason": "code_fragment", "source_id": "src_96e79681", "text": "--- 4.5 orderBy: sort the result ---"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-21:12", "reason": "fragment_or_lead_in", "source_id": "src_96e79681", "text": "Key symbols to look for in the physical plan:"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-21:26", "reason": "too_short_or_boilerplate", "source_id": "src_96e79681", "text": "Why or why not?"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-21:26", "reason": "too_short_or_boilerplate", "source_id": "src_96e79681", "text": "Your answer: ..."}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-22", "reason": "too_few_content_tokens", "source_id": "src_96e79681", "text": "Compact plan (default)"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-23", "reason": "code_fragment", "source_id": "src_96e79681", "text": "Extended plan: shows logical plan stages AND the physical plan"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-24:1", "reason": "too_few_content_tokens", "source_id": "src_96e79681", "text": "Read the plan together:"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-25", "reason": "code_fragment", "source_id": "src_96e79681", "text": "Contrast: a filter-only plan has NO Exchange"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-26:14", "reason": "too_few_content_tokens", "source_id": "src_96e79681", "text": "The exam is individual and without AI."}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-26:22", "reason": "too_short_or_boilerplate", "source_id": "src_96e79681", "text": "Your pipeline must:"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-26:23", "reason": "too_few_content_tokens", "source_id": "src_96e79681", "text": "Start from the cleaned DataFrame (clean)."}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-26:5", "reason": "too_few_content_tokens", "source_id": "src_96e79681", "text": "Rotate roles every 20 minutes:"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-27", "reason": "too_few_content_tokens", "source_id": "src_96e79681", "text": "Task A – your solution here YOUR CODE"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-28:1", "reason": "fragment_or_lead_in", "source_id": "src_96e79681", "text": "Task A – Explanation (Explainer fills this in):"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-28:3", "reason": "too_few_content_tokens", "source_id": "src_96e79681", "text": "The shuffle happens at: ..."}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-28:4", "reason": "too_few_content_tokens", "source_id": "src_96e79681", "text": "It is necessary because: ..."}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-30", "reason": "code_fragment", "source_id": "src_96e79681", "text": "Task B – read the zones table"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-32", "reason": "code_fragment", "source_id": "src_96e79681", "text": "Task B – inspect the join plan"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-33:1", "reason": "too_few_content_tokens", "source_id": "src_96e79681", "text": "Task B – Explanation:"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-33:4", "reason": "too_few_content_tokens", "source_id": "src_96e79681", "text": "A BroadcastHashJoin avoids a shuffle because: ..."}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-35", "reason": "code_fragment", "source_id": "src_96e79681", "text": "Task C – your solution and explain() YOUR CODE"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-36:1", "reason": "too_few_content_tokens", "source_id": "src_96e79681", "text": "Task C – Explanation:"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-37:5", "reason": "fragment_or_lead_in", "source_id": "src_96e79681", "text": "Two actions that are dangerous on large DataFrames:"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-38", "reason": "code_fragment", "source_id": "src_96e79681", "text": "SAFE: collect on a small, already-aggregated result"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-39", "reason": "code_fragment", "source_id": "src_96e79681", "text": "DANGEROUS: never do this on the raw, unaggregated DataFrame df.collect() # would pull ~3 million rows into Driver memory → OOM risk df.toPandas() # same problem"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-3:18", "reason": "too_few_content_tokens", "source_id": "src_96e79681", "text": "Does it read any data?"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-3:18", "reason": "too_few_content_tokens", "source_id": "src_96e79681", "text": "Does it start any computation?"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-42", "reason": "too_few_content_tokens", "source_id": "src_96e79681", "text": "Run this cell when you are finished"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-43:11", "reason": "fragment_or_lead_in", "source_id": "src_96e79681", "text": "A colleague writes the following code:"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-43:22", "reason": "too_short_or_boilerplate", "source_id": "src_96e79681", "text": "Your answer:"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-43:30", "reason": "too_short_or_boilerplate", "source_id": "src_96e79681", "text": "Explain:"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-43:31", "reason": "too_few_content_tokens", "source_id": "src_96e79681", "text": "Why does this require a shuffle?"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-43:34", "reason": "too_short_or_boilerplate", "source_id": "src_96e79681", "text": "Your answer:"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-43:42", "reason": "fragment_or_lead_in", "source_id": "src_96e79681", "text": "The following query returns exactly 10 rows:"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-43:5", "reason": "too_few_content_tokens", "source_id": "src_96e79681", "text": "You have 10 minutes."}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-43:5", "reason": "too_few_content_tokens", "source_id": "src_96e79681", "text": "These are representative of exam questions."}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-43:50", "reason": "too_short_or_boilerplate", "source_id": "src_96e79681", "text": "Your answer:"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-43:56", "reason": "too_short_or_boilerplate", "source_id": "src_96e79681", "text": "Question 4 (harder)"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-43:59", "reason": "too_few_content_tokens", "source_id": "src_96e79681", "text": "Why did Spark choose BroadcastHashJoin?"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-43:60", "reason": "too_few_content_tokens", "source_id": "src_96e79681", "text": "What is the benefit compared to SortMergeJoin?"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-43:63", "reason": "too_short_or_boilerplate", "source_id": "src_96e79681", "text": "Your answer:"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-5:1", "reason": "too_few_content_tokens", "source_id": "src_96e79681", "text": "A look at the Spark UI"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-5:10", "reason": "too_few_content_tokens", "source_id": "src_96e79681", "text": "Right now the UI is mostly empty."}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-5:3", "reason": "too_short_or_boilerplate", "source_id": "src_96e79681", "text": "You will see:"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-5:4", "reason": "too_few_content_tokens", "source_id": "src_96e79681", "text": "Jobs – each Action creates one or more jobs."}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-5:7", "reason": "too_few_content_tokens", "source_id": "src_96e79681", "text": "Storage – cached DataFrames."}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-6:14", "reason": "too_short_or_boilerplate", "source_id": "src_96e79681", "text": "Your answer: ..."}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-6:5", "reason": "too_short_or_boilerplate", "source_id": "src_96e79681", "text": "It is:"}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-8", "reason": "code_fragment", "source_id": "src_96e79681", "text": "How many rows are there? Note: this IS an Action – it triggers computation."}
+{"locator": "session-02/02_spark_fundamentals.ipynb#cell-9", "reason": "code_fragment", "source_id": "src_96e79681", "text": "Look at a few rows show() is also an Action."}
+{"locator": "session-06/03_exam_circuit.md:10", "reason": "too_few_content_tokens", "source_id": "src_9ddf1cb5", "text": "Names: ______ & ______"}
+{"locator": "session-06/03_exam_circuit.md:7", "reason": "too_short_or_boilerplate", "source_id": "src_9ddf1cb5", "text": "Total: 58 P."}
+{"locator": "session-01/02_bonus_python_without_gil.ipynb#cell-0:16", "reason": "too_few_content_tokens", "source_id": "src_9e752903", "text": "The first run downloads ~50 MB."}
+{"locator": "session-01/02_bonus_python_without_gil.ipynb#cell-0:16", "reason": "too_short_or_boilerplate", "source_id": "src_9e752903", "text": "About 5 minutes."}
+{"locator": "session-01/02_bonus_python_without_gil.ipynb#cell-0:7", "reason": "fragment_or_lead_in", "source_id": "src_9e752903", "text": "In this notebook we install it next to our normal Python and run the same benchmark three times:"}
+{"locator": "session-01/02_bonus_python_without_gil.ipynb#cell-3:3", "reason": "too_few_content_tokens", "source_id": "src_9e752903", "text": "We use uv, a fast Python installer."}
+{"locator": "session-01/02_bonus_python_without_gil.ipynb#cell-9:19", "reason": "too_few_content_tokens", "source_id": "src_9e752903", "text": "Check any time with sys._is_gil_enabled()."}
+{"locator": "session-01/02_bonus_python_without_gil.ipynb#cell-9:5", "reason": "fragment_or_lead_in", "source_id": "src_9e752903", "text": "(If Thread(s) per core is 2, two \"CPUs\" share one core – and threads doing pure computation barely gain anything.)"}
+{"locator": "session-01/02_bonus_python_without_gil.ipynb#cell-9:8", "reason": "fragment_or_lead_in", "source_id": "src_9e752903", "text": "(Hint: Python 3.11+ made the interpreter itself much faster.) Why could removing the GIL also cost something?"}
+{"locator": "session-01/02_bonus_python_without_gil.ipynb#cell-9:8", "reason": "too_few_content_tokens", "source_id": "src_9e752903", "text": "Which one explains the difference?"}
+{"locator": "session-06/01_kafka_cli.md:106", "reason": "fragment_or_lead_in", "source_id": "src_b289b34c", "text": "Route A: docker exec -it broker /opt/kafka/bin/kafka-console-producer.sh --bootstrap-server localhost:9092 --topic cli-demo --reader-property parse.key=true --r"}
+{"locator": "session-06/01_kafka_cli.md:108", "reason": "fragment_or_lead_in", "source_id": "src_b289b34c", "text": "At the > prompt type these lines, one per Enter, then Ctrl+C:"}
+{"locator": "session-06/01_kafka_cli.md:118", "reason": "too_few_content_tokens", "source_id": "src_b289b34c", "text": "And the two Wien messages?"}
+{"locator": "session-06/01_kafka_cli.md:130", "reason": "fragment_or_lead_in", "source_id": "src_b289b34c", "text": "Example (your partition numbers may differ, the pattern will not):"}
+{"locator": "session-06/01_kafka_cli.md:140", "reason": "too_few_content_tokens", "source_id": "src_b289b34c", "text": "Check your predictions and answer:"}
+{"locator": "session-06/01_kafka_cli.md:15", "reason": "too_few_content_tokens", "source_id": "src_b289b34c", "text": "Every step shows two variants."}
+{"locator": "session-06/01_kafka_cli.md:15", "reason": "too_few_content_tokens", "source_id": "src_b289b34c", "text": "Use one of them for the whole block."}
+{"locator": "session-06/01_kafka_cli.md:153", "reason": "fragment_or_lead_in", "source_id": "src_b289b34c", "text": "Read everything once as group cli-group, then Ctrl+C:"}
+{"locator": "session-06/01_kafka_cli.md:153", "reason": "too_short_or_boilerplate", "source_id": "src_b289b34c", "text": "5a."}
+{"locator": "session-06/01_kafka_cli.md:159", "reason": "fragment_or_lead_in", "source_id": "src_b289b34c", "text": "While no consumer runs, produce five more messages (producer command from part 3):"}
+{"locator": "session-06/01_kafka_cli.md:159", "reason": "too_short_or_boilerplate", "source_id": "src_b289b34c", "text": "5b."}
+{"locator": "session-06/01_kafka_cli.md:168", "reason": "too_short_or_boilerplate", "source_id": "src_b289b34c", "text": "5c."}
+{"locator": "session-06/01_kafka_cli.md:168", "reason": "too_short_or_boilerplate", "source_id": "src_b289b34c", "text": "Then check:"}
+{"locator": "session-06/01_kafka_cli.md:174", "reason": "fragment_or_lead_in", "source_id": "src_b289b34c", "text": "Expected shape (numbers per partition depend on the keys):"}
+{"locator": "session-06/01_kafka_cli.md:183", "reason": "too_few_content_tokens", "source_id": "src_b289b34c", "text": "Which messages do you get?"}
+{"locator": "session-06/01_kafka_cli.md:183", "reason": "too_few_content_tokens", "source_id": "src_b289b34c", "text": "Describe the group again: what is the LAG now?"}
+{"locator": "session-06/01_kafka_cli.md:183", "reason": "too_short_or_boilerplate", "source_id": "src_b289b34c", "text": "5d."}
+{"locator": "session-06/01_kafka_cli.md:186", "reason": "fragment_or_lead_in", "source_id": "src_b289b34c", "text": "That is why part 4 always started again at the beginning."}
+{"locator": "session-06/01_kafka_cli.md:186", "reason": "too_short_or_boilerplate", "source_id": "src_b289b34c", "text": "5e."}
+{"locator": "session-06/01_kafka_cli.md:194", "reason": "fragment_or_lead_in", "source_id": "src_b289b34c", "text": "(__consumer_offsets-0 … -49 are the 50 partitions of the internal offsets topic.)"}
+{"locator": "session-06/01_kafka_cli.md:197", "reason": "too_short_or_boilerplate", "source_id": "src_b289b34c", "text": "Route A – Docker"}
+{"locator": "session-06/01_kafka_cli.md:198", "reason": "code_block_too_long", "source_id": "src_b289b34c", "text": "docker exec -it broker bash -lc \"ls /tmp/kafka-logs\" ; docker exec -it broker bash -lc \"ls -la /tmp/kafka-logs/cli-demo-0\" ; docker exec -it broker /opt/kafka/b"}
+{"locator": "session-06/01_kafka_cli.md:206", "reason": "too_short_or_boilerplate", "source_id": "src_b289b34c", "text": "Route B – native"}
+{"locator": "session-06/01_kafka_cli.md:213", "reason": "fragment_or_lead_in", "source_id": "src_b289b34c", "text": "(If Tirol landed in another partition for you, use that partition's folder.)"}
+{"locator": "session-06/01_kafka_cli.md:215", "reason": "fragment_or_lead_in", "source_id": "src_b289b34c", "text": "After docker cp, run this in Python (a notebook cell or python in the terminal):"}
+{"locator": "session-06/01_kafka_cli.md:215", "reason": "too_few_content_tokens", "source_id": "src_b289b34c", "text": "No hexdump (Windows)?"}
+{"locator": "session-06/01_kafka_cli.md:224", "reason": "too_few_content_tokens", "source_id": "src_b289b34c", "text": "What you see in kafka-dump-log (shortened):"}
+{"locator": "session-06/01_kafka_cli.md:23", "reason": "fragment_or_lead_in", "source_id": "src_b289b34c", "text": "Route A only – start the broker from inside session-06/ (that is where docker-compose.yml lives; from the repo root you get no configuration file provided: not "}
+{"locator": "session-06/01_kafka_cli.md:230", "reason": "fragment_or_lead_in", "source_id": "src_b289b34c", "text": "(How many messages share one batch depends on how fast you typed – the console producer waits a moment to batch.) and in the hex dump, among binary header bytes"}
+{"locator": "session-06/01_kafka_cli.md:246", "reason": "too_few_content_tokens", "source_id": "src_b289b34c", "text": "Does Tirol still go to the same partition?"}
+{"locator": "session-06/01_kafka_cli.md:252", "reason": "too_few_content_tokens", "source_id": "src_b289b34c", "text": "Then try --partitions 2."}
+{"locator": "session-06/01_kafka_cli.md:252", "reason": "too_few_content_tokens", "source_id": "src_b289b34c", "text": "What happens, and why can Kafka not do that?"}
+{"locator": "session-06/01_kafka_cli.md:255", "reason": "fragment_or_lead_in", "source_id": "src_b289b34c", "text": "(Tested on Kafka 4.4.0: after the change, Tirol and Wien moved to other partitions – hash(key) mod 4 ≠ hash(key) mod 3.)"}
+{"locator": "session-06/01_kafka_cli.md:33", "reason": "fragment_or_lead_in", "source_id": "src_b289b34c", "text": "Route B only – once per terminal, in the folder where get_kafka.py installed Kafka (session-06/, or the folder you gave with --dest):"}
+{"locator": "session-06/01_kafka_cli.md:52", "reason": "too_short_or_boilerplate", "source_id": "src_b289b34c", "text": "Answer in part 6)."}
+{"locator": "session-06/01_kafka_cli.md:60", "reason": "too_few_content_tokens", "source_id": "src_b289b34c", "text": "Prediction 1: we have one broker."}
+{"locator": "session-06/01_kafka_cli.md:66", "reason": "too_few_content_tokens", "source_id": "src_b289b34c", "text": "Now with replication factor 1:"}
+{"locator": "session-06/01_kafka_cli.md:72", "reason": "too_short_or_boilerplate", "source_id": "src_b289b34c", "text": "Describe it:"}
+{"locator": "session-06/01_kafka_cli.md:78", "reason": "too_few_content_tokens", "source_id": "src_b289b34c", "text": "Expected (your TopicId differs):"}
+{"locator": "session-06/01_kafka_cli.md:9", "reason": "too_few_content_tokens", "source_id": "src_b289b34c", "text": "The exam asks why, not which command."}
+{"locator": "README.md:10", "reason": "too_few_content_tokens", "source_id": "src_b3356305", "text": "The exam is without AI."}
+{"locator": "README.md:108", "reason": "fragment_or_lead_in", "source_id": "src_b3356305", "text": "Start a broker – choose one route:"}
+{"locator": "README.md:21", "reason": "too_few_content_tokens", "source_id": "src_b3356305", "text": "In the repository folder on your laptop:"}
+{"locator": "README.md:3", "reason": "too_few_content_tokens", "source_id": "src_b3356305", "text": "Hands-on material for the course."}
+{"locator": "README.md:3", "reason": "too_few_content_tokens", "source_id": "src_b3356305", "text": "You work in two places:"}
+{"locator": "README.md:41", "reason": "too_few_content_tokens", "source_id": "src_b3356305", "text": "On this repository: Fork → Create fork."}
+{"locator": "README.md:41", "reason": "too_short_or_boilerplate", "source_id": "src_b3356305", "text": "Then:"}
+{"locator": "README.md:42", "reason": "too_few_content_tokens", "source_id": "src_b3356305", "text": "git clone https://github.com/ / .git ; cd"}
+{"locator": "README.md:48", "reason": "too_short_or_boilerplate", "source_id": "src_b3356305", "text": "macOS / Linux:"}
+{"locator": "README.md:55", "reason": "too_few_content_tokens", "source_id": "src_b3356305", "text": "Windows (PowerShell):"}
+{"locator": "README.md:82", "reason": "too_few_content_tokens", "source_id": "src_b3356305", "text": "Settings → Internet: On · Accelerator: None."}
+{"locator": "03_exam_circuit-gitdiff.md:10", "reason": "too_short_or_boilerplate", "source_id": "src_bdf79ad3", "text": "Total: 58 P."}
+{"locator": "03_exam_circuit-gitdiff.md:13", "reason": "too_few_content_tokens", "source_id": "src_bdf79ad3", "text": "Names: ______ & ______"}
+{"locator": "03_exam_circuit-gitdiff.md:309", "reason": "too_short_or_boilerplate", "source_id": "src_bdf79ad3", "text": "Total: 58 P."}
+{"locator": "03_exam_circuit-gitdiff.md:312", "reason": "too_few_content_tokens", "source_id": "src_bdf79ad3", "text": "Names: ______ & ______"}
+{"locator": "03_exam_circuit-gitdiff.md:95", "reason": "too_short_or_boilerplate", "source_id": "src_bdf79ad3", "text": "Total: 58 P."}
+{"locator": "03_exam_circuit-gitdiff.md:98", "reason": "too_few_content_tokens", "source_id": "src_bdf79ad3", "text": "Names: ______ & ______"}
+{"locator": "session-06/README.md:126", "reason": "too_few_content_tokens", "source_id": "src_cecf99ea", "text": "File: README.md; What: this page"}
+{"locator": "session-06/README.md:16", "reason": "too_few_content_tokens", "source_id": "src_cecf99ea", "text": "The exam is without AI."}
+{"locator": "session-06/README.md:23", "reason": "too_few_content_tokens", "source_id": "src_cecf99ea", "text": "Do this before we meet."}
+{"locator": "session-06/README.md:3", "reason": "too_short_or_boilerplate", "source_id": "src_cecf99ea", "text": "Last session."}
+{"locator": "session-06/README.md:32", "reason": "too_short_or_boilerplate", "source_id": "src_cecf99ea", "text": "macOS / Linux:"}
+{"locator": "session-06/README.md:37", "reason": "too_few_content_tokens", "source_id": "src_cecf99ea", "text": "Windows (PowerShell):"}
+{"locator": "session-06/README.md:38", "reason": "too_few_content_tokens", "source_id": "src_cecf99ea", "text": "pip install -r requirements-local.txt"}
+{"locator": "session-06/README.md:42", "reason": "fragment_or_lead_in", "source_id": "src_cecf99ea", "text": "(Old tutorials use kafka-python==2.0.2 – it does not work on Python 3.12.)"}
+{"locator": "session-06/README.md:47", "reason": "fragment_or_lead_in", "source_id": "src_cecf99ea", "text": "Download the image once at home (~240 MB download, the campus Wi-Fi will thank you):"}
+{"locator": "session-06/README.md:48", "reason": "too_few_content_tokens", "source_id": "src_cecf99ea", "text": "docker pull apache/kafka:4.4.0"}
+{"locator": "session-06/README.md:51", "reason": "fragment_or_lead_in", "source_id": "src_cecf99ea", "text": "Go into the session-06/ folder first – docker-compose.yml lives there, not in the repo root:"}
+{"locator": "session-06/README.md:69", "reason": "fragment_or_lead_in", "source_id": "src_cecf99ea", "text": "Kafka's scripts then fail with Classpath is empty. get_kafka.py checks this and stops; install somewhere else instead:"}
+{"locator": "session-06/README.md:74", "reason": "too_few_content_tokens", "source_id": "src_cecf99ea", "text": "Windows without WSL: use Route A."}
+{"locator": "session-06/README.md:77", "reason": "fragment_or_lead_in", "source_id": "src_cecf99ea", "text": "With the broker running, in the activated .venv:"}
+{"locator": "session-06/README.md:81", "reason": "too_few_content_tokens", "source_id": "src_cecf99ea", "text": "A list (maybe empty []) = ✓."}
+{"locator": "session-06/README.md:84", "reason": "fragment_or_lead_in", "source_id": "src_cecf99ea", "text": "(Running the scripts on your laptop against their broker does not work with our setup – the broker tells every client to connect to localhost, i.e. to the clien"}
+{"locator": "requirements-local.txt:10", "reason": "too_few_content_tokens", "source_id": "src_d56cb0d7", "text": "pyarrow is pinned as >=17"}
+{"locator": "requirements-local.txt:13", "reason": "too_few_content_tokens", "source_id": "src_d56cb0d7", "text": "scikit-learn is pinned as >=1.5"}
+{"locator": "requirements-local.txt:7", "reason": "too_few_content_tokens", "source_id": "src_d56cb0d7", "text": "pandas is pinned as >=2.2"}
+{"locator": "requirements-local.txt:8", "reason": "too_few_content_tokens", "source_id": "src_d56cb0d7", "text": "polars is pinned as >=1.0"}
+{"locator": "requirements-local.txt:9", "reason": "too_few_content_tokens", "source_id": "src_d56cb0d7", "text": "duckdb is pinned as >=1.1"}
+{"locator": "session-04/check_env.py:1", "reason": "fragment_or_lead_in", "source_id": "src_de25e104", "text": "Run it in the terminal, once BEFORE and once AFTER activating your virtual environment:"}
+{"locator": "session-04/check_env.py:1", "reason": "too_few_content_tokens", "source_id": "src_de25e104", "text": "Session 4 – environment check."}
+{"locator": "session-04/check_env.py:1", "reason": "too_few_content_tokens", "source_id": "src_de25e104", "text": "python session-04/check_env.py"}
+{"locator": "session-06/kafka_data.py:1", "reason": "too_few_content_tokens", "source_id": "src_f8b034ea", "text": "Try it: python kafka_data.py"}
+{"locator": "session-06/kafka_data.py:19", "reason": "code_fragment", "source_id": "src_f8b034ea", "text": "so you can see that the same key always lands in the same partition."}
+{"locator": "session-01/00_warmup_threads_vs_processes.ipynb#cell-0:6", "reason": "too_few_content_tokens", "source_id": "src_ffd1cdcc", "text": "We test three kinds of work:"}
+{"locator": "session-01/00_warmup_threads_vs_processes.ipynb#cell-0:8", "reason": "too_few_content_tokens", "source_id": "src_ffd1cdcc", "text": "CPU-bound – pure computation"}
+{"locator": "session-01/00_warmup_threads_vs_processes.ipynb#cell-4:1", "reason": "too_few_content_tokens", "source_id": "src_ffd1cdcc", "text": "Why doesn't the GIL matter for waiting?"}
+{"locator": "session-01/00_warmup_threads_vs_processes.ipynb#cell-6:1", "reason": "too_few_content_tokens", "source_id": "src_ffd1cdcc", "text": "What limits the process speed-up?"}

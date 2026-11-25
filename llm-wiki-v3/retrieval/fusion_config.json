@@ -1,0 +1,15 @@
+{
+  "k": 60,
+  "method": "reciprocal_rank_fusion",
+  "rerank": [
+    "claim_probability",
+    "source_authority",
+    "freshness"
+  ],
+  "streams": [
+    "bm25",
+    "vector",
+    "graph",
+    "state"
+  ]
+}
