@@ -2,13 +2,25 @@
 title: Questions: Spark Architecture
 type: questions
 topic: spark.architecture
-question_count: 14
-last_rendered: 2026-11-25T09:51:47Z
+question_count: 15
+last_rendered: 2026-11-25T12:17:11Z
 ---
 
 # Questions: Spark Architecture
 
 Prompts extracted from the material. No answers are stored: the state holds claims, not solutions, so these stay open until someone writes a claim with evidence.
+
+## Big Data Processing – Mock exam / Part B – Spark architecture, HDFS, MapReduce
+
+- B6 (3 P) Explain the roles of the driver, the executors and the cluster manager in a Spark application.
+  - `raw/04_mock_exam.md:54` · exam_prompt
+- B8 (2 P) In Spark, what is a task, and at which kind of operation does a new stage begin?
+  - `raw/04_mock_exam.md:58` · exam_prompt
+
+## General
+
+- Entry Point SparkContext SparkSession Supports RDDs?
+  - `raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p120:8` · open_question
 
 ## Session 2 – Apache Spark Fundamentals / Part 3 – Transformations vs. Actions: the most important concept in Spark / Predict before you run
 
@@ -54,10 +66,3 @@ Prompts extracted from the material. No answers are stored: the state holds clai
 
 - 3.3 (4 P) In a Spark application: what are the roles of the driver, the executors and the cluster manager? One count() starts a job – how is it split into stages and tasks?
   - `session-06/03_exam_circuit.md:56` · exam_prompt
-
-## Big Data Processing – Mock exam / Part B – Spark architecture, HDFS, MapReduce
-
-- B6 (3 P) Explain the roles of the driver, the executors and the cluster manager in a Spark application.
-  - `04_mock_exam-gitdiff.md:184` · exam_prompt
-- B8 (2 P) In Spark, what is a task, and at which kind of operation does a new stage begin?
-  - `04_mock_exam-gitdiff.md:188` · exam_prompt

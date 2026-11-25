@@ -1,16 +1,16 @@
 # Eval report
 
-Generated 2026-11-25T09:51:53Z
+Generated 2026-11-25T12:17:18Z
 
 ## Retrieval (evidence span -> claim)
 
 | Metric | Value |
 |---|---|
 | queries | 80 |
-| recall_at_1 | 0.575 |
-| recall_at_5 | 0.85 |
-| recall_at_10 | 0.938 |
-| mrr | 0.707 |
+| recall_at_1 | 0.525 |
+| recall_at_5 | 0.838 |
+| recall_at_10 | 0.85 |
+| mrr | 0.648 |
 
 ## State update cases
 
@@ -35,7 +35,7 @@ Generated 2026-11-25T09:51:53Z
 - pass — evidence entries are attached to their claim (orphan evidence=0)
 - pass — superseded claims are not presented as current (violations=0)
 
-Pages checked: 99 · claims checked: 1104
+Pages checked: 120 · claims checked: 2048
 
 ## Governance
 
@@ -43,6 +43,7 @@ Pages checked: 99 · claims checked: 1104
 - pass — every transition has an actor and an operation (invalid=0)
 - pass — every claim has provenance (claims without source=0)
 - pass — raw copies match their recorded hash (mismatches=0)
-- pass — no private claims are rendered into shared pages (private claims=0)
+- pass — no private-only text appears in a rendered page (private claims=89 leaks=0)
+- pass — private claims are stored apart from public claims (mixed=0)
 
 Failures: 0

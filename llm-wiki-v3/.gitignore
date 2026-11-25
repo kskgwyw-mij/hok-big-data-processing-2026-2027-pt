@@ -1,0 +1,14 @@
+# Teacher material is queryable, never published.
+# Sources matching schema.json -> privacy.private_patterns are ingested into
+# observations/private/ and state/private_claims.jsonl, and are never rendered
+# into wiki/. This file keeps them out of git as well.
+raw/private/
+raw/*MODEL_ANSWERS*
+raw/*_SOLUTION*
+raw/*_SOLUTION*.*
+observations/private/
+state/private_claims.jsonl
+state/private_questions.jsonl
+
+# Lecture decks are ~145 MB; the state records their sha256 instead of a copy.
+raw/*.pdf

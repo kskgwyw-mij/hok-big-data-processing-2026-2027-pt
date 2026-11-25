@@ -17,6 +17,52 @@
 {"locator": "session-04/01_python_environments.md:92", "reason": "too_few_content_tokens", "source_id": "src_1a3d69f8", "text": "Why is it much longer than requirements.txt?"}
 {"locator": "session-04/01_python_environments.md:92", "reason": "too_short_or_boilerplate", "source_id": "src_1a3d69f8", "text": "Open the file."}
 {"locator": "session-04/01_python_environments.md:94", "reason": "too_few_content_tokens", "source_id": "src_1a3d69f8", "text": ".venv/ is in .gitignore."}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p12:1", "reason": "too_short_or_boilerplate", "source_id": "src_1cebb3bb", "text": "Who are you?"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p12:3", "reason": "too_few_content_tokens", "source_id": "src_1cebb3bb", "text": "» Introduce yourself:"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p13:1", "reason": "too_short_or_boilerplate", "source_id": "src_1cebb3bb", "text": "Poll - Dataset"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p14:1", "reason": "too_few_content_tokens", "source_id": "src_1cebb3bb", "text": "Six sessions, four Vs"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p14:6", "reason": "too_short_or_boilerplate", "source_id": "src_1cebb3bb", "text": "Volume"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p15:1", "reason": "too_short_or_boilerplate", "source_id": "src_1cebb3bb", "text": "How you pass"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p16:1", "reason": "too_few_content_tokens", "source_id": "src_1cebb3bb", "text": "Your Coding Environment"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p17:1", "reason": "too_few_content_tokens", "source_id": "src_1cebb3bb", "text": "What makes Data Big?"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p18:1", "reason": "too_short_or_boilerplate", "source_id": "src_1cebb3bb", "text": "What is Big Data?"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p19:1", "reason": "too_short_or_boilerplate", "source_id": "src_1cebb3bb", "text": "History of Big Data"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p20:1", "reason": "fragment_or_lead_in", "source_id": "src_1cebb3bb", "text": "There is no single definition of „Big Data\""}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p22:1", "reason": "too_few_content_tokens", "source_id": "src_1cebb3bb", "text": "Data Engineering Expectations"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p24:1", "reason": "too_short_or_boilerplate", "source_id": "src_1cebb3bb", "text": "3 Vs of Big Data"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p26:1", "reason": "too_few_content_tokens", "source_id": "src_1cebb3bb", "text": "Technological Development"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p2:1", "reason": "too_short_or_boilerplate", "source_id": "src_1cebb3bb", "text": "Outline & Format"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p37:6", "reason": "too_short_or_boilerplate", "source_id": "src_1cebb3bb", "text": "What is real-time?"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p3:1", "reason": "too_short_or_boilerplate", "source_id": "src_1cebb3bb", "text": "Course Outline"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p3:3", "reason": "too_short_or_boilerplate", "source_id": "src_1cebb3bb", "text": "Exam » On-Campus"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p44:1", "reason": "too_short_or_boilerplate", "source_id": "src_1cebb3bb", "text": "Structured Data"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p45:1", "reason": "too_few_content_tokens", "source_id": "src_1cebb3bb", "text": "Semi-structured Data"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p46:1", "reason": "too_short_or_boilerplate", "source_id": "src_1cebb3bb", "text": "Un-structured Data"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p48:1", "reason": "too_short_or_boilerplate", "source_id": "src_1cebb3bb", "text": "3 Vs of Big Data"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p59:1", "reason": "too_short_or_boilerplate", "source_id": "src_1cebb3bb", "text": "Big Data Examples"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p60:1", "reason": "too_few_content_tokens", "source_id": "src_1cebb3bb", "text": "The Good News for Us"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p61:1", "reason": "too_few_content_tokens", "source_id": "src_1cebb3bb", "text": "Challenge for Companies"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p63:1", "reason": "too_few_content_tokens", "source_id": "src_1cebb3bb", "text": "Challenges of Big Data"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p65:1", "reason": "too_few_content_tokens", "source_id": "src_1cebb3bb", "text": "How often do disks fail?"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p66:1", "reason": "too_few_content_tokens", "source_id": "src_1cebb3bb", "text": "Single Central Storage"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p67:1", "reason": "too_short_or_boilerplate", "source_id": "src_1cebb3bb", "text": "Scaleability"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p68:1", "reason": "too_short_or_boilerplate", "source_id": "src_1cebb3bb", "text": "Serial Processing"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p69:1", "reason": "too_short_or_boilerplate", "source_id": "src_1cebb3bb", "text": "Fault Tolerance"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p72:1", "reason": "too_few_content_tokens", "source_id": "src_1cebb3bb", "text": "Python Foundations (Speed Up Python)"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p73:1", "reason": "too_short_or_boilerplate", "source_id": "src_1cebb3bb", "text": "What is Python?"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p74:1", "reason": "too_few_content_tokens", "source_id": "src_1cebb3bb", "text": "What is Python used for?"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p75:1", "reason": "too_short_or_boilerplate", "source_id": "src_1cebb3bb", "text": "Python Repetition"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p75:14", "reason": "too_few_content_tokens", "source_id": "src_1cebb3bb", "text": "Java is one example."}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p75:6", "reason": "too_few_content_tokens", "source_id": "src_1cebb3bb", "text": "» Implementation » Implementation is all about what the interpreter ends up doing."}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p76:1", "reason": "too_short_or_boilerplate", "source_id": "src_1cebb3bb", "text": "Python Foundations"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p78:1", "reason": "too_short_or_boilerplate", "source_id": "src_1cebb3bb", "text": "Interpretation"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p79:1", "reason": "too_few_content_tokens", "source_id": "src_1cebb3bb", "text": "How does CPyhon work?"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p7:3", "reason": "too_short_or_boilerplate", "source_id": "src_1cebb3bb", "text": "» Mag."}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p80:1", "reason": "too_short_or_boilerplate", "source_id": "src_1cebb3bb", "text": "CPython Interpreter"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p82:1", "reason": "too_short_or_boilerplate", "source_id": "src_1cebb3bb", "text": "GIL in Python"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p84:11", "reason": "too_short_or_boilerplate", "source_id": "src_1cebb3bb", "text": "https://www.linkedin.com/in/mariotuta/"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p84:6", "reason": "too_few_content_tokens", "source_id": "src_1cebb3bb", "text": "Kontakt / contact@stoic-analytics.com"}
+{"locator": "raw/20260925-FH-Kufstein-Big Data-Processing-1.pdf#p9:1", "reason": "too_few_content_tokens", "source_id": "src_1cebb3bb", "text": "What does Stoic Analytics do?"}
 {"locator": "session-01/01_do_you_need_a_cluster.ipynb#cell-0:3", "reason": "fragment_or_lead_in", "source_id": "src_46087206", "text": "We run the same analysis on NYC Yellow Taxi data with three engines:"}
 {"locator": "session-01/01_do_you_need_a_cluster.ipynb#cell-14", "reason": "too_few_content_tokens", "source_id": "src_46087206", "text": "Same answer from all three engines?"}
 {"locator": "session-01/01_do_you_need_a_cluster.ipynb#cell-15:2", "reason": "too_few_content_tokens", "source_id": "src_46087206", "text": "CSV is none of that."}
@@ -43,6 +89,88 @@
 {"locator": "session-04/04_spark_fundamentals_and_ml.ipynb#cell-6", "reason": "code_fragment", "source_id": "src_47132aab", "text": "Stopwatch: run fn(), print how long it took, return its result. Call it with a lambda: timed(\"count\", lambda: df.count())"}
 {"locator": "session-04/04_spark_fundamentals_and_ml.ipynb#cell-9:1", "reason": "too_few_content_tokens", "source_id": "src_47132aab", "text": "When you are back, everybody should see ✓ converted."}
 {"locator": "session-04/04_spark_fundamentals_and_ml.ipynb#cell-9:1", "reason": "too_short_or_boilerplate", "source_id": "src_47132aab", "text": "Break."}
+{"locator": "raw/02_kafka_python_SOLUTION.ipynb#cell-0:6", "reason": "too_short_or_boilerplate", "source_id": "src_4a842820", "text": "What you learn:"}
+{"locator": "raw/02_kafka_python_SOLUTION.ipynb#cell-0:8", "reason": "too_few_content_tokens", "source_id": "src_4a842820", "text": "what a serializer does,"}
+{"locator": "raw/02_kafka_python_SOLUTION.ipynb#cell-13:1", "reason": "fragment_or_lead_in", "source_id": "src_4a842820", "text": "(How exactly it spreads them depends on the client library; the Java client fills one partition for a while, then switches.)"}
+{"locator": "raw/02_kafka_python_SOLUTION.ipynb#cell-17:1", "reason": "fragment_or_lead_in", "source_id": "src_4a842820", "text": "(If you see 0 here, run sections 4 and 5 again – with few messages it can happen by chance.)"}
+{"locator": "raw/02_kafka_python_SOLUTION.ipynb#cell-17:7", "reason": "too_few_content_tokens", "source_id": "src_4a842820", "text": "Read with the same group again."}
+{"locator": "raw/02_kafka_python_SOLUTION.ipynb#cell-17:7", "reason": "too_few_content_tokens", "source_id": "src_4a842820", "text": "Predict: how many records do you get?"}
+{"locator": "raw/02_kafka_python_SOLUTION.ipynb#cell-21:2", "reason": "too_few_content_tokens", "source_id": "src_4a842820", "text": "The total must be 5 – why?"}
+{"locator": "raw/02_kafka_python_SOLUTION.ipynb#cell-23:25", "reason": "too_few_content_tokens", "source_id": "src_4a842820", "text": "Predict first: will C2 get copies of all messages, or a part?"}
+{"locator": "raw/02_kafka_python_SOLUTION.ipynb#cell-23:29", "reason": "fragment_or_lead_in", "source_id": "src_4a842820", "text": "Then look at the assignment from the broker's view:"}
+{"locator": "raw/02_kafka_python_SOLUTION.ipynb#cell-23:35", "reason": "too_few_content_tokens", "source_id": "src_4a842820", "text": "Now start C3 and C4 in the same group."}
+{"locator": "raw/02_kafka_python_SOLUTION.ipynb#cell-23:35", "reason": "too_few_content_tokens", "source_id": "src_4a842820", "text": "With 3 partitions – what does C4 do?"}
+{"locator": "raw/02_kafka_python_SOLUTION.ipynb#cell-23:38", "reason": "too_few_content_tokens", "source_id": "src_4a842820", "text": "Predict: what does B1 receive?"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p10:1", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "uv: one tool for both"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p10:3", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "Here you can enter your own values:"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p11:1", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "venv vs. pyenv vs. uv"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p11:11", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "Windows yes only pyenv-win yes"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p11:5", "reason": "too_short_or_boilerplate", "source_id": "src_59b6ded4", "text": "venv pyenv uv"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p12:1", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "The reproducibility ladder"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p12:6", "reason": "too_short_or_boilerplate", "source_id": "src_59b6ded4", "text": "Codespace."}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p13:1", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "Build your environment"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p13:11", "reason": "too_short_or_boilerplate", "source_id": "src_59b6ded4", "text": "uv · 10 min"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p13:4", "reason": "fragment_or_lead_in", "source_id": "src_59b6ded4", "text": "session-04/01_python_environments.md Install everything except Spark:"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p14:1", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "Could you answer these?"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p16:14", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "In Lab B you measure the first three yourself."}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p16:6", "reason": "too_short_or_boilerplate", "source_id": "src_59b6ded4", "text": "Spark?"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p17:1", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "Row vs. column on disk"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p17:11", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "V1 V2 V3 P1 P2 P3 D1 D2 D3 T1 T2 T3"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p17:4", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "Row-oriented (CSV): one trip after the other"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p17:6", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "V1 P1 D1 T1 V2 P2 D2 T2 V3 P3 D3 T3"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p17:9", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "Columnar (Parquet): one column after the other"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p18:12", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "state: arrays, numbers"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p19:5", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "Here the function is print."}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p20:1", "reason": "too_short_or_boilerplate", "source_id": "src_59b6ded4", "text": "Measure it yourself"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p20:4", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "Here you can enter your own values:"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p21:3", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "Explain the risk in two sentences."}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p24:1", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "In memory or in a file?"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p24:16", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "Many readers OR one writer."}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p24:5", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "duckdb.connect() duckdb.connect(\"taxi.duckdb\")"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p24:7", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "Gone when Python stops."}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p24:7", "reason": "too_short_or_boilerplate", "source_id": "src_59b6ded4", "text": "Tables survive."}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p25:1", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "Where does DuckDB fit?"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p26:10", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "Close, reopen – still there?"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p26:11", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "Transaction and ROLLBACK SELECT"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p26:19", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "Hint for your data-quality query."}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p26:9", "reason": "too_short_or_boilerplate", "source_id": "src_59b6ded4", "text": "A view with a join"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p29:14", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "Error \"Dataset missing\"?"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p29:14", "reason": "too_short_or_boilerplate", "source_id": "src_59b6ded4", "text": "Step 2."}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p2:1", "reason": "too_short_or_boilerplate", "source_id": "src_59b6ded4", "text": "Course Outline"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p2:3", "reason": "too_short_or_boilerplate", "source_id": "src_59b6ded4", "text": "Exam » On-Campus"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p30:6", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "one JVM on one machine Driver"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p30:8", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "Driver: plans the job"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p32:1", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "Narrow vs. wide = no shuffle vs. shuffle"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p33:11", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "No shuffle of the big side."}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p35:1", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "Partitions become tasks"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p36:1", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "A Pipeline is a chain of stages"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p37:1", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "A Pipeline is a chain of stages"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p37:12", "reason": "fragment_or_lead_in", "source_id": "src_59b6ded4", "text": "That's why we tune on a 10 % sample – it is enough to choose the parameters."}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p38:1", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "What do we know when the passenger gets in?"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p38:4", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "Pickup the ride Dropoff"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p39:1", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "Predict the trip duration"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p39:15", "reason": "too_short_or_boilerplate", "source_id": "src_59b6ded4", "text": "Not finished?"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p3:1", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "Four blocks, four labs"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p3:6", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "Block Topic Where Lab"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p40:3", "reason": "too_short_or_boilerplate", "source_id": "src_59b6ded4", "text": "Justify."}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p42:11", "reason": "too_short_or_boilerplate", "source_id": "src_59b6ded4", "text": "https://www.linkedin.com/in/mariotuta/"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p42:6", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "Kontakt / contact@stoic-analytics.com"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p4:1", "reason": "too_short_or_boilerplate", "source_id": "src_59b6ded4", "text": "Three quick checks"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p4:6", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "Sit next to someone Not yet?"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p4:6", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "The exam is without AI."}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p4:6", "reason": "too_short_or_boilerplate", "source_id": "src_59b6ded4", "text": "Data downloaded?"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p4:6", "reason": "too_short_or_boilerplate", "source_id": "src_59b6ded4", "text": "Kaggle verified?"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p4:6", "reason": "too_short_or_boilerplate", "source_id": "src_59b6ded4", "text": "No data yet?"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p6:1", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "\"It works on my machine\""}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p6:4", "reason": "too_short_or_boilerplate", "source_id": "src_59b6ded4", "text": "Laptop A Laptop B"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p7:1", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "Two different problems"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p7:5", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "Which Python version?"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p7:5", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "Which packages, in which versions?"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p7:9", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "→ pyenv or uv python → venv or uv venv"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p8:1", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "What is inside .venv?"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p8:6", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "It is just a folder .venv/ Broken?"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p9:1", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "pyenv: shims and .python-version"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p9:16", "reason": "too_few_content_tokens", "source_id": "src_59b6ded4", "text": "Only through the separate port pyenv-win."}
 {"locator": "session-06/docker-compose.yml:13", "reason": "too_few_content_tokens", "source_id": "src_6002d48d", "text": "broker image is apache/kafka:4.4.0"}
 {"locator": "session-06/docker-compose.yml:14", "reason": "too_few_content_tokens", "source_id": "src_6002d48d", "text": "broker container_name is broker"}
 {"locator": "session-06/docker-compose.yml:19", "reason": "too_few_content_tokens", "source_id": "src_6002d48d", "text": "broker KAFKA_NODE_ID is 1"}
@@ -66,6 +194,116 @@
 {"locator": "session-04/README.md:31", "reason": "too_few_content_tokens", "source_id": "src_6494d099", "text": "Check in a new terminal:"}
 {"locator": "session-04/README.md:39", "reason": "too_few_content_tokens", "source_id": "src_6494d099", "text": "Then on your laptop:"}
 {"locator": "session-04/README.md:54", "reason": "too_few_content_tokens", "source_id": "src_6494d099", "text": "Sign up at kaggle.com (free)."}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p100:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Apache Spark Infrastruktur"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p101:1", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "Apache Spark UI"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p103:1", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "Install Java JDK"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p104:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Check Version in Terminal/PowerShell"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p106:1", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "Apache Spark 3.5.4"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p108:1", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "Pip Brew Install"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p109:1", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "Mac User Folder"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p10:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "What is Multiprocessing?"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p110:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "SparkContext vs SparkSession"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p111:1", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "Introduction"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p111:3", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "» SparkContext » SparkSesssion"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p112:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Functionality Differences"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p112:3", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "» SparkContext » SparkSesssion"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p113:3", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "» SparkContext » SparkSesssion"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p114:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Backward Compatibility"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p114:3", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "» SparkContext » SparkSesssion"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p116:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Spark RDD and RDD Operations"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p118:1", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "RDD Characteristics"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p119:1", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "RDD operations"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p119:3", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "» Transformations » Actions"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p11:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Multiprocessing vs. Multithreading"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p120:1", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "Key Differences"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p121:1", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "Dataframes in Spark"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p122:1", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "Dataframes in Spark"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p123:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Advantages of DataFrames over RDDs"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p124:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Advantages of DataFrames over RDDs"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p126:11", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "https://www.linkedin.com/in/mariotuta/"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p126:6", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Kontakt / contact@stoic-analytics.com"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p12:3", "reason": "fragment_or_lead_in", "source_id": "src_68fcf2b9", "text": "But they have to coordinate, so two cooks don't grab the same pan at the same time. » The GIL is a rule in the Python kitchen: only one cook may cook at a time."}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p12:3", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "» A process is a kitchen."}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p14:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Three engines, one question"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p14:12", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Cores used mostly one all all"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p14:16", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Written in Python / C Rust C++"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p14:4", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "pandas Polars DuckDB"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p14:7", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Interface DataFrame DataFrame SQL"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p15:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Big Data Architectures"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p17:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Lambda (λ) Architecture I"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p18:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Lambda (λ) Architecture II"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p19:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Lambda (λ) Architecture III"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p20:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Lambda (λ) Architecture"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p21:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Kappa (κ) Architecture"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p22:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Kappa (κ) Architecture"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p23:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Lambda vs. Kappa vs. Zeta"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p26:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "What is a Big Data Pipeline?"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p27:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "What is a Data Pipeline?"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p2:1", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "Course Outline"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p2:3", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "Exam » On-Campus"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p30:1", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "Data Warehouse"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p33:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Data Warehouse vs. Data Lake"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p33:11", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Advanced Analytics (AA)"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p33:6", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Business Intelligence (BI)"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p36:1", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "Storage & Costs"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p37:1", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "noSQL Databases"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p39:1", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "Data Integration"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p3:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Master Thesis Supervision"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p3:3", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "Feedback Prof."}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p40:1", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "Data Integration"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p44:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Batch Processing Example"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p47:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Stream Processing Example"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p4:12", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "» https://tinyurl.com/4frfpx3z"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p50:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Chronology of Big Data"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p55:12", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Serial Processing Parallel Processing"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p55:4", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "Challange Solution"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p56:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Hadoop Core Components"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p60:4", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Datanodes mydata.txt"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p61:4", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Datanodes (on each mydata.txt machine)"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p62:16", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "150 MB Namenode"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p62:4", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Datanodes (on each mydata.txt machine)"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p63:1", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "Is there a problem?"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p63:4", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Datanodes (on each machine)"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p64:1", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "Data Redundancy"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p64:4", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Datanodes (on each machine)"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p65:1", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "Data Redundancy"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p65:4", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Datanodes (on each machine)"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p66:1", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "Is there a problem?"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p66:4", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Datanodes (on each machine)"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p67:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Namenode Standby NFS"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p67:11", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "Meta NFS data"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p67:4", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Datanodes (on each machine)"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p68:11", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "Meta NFS data"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p68:15", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Namenode Namenode (Active) (Standby)"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p68:4", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Datanodes (on each machine)"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p69:6", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Performs replication."}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p6:1", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "GIL in Python"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p70:1", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "Features of HDFS"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p73:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Hadoop Core Components"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p74:1", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "What is Map Reduce"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p76:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Application of Map Reduce"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p77:1", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "Mapper & Reducer"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p78:1", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "Mapper & Reducer"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p79:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "How does MapReduce Work?"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p80:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "How does MapReduce Work?"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p82:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Advantages of MapReduce"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p83:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Disadvantages of MapReduce"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p84:1", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "Apache Spark"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p86:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "What is Apache Spark?"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p87:1", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "Apache Spark"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p88:1", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "Apache Spark"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p89:1", "reason": "too_short_or_boilerplate", "source_id": "src_68fcf2b9", "text": "Apache Spark"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p90:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Which problems can be solved"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p91:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Why Spark is better than other Tools"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p92:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Who should learn Spark?"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p93:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Apache Spark Infrastruktur"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p94:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Apache Spark Infrastruktur"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p95:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Apache Spark Infrastruktur"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p96:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Apache Spark Infrastruktur"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p97:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Apache Spark Infrastruktur"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p98:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Apache Spark Infrastruktur"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p99:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "Apache Spark Infrastruktur"}
+{"locator": "raw/20261016-FH-Kufstein-Big Data-Processing-3.pdf#p9:1", "reason": "too_few_content_tokens", "source_id": "src_68fcf2b9", "text": "What is Multithreading?"}
 {"locator": "session-04/03_duckdb_database.ipynb#cell-10", "reason": "code_fragment", "source_id": "src_6e2e5684", "text": "TODO: one query, one pass over the table, four counts"}
 {"locator": "session-04/03_duckdb_database.ipynb#cell-11:2", "reason": "fragment_or_lead_in", "source_id": "src_6e2e5684", "text": "It is always up to date and costs no disk space."}
 {"locator": "session-04/03_duckdb_database.ipynb#cell-21:2", "reason": "too_few_content_tokens", "source_id": "src_6e2e5684", "text": "Results convert with .df(), .pl() or .arrow()."}
@@ -79,6 +317,62 @@
 {"locator": "session-04/03_duckdb_database.ipynb#cell-9:5", "reason": "too_few_content_tokens", "source_id": "src_6e2e5684", "text": "trips with total_amount < 0,"}
 {"locator": "session-04/03_duckdb_database.ipynb#cell-9:6", "reason": "too_few_content_tokens", "source_id": "src_6e2e5684", "text": "trips with passenger_count missing."}
 {"locator": "session-04/03_duckdb_database.ipynb#cell-9:8", "reason": "too_short_or_boilerplate", "source_id": "src_6e2e5684", "text": "THEN 1 ELSE 0 END)."}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p16:1", "reason": "too_short_or_boilerplate", "source_id": "src_70f9fe3e", "text": "Scaleability"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p17:1", "reason": "too_few_content_tokens", "source_id": "src_70f9fe3e", "text": "Single Central Storage"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p18:1", "reason": "too_few_content_tokens", "source_id": "src_70f9fe3e", "text": "Distributed Systems are hard"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p19:1", "reason": "too_few_content_tokens", "source_id": "src_70f9fe3e", "text": "Scale up or scale out?"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p19:6", "reason": "too_few_content_tokens", "source_id": "src_70f9fe3e", "text": "Scale up Scale out A bigger machine."}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p21:1", "reason": "too_few_content_tokens", "source_id": "src_70f9fe3e", "text": "Pope Nomination 2013"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p23:1", "reason": "too_short_or_boilerplate", "source_id": "src_70f9fe3e", "text": "Group work: Paper"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p24:1", "reason": "too_few_content_tokens", "source_id": "src_70f9fe3e", "text": "Big Data is the new soil!"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p26:1", "reason": "too_few_content_tokens", "source_id": "src_70f9fe3e", "text": "Do you need a cluster?"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p26:1", "reason": "too_short_or_boilerplate", "source_id": "src_70f9fe3e", "text": "Part II"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p27:1", "reason": "too_short_or_boilerplate", "source_id": "src_70f9fe3e", "text": "Python Repetition"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p27:14", "reason": "too_few_content_tokens", "source_id": "src_70f9fe3e", "text": "Java is one example."}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p27:6", "reason": "too_few_content_tokens", "source_id": "src_70f9fe3e", "text": "» Implementation » Implementation is all about what the interpreter ends up doing."}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p28:1", "reason": "too_short_or_boilerplate", "source_id": "src_70f9fe3e", "text": "Python Foundations"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p2:1", "reason": "too_short_or_boilerplate", "source_id": "src_70f9fe3e", "text": "Course Outline"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p2:3", "reason": "too_short_or_boilerplate", "source_id": "src_70f9fe3e", "text": "Exam » On-Campus"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p30:1", "reason": "too_short_or_boilerplate", "source_id": "src_70f9fe3e", "text": "CPython Interpreter"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p32:1", "reason": "too_short_or_boilerplate", "source_id": "src_70f9fe3e", "text": "GIL in Python"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p37:1", "reason": "too_few_content_tokens", "source_id": "src_70f9fe3e", "text": "Multithreading und Multiprocessing"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p38:1", "reason": "too_few_content_tokens", "source_id": "src_70f9fe3e", "text": "One thread at a time"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p38:1", "reason": "too_short_or_boilerplate", "source_id": "src_70f9fe3e", "text": "Why is Python slow?"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p39:1", "reason": "too_short_or_boilerplate", "source_id": "src_70f9fe3e", "text": "Coding time!"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p3:1", "reason": "too_short_or_boilerplate", "source_id": "src_70f9fe3e", "text": "Certifications"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p40:1", "reason": "too_few_content_tokens", "source_id": "src_70f9fe3e", "text": "Threads vs. processes"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p40:12", "reason": "too_few_content_tokens", "source_id": "src_70f9fe3e", "text": "session-01/00_warmup_threads_vs_processes.ipynb"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p41:1", "reason": "too_few_content_tokens", "source_id": "src_70f9fe3e", "text": "Introduction to Multithreading & Multiprocessing"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p42:1", "reason": "too_short_or_boilerplate", "source_id": "src_70f9fe3e", "text": "Data Parallelism"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p43:1", "reason": "too_short_or_boilerplate", "source_id": "src_70f9fe3e", "text": "Data Parallelism"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p44:1", "reason": "too_few_content_tokens", "source_id": "src_70f9fe3e", "text": "What is Multithreading?"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p45:1", "reason": "too_few_content_tokens", "source_id": "src_70f9fe3e", "text": "What is Multiprocessing?"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p46:1", "reason": "too_few_content_tokens", "source_id": "src_70f9fe3e", "text": "Multiprocessing vs. Multithreading"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p47:3", "reason": "fragment_or_lead_in", "source_id": "src_70f9fe3e", "text": "But they have to coordinate, so two cooks don't grab the same pan at the same time. » The GIL is a rule in the Python kitchen: only one cook may cook at a time."}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p47:3", "reason": "too_few_content_tokens", "source_id": "src_70f9fe3e", "text": "» A process is a kitchen."}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p48:1", "reason": "too_few_content_tokens", "source_id": "src_70f9fe3e", "text": "Technical Comparison"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p48:4", "reason": "too_short_or_boilerplate", "source_id": "src_70f9fe3e", "text": "Area Thread Process"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p50:1", "reason": "too_few_content_tokens", "source_id": "src_70f9fe3e", "text": "Row vs. column storage"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p50:10", "reason": "too_few_content_tokens", "source_id": "src_70f9fe3e", "text": "You read only the column you need."}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p50:5", "reason": "too_few_content_tokens", "source_id": "src_70f9fe3e", "text": "CSV – row by row Parquet – column by column"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p51:1", "reason": "too_few_content_tokens", "source_id": "src_70f9fe3e", "text": "Five Formats, two families"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p53:1", "reason": "too_short_or_boilerplate", "source_id": "src_70f9fe3e", "text": "Which format when?"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p53:6", "reason": "too_few_content_tokens", "source_id": "src_70f9fe3e", "text": "But no types, big and slow."}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p53:6", "reason": "too_short_or_boilerplate", "source_id": "src_70f9fe3e", "text": "Parquet, ORC."}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p53:6", "reason": "too_short_or_boilerplate", "source_id": "src_70f9fe3e", "text": "JSON."}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p54:1", "reason": "too_few_content_tokens", "source_id": "src_70f9fe3e", "text": "Three engines, one question"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p54:12", "reason": "too_few_content_tokens", "source_id": "src_70f9fe3e", "text": "Cores used mostly one all all"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p54:16", "reason": "too_few_content_tokens", "source_id": "src_70f9fe3e", "text": "Written in Python / C Rust C++"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p54:4", "reason": "too_few_content_tokens", "source_id": "src_70f9fe3e", "text": "pandas Polars DuckDB"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p54:7", "reason": "too_few_content_tokens", "source_id": "src_70f9fe3e", "text": "Interface DataFrame DataFrame SQL"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p56:1", "reason": "too_few_content_tokens", "source_id": "src_70f9fe3e", "text": "Groups for Group Work"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p56:3", "reason": "too_few_content_tokens", "source_id": "src_70f9fe3e", "text": "Prename Surname Group"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p59:11", "reason": "too_short_or_boilerplate", "source_id": "src_70f9fe3e", "text": "https://www.linkedin.com/in/mariotuta/"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p59:6", "reason": "too_few_content_tokens", "source_id": "src_70f9fe3e", "text": "Kontakt / contact@stoic-analytics.com"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p5:1", "reason": "too_few_content_tokens", "source_id": "src_70f9fe3e", "text": "PL-300 Power BI Certification"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p6:1", "reason": "too_few_content_tokens", "source_id": "src_70f9fe3e", "text": "Certification on Datacamp"}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p8:1", "reason": "fragment_or_lead_in", "source_id": "src_70f9fe3e", "text": "There is no single definition of „Big Data\""}
+{"locator": "raw/20260926-FH-Kufstein-Big Data-Processing-2.pdf#p9:1", "reason": "too_short_or_boilerplate", "source_id": "src_70f9fe3e", "text": "3 Vs of Big Data"}
 {"locator": "session-06/02_kafka_python.ipynb#cell-0:6", "reason": "too_short_or_boilerplate", "source_id": "src_799c8bd7", "text": "What you learn:"}
 {"locator": "session-06/02_kafka_python.ipynb#cell-0:8", "reason": "too_few_content_tokens", "source_id": "src_799c8bd7", "text": "what a serializer does,"}
 {"locator": "session-06/02_kafka_python.ipynb#cell-13:1", "reason": "fragment_or_lead_in", "source_id": "src_799c8bd7", "text": "(How exactly it spreads them depends on the client library; the Java client fills one partition for a while, then switches.)"}
@@ -92,6 +386,128 @@
 {"locator": "session-06/02_kafka_python.ipynb#cell-23:35", "reason": "too_few_content_tokens", "source_id": "src_799c8bd7", "text": "Now start C3 and C4 in the same group."}
 {"locator": "session-06/02_kafka_python.ipynb#cell-23:35", "reason": "too_few_content_tokens", "source_id": "src_799c8bd7", "text": "With 3 partitions – what does C4 do?"}
 {"locator": "session-06/02_kafka_python.ipynb#cell-23:38", "reason": "too_few_content_tokens", "source_id": "src_799c8bd7", "text": "Predict: what does B1 receive?"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p100:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Exam Style Questions"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p100:3", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Why does --replication-factor 2 fail?"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p100:3", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "What can go wrong, and what would you do?"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p100:3", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "» Define offset."}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p101:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Exam Style Questions"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p101:3", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Same group_id or different ones?"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p102:9", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "In pairs · paper only"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p104:1", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "Course Evaluation"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p107:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Kontakt / contact@stoic-analytics.com"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p10:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Administration & Monitoring Tools"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p11:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Administration & Monitoring Tools"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p12:6", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Kafka in Enterprise Architecture"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p13:1", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "Topics & Partitions"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p14:1", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "Topics & Partitions"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p15:1", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "Topics & Partitions"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p16:1", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "Topics & Partitions"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p18:6", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "Brokers and Topics"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p19:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Topics replication factor"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p20:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Topics replication factor"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p21:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Concepts of a Leader of a Partition"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p22:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Concepts of a Leader of a Partition"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p23:1", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "Kafka Producers"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p24:1", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "Kafka Producers"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p25:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Producers: Message Keys"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p26:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Producers: Message Keys"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p27:1", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "Kafka Consumers"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p28:1", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "Kafka Consumers"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p29:1", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "Consumer Groups"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p2:1", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "Course Outline"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p30:1", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "Consumer Groups"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p31:1", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "Consumer Groups"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p32:1", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "Consumer Groups"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p33:1", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "Consumer Groups"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p34:1", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "Consumer Offsets"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p35:1", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "Consumer Offsets"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p36:1", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "Consumer Offsets"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p37:1", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "Project Start"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p38:1", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "Project Start"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p3:3", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Time Block Material Type"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p40:1", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "Data Examples"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p41:1", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "Consumer Offsets"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p42:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Topics, Partitions and Offsets"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p43:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Topics, Partitions and Offsets"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p44:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Topics, Partitions and Offsets"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p45:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Topics, Partitions and Offsets"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p46:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Topics, Partitions and Offsets"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p47:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Topics, Partitions and Offsets"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p48:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Topic Example: truck_gps"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p49:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Topic Example: truck_gps"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p4:3", "reason": "fragment_or_lead_in", "source_id": "src_8615b91f", "text": "Google Tag Manager SQL With over a decade of experience, I specialize in:"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p4:3", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Contact mario.tuta@stoic-analytics."}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p50:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Topic Example: truck_gps"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p51:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Topic Example: truck_gps"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p52:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Topic Example: truck_gps"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p53:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Topic Example: truck_gps"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p54:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Topics, Partitions and Offsets"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p55:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Topics, Partitions and Offsets"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p56:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Topics, Partitions and Offsets"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p57:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Topics, Partitions and Offsets"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p58:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Topics, Partitions and Offsets"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p59:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Topics, Partitions and Offsets"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p5:3", "reason": "fragment_or_lead_in", "source_id": "src_8615b91f", "text": "Google Tag Manager SQL With over a decade of experience, I specialize in:"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p5:3", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Contact mario.tuta@stoic-analytics."}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p60:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Docker Compose & YAML"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p61:1", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "Why Docker Compose?"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p61:12", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "» b."}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p61:7", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "» a."}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p62:1", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "What is YAML"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p63:1", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "Why use YAML?"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p65:1", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "YAML Syntax Basics"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p66:3", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "» Lists are defined using -"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p66:8", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "» Indentation creates hierarchy"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p67:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Dictionary/Map in YAML"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p68:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Structure of a YAML File"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p69:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Common mistakes in YAML"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p6:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Apache Kafka Details"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p70:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Common mistakes in YAML"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p71:1", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "Coding time!"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p72:1", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "docker-compose.yml"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p73:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Examples Docker Compose"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p74:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Docker Compose Reference"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p75:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Install Docker Desktop"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p76:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Start docker-compose.yml"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p76:3", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "» Change to directory"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p76:8", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "» Start Docker Compose"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p77:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Docker Installation for Mac"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p78:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Docker Installation for Windows"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p7:6", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "Apache Kafka Core"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p80:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Apache Kafka Project"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p82:10", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "p0 C2 p0 C1 p0"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p82:13", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "p1 C2 p1 B1 p1 C2"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p82:16", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "p2 p2 C1 p2 C3"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p85:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Your setup: pick one route"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p85:20", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Windows, macOS, Linux"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p85:3", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "» Use the same route for the whole lab"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p87:23", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Check (all OS) Install (~240 MB)"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p87:3", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "OS Install Watch out"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p88:20", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "Windows?"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p8:6", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "Kafka Extended API"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p90:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Operating Systems Overview"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p90:19", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Path separator \\ (also accepts /) / /"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p91:11", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "① fails on one broker → InvalidReplicationFactorException."}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p91:11", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "Intended!"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p91:17", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "✓ What you should see"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p91:3", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Route A – Docker Route B – native"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p91:33", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Your TopicId differs."}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p91:8", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "② same, with --replication-factor 1 ② same, with --replication-factor 1"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p92:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Same key → same partition"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p92:11", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "Tirol:second order"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p92:26", "reason": "fragment_or_lead_in", "source_id": "src_8615b91f", "text": "kafka-console-producer.sh --bootstrap-server localhost:9092 --topic cli-demo --reader-property parse.key=true --reader-property key.separator=:"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p97:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "If it fails: top fixes"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p97:3", "reason": "too_short_or_boilerplate", "source_id": "src_8615b91f", "text": "You see … Fix"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p98:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Exam-style questions"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p98:3", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Are they the same message?"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p99:1", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Exam-style questions"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p99:3", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Are they the same message?"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p99:3", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "What exactly does an offset identify?"}
+{"locator": "raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p99:7", "reason": "too_few_content_tokens", "source_id": "src_8615b91f", "text": "Which message key do you choose, and why?"}
+{"locator": "raw/01_kafka_cli_MODEL_ANSWERS.md:33", "reason": "too_short_or_boilerplate", "source_id": "src_8a44f955", "text": "5c observed:"}
+{"locator": "raw/01_kafka_cli_MODEL_ANSWERS.md:49", "reason": "fragment_or_lead_in", "source_id": "src_8a44f955", "text": "(The index files are pre-allocated at 10 MB, that is why ls -la shows 10 485 760 bytes.)"}
+{"locator": "raw/01_kafka_cli_MODEL_ANSWERS.md:54", "reason": "fragment_or_lead_in", "source_id": "src_8a44f955", "text": "Observed kafka-dump-log (piped input):"}
+{"locator": "raw/01_kafka_cli_MODEL_ANSWERS.md:60", "reason": "too_few_content_tokens", "source_id": "src_8a44f955", "text": "Only if someone asks.)"}
 {"locator": "session-04/02_file_formats_and_pickle.ipynb#cell-0:11", "reason": "too_few_content_tokens", "source_id": "src_8e87808f", "text": "and whether opening it is safe."}
 {"locator": "session-04/02_file_formats_and_pickle.ipynb#cell-0:6", "reason": "too_few_content_tokens", "source_id": "src_8e87808f", "text": "The file format decides"}
 {"locator": "session-04/02_file_formats_and_pickle.ipynb#cell-0:7", "reason": "too_few_content_tokens", "source_id": "src_8e87808f", "text": "how fast you can write and read it,"}
@@ -267,6 +683,81 @@
 {"locator": "session-04/check_env.py:1", "reason": "too_few_content_tokens", "source_id": "src_de25e104", "text": "python session-04/check_env.py"}
 {"locator": "session-06/kafka_data.py:1", "reason": "too_few_content_tokens", "source_id": "src_f8b034ea", "text": "Try it: python kafka_data.py"}
 {"locator": "session-06/kafka_data.py:19", "reason": "code_fragment", "source_id": "src_f8b034ea", "text": "so you can see that the same key always lands in the same partition."}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p10:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "What is an event?"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p11:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "What is an event?"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p12:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "What is an event?"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p13:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "What is an event?"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p14:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "What is an event?"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p15:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "What is an event?"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p16:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "What is an event?"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p17:1", "reason": "too_few_content_tokens", "source_id": "src_fc0bfe80", "text": "Examples of Stream Processing"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p18:1", "reason": "too_few_content_tokens", "source_id": "src_fc0bfe80", "text": "Example: Log Analysis"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p19:1", "reason": "too_few_content_tokens", "source_id": "src_fc0bfe80", "text": "Example: Log Analysis"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p19:3", "reason": "too_few_content_tokens", "source_id": "src_fc0bfe80", "text": "» How to solve this messy problem?"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p20:1", "reason": "too_few_content_tokens", "source_id": "src_fc0bfe80", "text": "Example: Web Analytics"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p21:1", "reason": "too_few_content_tokens", "source_id": "src_fc0bfe80", "text": "Example: Web Analytics"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p22:1", "reason": "too_few_content_tokens", "source_id": "src_fc0bfe80", "text": "Example: Real-Time Pricing"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p23:1", "reason": "too_few_content_tokens", "source_id": "src_fc0bfe80", "text": "Example: Financial Analysis"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p24:1", "reason": "too_few_content_tokens", "source_id": "src_fc0bfe80", "text": "Example: Financial Analysis"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p25:1", "reason": "too_few_content_tokens", "source_id": "src_fc0bfe80", "text": "Example: Financial Analysis"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p26:1", "reason": "too_few_content_tokens", "source_id": "src_fc0bfe80", "text": "Stream vs. Batch Processing"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p27:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Batch Processing"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p28:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Stream Processing"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p29:1", "reason": "too_few_content_tokens", "source_id": "src_fc0bfe80", "text": "Batch vs Stream Processing"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p2:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Course Outline"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p2:3", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Exam » On-Campus"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p35:1", "reason": "too_few_content_tokens", "source_id": "src_fc0bfe80", "text": "Stream Processing Benefits"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p36:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Append-Only Logs"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p37:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Append-Only Logs"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p38:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Append-Only Logs"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p39:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Append-Only Logs"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p3:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Kaggle Notebook"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p40:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Append-Only Logs"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p41:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Append-Only Logs"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p43:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Append-Only Logs"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p44:1", "reason": "too_few_content_tokens", "source_id": "src_fc0bfe80", "text": "Log-structured storage characteristics"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p45:1", "reason": "too_few_content_tokens", "source_id": "src_fc0bfe80", "text": "Log-structured Storage Characteristics"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p46:1", "reason": "too_few_content_tokens", "source_id": "src_fc0bfe80", "text": "Example Log-structured Storage"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p47:1", "reason": "too_few_content_tokens", "source_id": "src_fc0bfe80", "text": "Example Log-structured Storage"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p48:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Industry Use-Cases"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p49:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Industry Use-Cases"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p4:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Kaggle Notebook"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p50:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Industry Use-Cases"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p51:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Industry Use-Cases"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p52:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Kafka in Action"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p53:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Kafka Topics"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p54:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Kafka Producers"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p55:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Kafka Consumers"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p56:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Kafka in CLI"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p57:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Kafka CLI Commands"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p58:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Kafka CLI Commands"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p59:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Kafka CLI Commands"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p60:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Kafka in Python"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p61:1", "reason": "too_few_content_tokens", "source_id": "src_fc0bfe80", "text": "How Apache Kafka works"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p62:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Kafka Topics"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p63:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Kafka Clustering"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p64:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Kafka Clustering"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p64:3", "reason": "too_few_content_tokens", "source_id": "src_fc0bfe80", "text": "» Brokers are organized into clusters."}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p65:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Kafka Clustering"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p65:3", "reason": "too_few_content_tokens", "source_id": "src_fc0bfe80", "text": "Zookeeper is removed."}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p66:1", "reason": "too_few_content_tokens", "source_id": "src_fc0bfe80", "text": "How Kafka Stores Data"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p68:1", "reason": "too_few_content_tokens", "source_id": "src_fc0bfe80", "text": "How Kafka Stores Data"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p69:1", "reason": "too_few_content_tokens", "source_id": "src_fc0bfe80", "text": "How Kafka Stores Data"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p6:1", "reason": "too_few_content_tokens", "source_id": "src_fc0bfe80", "text": "What is Stream Processing?"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p70:1", "reason": "too_few_content_tokens", "source_id": "src_fc0bfe80", "text": "How Kafka Stores Data"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p71:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Data Replication"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p72:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Data Replication"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p73:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Data Replication"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p74:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Data Replication"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p75:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Data Replication"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p76:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Data Replication"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p77:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Data Replication"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p78:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Kafka CLI Commands"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p79:1", "reason": "too_short_or_boilerplate", "source_id": "src_fc0bfe80", "text": "Kafka CLI Commands"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p7:1", "reason": "too_few_content_tokens", "source_id": "src_fc0bfe80", "text": "What is Stream Processing?"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p8:1", "reason": "too_few_content_tokens", "source_id": "src_fc0bfe80", "text": "What is Stream Processing?"}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p8:3", "reason": "too_few_content_tokens", "source_id": "src_fc0bfe80", "text": "» Data Streams are made up of immutable data."}
+{"locator": "raw/20261031-FH-Kufstein-Big Data-Processing-5.pdf#p9:1", "reason": "too_few_content_tokens", "source_id": "src_fc0bfe80", "text": "What is Stream Processing?"}
 {"locator": "session-01/00_warmup_threads_vs_processes.ipynb#cell-0:6", "reason": "too_few_content_tokens", "source_id": "src_ffd1cdcc", "text": "We test three kinds of work:"}
 {"locator": "session-01/00_warmup_threads_vs_processes.ipynb#cell-0:8", "reason": "too_few_content_tokens", "source_id": "src_ffd1cdcc", "text": "CPU-bound – pure computation"}
 {"locator": "session-01/00_warmup_threads_vs_processes.ipynb#cell-4:1", "reason": "too_few_content_tokens", "source_id": "src_ffd1cdcc", "text": "Why doesn't the GIL matter for waiting?"}

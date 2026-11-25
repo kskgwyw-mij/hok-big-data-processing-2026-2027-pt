@@ -211,6 +211,7 @@ def extract_source(
                     "topic": topic,
                     "kind": "exam_prompt",
                     "heading": " / ".join(segment.heading_path),
+                    "privacy": source.sensitivity,
                 })
             continue
         for unit in candidate_units(segment):
@@ -257,6 +258,7 @@ def extract_source(
                     "topic": topic,
                     "kind": "exam_prompt" if topic == "course.exam" else "open_question",
                     "heading": " / ".join(segment.heading_path),
+                    "privacy": source.sensitivity,
                 })
                 continue
             claim_text = claim_text_for(Segment(

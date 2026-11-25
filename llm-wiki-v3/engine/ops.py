@@ -9,7 +9,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
-from . import config, extract, graph, index, nlp, readers, render, sources, state
+from . import config, evals, extract, graph, index, nlp, readers, render, sources, state
 
 
 def _store() -> state.StateStore:
@@ -22,8 +22,12 @@ def _register(store: state.StateStore, source: readers.Source) -> None:
 
 def _question_rows(results: list[extract.ExtractionResult]) -> list[dict[str, Any]]:
     """One row per distinct prompt: the same question often appears in several sources."""
-    def rank(question: dict[str, Any]) -> tuple[int, str]:
-        return (1 if "gitdiff" in question["locator"] else 0, question["locator"])
+    def rank(question: dict[str, Any]) -> tuple[int, int, str]:
+        return (
+            1 if config.is_private_sensitivity(question.get("privacy", "internal")) else 0,
+            1 if "gitdiff" in question["locator"] else 0,
+            question["locator"],
+        )
 
     rows: dict[str, dict[str, Any]] = {}
     for result in results:
@@ -43,8 +47,14 @@ def _question_rows(results: list[extract.ExtractionResult]) -> list[dict[str, An
 
 
 def _write_extraction(observations: list[dict[str, Any]], results: list[extract.ExtractionResult]) -> None:
+    def is_private(row: dict[str, Any]) -> bool:
+        return config.is_private_sensitivity(row.get("privacy", "internal"))
+
     ordered = sorted(observations, key=lambda o: (o["source_id"], o["locator"], o["observation_id"]))
-    config.write_jsonl(config.OBS_DIR / "accepted" / "observations.jsonl", ordered)
+    config.write_jsonl(config.OBS_DIR / "accepted" / "observations.jsonl",
+                       [row for row in ordered if not is_private(row)])
+    config.write_jsonl(config.PRIVATE_OBS_DIR / "observations.jsonl",
+                       [row for row in ordered if is_private(row)])
     rejected = [
         row for result in results for row in result.rejected
     ]
@@ -84,7 +94,7 @@ def wipe_state(keep_raw: bool = True) -> None:
         shutil.rmtree(config.RAW_DIR)
     for sub in ("accepted", "rejected", "pending", "archived"):
         (config.OBS_DIR / sub).mkdir(parents=True, exist_ok=True)
-    for name in ("accepted/observations.jsonl", "rejected/rejected.jsonl"):
+    for name in ("accepted/observations.jsonl", "rejected/rejected.jsonl", "private/observations.jsonl"):
         path = config.OBS_DIR / name
         if path.exists():
             path.unlink()
@@ -98,11 +108,17 @@ def ingest(include_inbox: bool = True, force_rebuild: bool = False, quiet: bool 
     store = _store()
 
     paths = list(sources.discover())
+    dropzone: set[Path] = set()
     if include_inbox:
-        paths.extend(sources.discover_inbox())
+        dropzone = set(sources.discover_dropzone(schema))
+        paths.extend(sorted(dropzone))
     inbox_paths = {path for path in paths if config.INBOX_DIR in path.parents}
     source_objects = [
-        sources.make_source(path, schema, raw_dir=config.INBOX_DIR if path in inbox_paths else None)
+        sources.make_source(
+            path, schema,
+            raw_dir=config.INBOX_DIR if path in inbox_paths else None,
+            dropzone=path in dropzone,
+        )
         for path in paths
     ]
 
@@ -148,7 +164,15 @@ def ingest(include_inbox: bool = True, force_rebuild: bool = False, quiet: bool 
 
     store.link_claim_entities()
     questions = _question_rows(results)
-    config.write_jsonl(config.STATE_DIR / "questions.jsonl", questions)
+    public_questions = [
+        question for question in questions
+        if not config.is_private_sensitivity(question.get("privacy", "internal"))
+    ]
+    config.write_jsonl(config.STATE_DIR / "questions.jsonl", public_questions)
+    config.write_jsonl(config.PRIVATE_QUESTIONS_PATH, [
+        question for question in questions
+        if config.is_private_sensitivity(question.get("privacy", "internal"))
+    ])
     report.questions = len(questions)
 
     store.audit.append({
@@ -184,11 +208,29 @@ def rebuild(inner: bool = False) -> IngestReport:
 # ------------------------------------------------------------------- query
 
 
-def query(text: str, limit: int = 8, as_json: bool = False) -> str:
+def query(text: str, limit: int = 8, as_json: bool = False, include_private: bool = False) -> str:
     schema = config.load_schema()
     store = _store()
     hybrid = index.HybridIndex(schema).build(list(store.claims.values()), store.entities)
-    results = hybrid.search(text, limit=limit)
+    results = hybrid.search(text, limit=limit * 3 if include_private else limit)
+    if not include_private:
+        results = [
+            item for item in results
+            if not config.is_private_sensitivity(item["claim"].get("privacy", "internal"))
+        ][:limit]
+    else:
+        results = results[:limit]
+        # The same sentence may exist in both tiers; the public claim already answers it.
+        public_texts = {
+            nlp.normalize_text(item["claim"]["current_text"]).lower()
+            for item in results
+            if not config.is_private_sensitivity(item["claim"].get("privacy", "internal"))
+        }
+        results = [
+            item for item in results
+            if not config.is_private_sensitivity(item["claim"].get("privacy", "internal"))
+            or nlp.normalize_text(item["claim"]["current_text"]).lower() not in public_texts
+        ]
     if as_json:
         return json.dumps({
             "query": text,
@@ -238,6 +280,8 @@ def query(text: str, limit: int = 8, as_json: bool = False) -> str:
             lines.append("")
             lines.append("Also retrieved:")
             lines.append("")
+        if config.is_private_sensitivity(claim.get("privacy", "internal")):
+            caveat += " **Teacher-only:** not in the wiki."
         lines.append(
             f"- {claim['current_text']} (confidence {claim['probability']:.2f}, {claim['status']}).{caveat}"
         )
@@ -314,7 +358,17 @@ def lint() -> tuple[list[LintFinding], str]:
                 findings.append(LintFinding("broken_link", "error",
                                             f"Link target '{target}' does not exist.", str(page.relative_to(config.WIKI_ROOT))))
 
+    private_claims: list[dict[str, Any]] = []
     for claim in store.claims.values():
+        if config.is_private_sensitivity(claim.get("privacy", "internal")):
+            private_claims.append(claim)
+            for entry in claim["evidence"]:
+                path = entry["locator"].split("#")[0].rsplit(":", 1)[0]
+                if path and not config.resolve_source_path(path).exists():
+                    findings.append(LintFinding("dangling_evidence", "error",
+                                                f"Evidence locator points at a missing file: {entry['locator']}",
+                                                claim["claim_id"]))
+            continue
         if claim["status"] == "superseded":
             continue
         if not claim["supporting_observations"]:
@@ -325,17 +379,13 @@ def lint() -> tuple[list[LintFinding], str]:
                                         f"{claim['claim_id']} has no source.", claim["claim_key"]))
         for entry in claim["evidence"]:
             path = entry["locator"].split("#")[0].rsplit(":", 1)[0]
-            if path and not (config.REPO_ROOT / path).exists() and not path.startswith("inbox/"):
+            if path and not config.resolve_source_path(path).exists() and not path.startswith("inbox/"):
                 findings.append(LintFinding("dangling_evidence", "error",
                                             f"Evidence locator points at a missing file: {entry['locator']}",
                                             claim["claim_id"]))
         if claim.get("freshness", 1.0) < 0.3 and claim["status"] in {"active", "candidate"}:
             findings.append(LintFinding("stale_claim", "warning",
                                         f"{claim['claim_id']} is stale (freshness {claim['freshness']:.2f}).",
-                                        claim["claim_key"]))
-        if claim.get("privacy") in {"private", "secret"}:
-            findings.append(LintFinding("privacy_leak", "error",
-                                        f"{claim['claim_id']} is {claim['privacy']} but rendered in a shared page.",
                                         claim["claim_key"]))
         if claim["topic"] == "unfiled":
             findings.append(LintFinding("unfiled_claim", "warning",
@@ -347,6 +397,25 @@ def lint() -> tuple[list[LintFinding], str]:
             findings.append(LintFinding("unresolved_conflict", "warning",
                                         f"{conflict['type']}: {render.truncate(conflict.get('incoming_text', ''), 90)}",
                                         conflict.get("claim_id", "")))
+
+    if private_claims:
+        for claim_id in evals.privacy_leaks(store):
+            claim = store.claims[claim_id]
+            findings.append(LintFinding("privacy_leak", "error",
+                                        f"{claim_id} is {claim.get('privacy')} but its text appears in wiki/.",
+                                        claim_id))
+        public_ids = {
+            row["claim_id"] for row in config.read_jsonl(config.STATE_DIR / "claims.jsonl")
+        }
+        leaked = [claim["claim_id"] for claim in private_claims if claim["claim_id"] in public_ids]
+        if leaked:
+            findings.append(LintFinding("privacy_split", "error",
+                                        f"{len(leaked)} private claim(s) are stored in state/claims.jsonl.",
+                                        ", ".join(leaked[:5])))
+        public_questions = config.read_jsonl(config.STATE_DIR / "questions.jsonl")
+        if any(config.is_private_sensitivity(q.get("privacy", "internal")) for q in public_questions):
+            findings.append(LintFinding("privacy_split", "error",
+                                        "Private questions are still in the public question file.", "questions.jsonl"))
 
     seen_entities: dict[str, str] = {}
     for entity in store.entities.values():

@@ -2,13 +2,18 @@
 title: Questions: Kafka Log
 type: questions
 topic: kafka.log
-question_count: 15
-last_rendered: 2026-11-25T09:51:47Z
+question_count: 16
+last_rendered: 2026-11-25T12:17:11Z
 ---
 
 # Questions: Kafka Log
 
 Prompts extracted from the material. No answers are stored: the state holds claims, not solutions, so these stay open until someone writes a claim with evidence.
+
+## Big Data Processing – Mock exam / Part E – Kafka and streaming
+
+- E2 (1 P) Is a Kafka offset unique within a topic or within a partition?
+  - `raw/04_mock_exam.md:113` · exam_prompt
 
 ## Block 1 – Kafka broker and command-line tools / Produce messages with a key
 
@@ -49,6 +54,11 @@ Prompts extracted from the material. No answers are stored: the state holds clai
 - On a fresh broker the list is empty or shows only __consumer_offsets (an internal topic – what might it store?
   - `session-06/01_kafka_cli.md:52` · open_question
 
+## Session 6 · Block 2 – Kafka from Python: producers, consumers, consumer groups / A keyed producer / Your turn: which partitions did each key use?
+
+- Predict first: how many partitions per key?
+  - `session-06/02_kafka_python.ipynb#cell-9:2` · open_question
+
 ## Block 3 – Exam circuit / Station 6 – Kafka and streaming architectures
 
 - 6.1 (3 P) Define topic, partition and offset. What does Kafka 4 use to manage cluster metadata instead of ZooKeeper?
@@ -58,8 +68,3 @@ Prompts extracted from the material. No answers are stored: the state holds clai
 
 - 4.3 (3 P) Spark splits a 2 GB (= 2048 MB) file into partitions of 128 MB each. Each partition is processed by one task. Your laptop has 4 cores, and each core works on one task at a time. (a) How many partitions, and therefore tasks, does Spark create? (1 P) (b) How many rounds ("waves") are needed until all tasks are done? (1 P) (c) If the file had only 2 partitions, how many of the 4 cores would be busy? Name one function that fixes this. (1 P)
   - `session-06/03_exam_circuit.md:80` · exam_prompt
-
-## Big Data Processing – Mock exam / Part E – Kafka and streaming
-
-- E2 (1 P) Is a Kafka offset unique within a topic or within a partition?
-  - `04_mock_exam-gitdiff.md:116` · exam_prompt

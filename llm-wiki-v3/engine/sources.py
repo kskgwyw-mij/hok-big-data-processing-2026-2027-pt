@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import datetime as dt
+import fnmatch
 import shutil
 from pathlib import Path
 from typing import Any
@@ -45,10 +47,24 @@ def discover(repo_root: Path = config.REPO_ROOT) -> list[Path]:
     return found
 
 
-def discover_inbox() -> list[Path]:
-    if not config.INBOX_DIR.exists():
+def discover_dropzone(schema: dict[str, Any]) -> list[Path]:
+    """Files dropped anywhere under raw/ except the registered type folders.
+
+    The drop zone is the only place large files (lecture decks) may live: they are
+    not copied, so the size cap that protects the repository scan does not apply.
+    """
+    if not config.RAW_DIR.exists():
         return []
-    return sorted(p for p in config.INBOX_DIR.rglob("*") if p.is_file())
+    reserved = set(schema["source_types"]) | {"inbox"}
+    found: list[Path] = []
+    for path in sorted(config.RAW_DIR.rglob("*")):
+        if not path.is_file():
+            continue
+        rel = path.relative_to(config.RAW_DIR)
+        if len(rel.parts) > 1 and rel.parts[0] in reserved:
+            continue
+        found.append(path)
+    return found
 
 
 def classify(path: Path) -> str:
@@ -84,17 +100,54 @@ def classify(path: Path) -> str:
     return "readme"
 
 
-def make_source(path: Path, schema: dict[str, Any], raw_dir: Path | None = None) -> Source:
+def classify_sensitivity(path: Path, schema: dict[str, Any]) -> str:
+    """Teacher material (solutions, answer keys) is private: queryable, never published."""
+    privacy = schema.get("privacy") or {}
+    patterns = [p.lower() for p in privacy.get("private_patterns", [])]
+    if not patterns:
+        return privacy.get("public_sensitivity", "internal")
+    try:
+        in_wiki = path.resolve().is_relative_to(config.WIKI_ROOT)
+    except OSError:
+        in_wiki = False
+    rel = str(path.resolve().relative_to(config.WIKI_ROOT)).lower() if in_wiki else ""
+    name = path.name.lower()
+    for pattern in patterns:
+        if fnmatch.fnmatch(name, pattern) or (rel and fnmatch.fnmatch(rel, pattern)):
+            return privacy.get("private_sensitivity", "private")
+    return privacy.get("public_sensitivity", "internal")
+
+
+def make_source(
+    path: Path, schema: dict[str, Any], raw_dir: Path | None = None, dropzone: bool = False
+) -> Source:
+    """Build the source record. `dropzone` files already live under raw/ and are not copied."""
     rel = config.relative_to_repo(path)
+    raw_rel: str | None = None
+    if dropzone:
+        try:
+            raw_rel = str(path.resolve().relative_to(config.WIKI_ROOT))
+        except ValueError:
+            dropzone = False
+        else:
+            rel = raw_rel
     if raw_dir is not None:
         rel = f"inbox/{path.name}"
     source_type = classify(path)
     source_type_spec = schema["source_types"].get(source_type, {"authority": 0.6})
-    meta = config.git_metadata(str(path)) if raw_dir is None else {}
+    sensitivity = classify_sensitivity(path, schema)
+    if sensitivity != "internal" and path.suffix.lower() == ".md" and source_type == "readme":
+        source_type = "exam"
+        source_type_spec = schema["source_types"].get(source_type, source_type_spec)
+    meta = config.git_metadata(str(path)) if raw_dir is None and not dropzone else {}
     created = meta.get("created_at") or ""
     if not created:
-        import datetime as dt
-        created = dt.datetime.fromtimestamp(path.stat().st_mtime, dt.timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+        created = (
+            dt.datetime.fromtimestamp(path.stat().st_mtime, dt.timezone.utc)
+            .replace(microsecond=0)
+            .isoformat()
+            .replace("+00:00", "Z")
+        )
     return Source(
         source_id="src_" + config.short_hash(rel, 8),
         rel_path=rel,
@@ -103,15 +156,22 @@ def make_source(path: Path, schema: dict[str, Any], raw_dir: Path | None = None)
         authority=float(source_type_spec["authority"]),
         created_at=created,
         author=meta.get("author") or "unknown",
-        scope="shared",
-        sensitivity="internal",
+        scope="shared" if sensitivity == "internal" else "private",
+        sensitivity=sensitivity,
         title=path.stem.replace("_", " "),
         content_hash=config.sha256_file(path),
+        raw_rel_path=raw_rel,
     )
 
 
 def register_raw(source: Source, raw_dir: Path) -> Path:
-    """Copy the source into raw/<type>/ unchanged; the copy is the immutability proof."""
+    """Immutable copy of the source under raw/<type>/.
+
+    A file that already lives under raw/ is its own preserved copy: copying it again
+    would duplicate data and, for teacher material, spread it further.
+    """
+    if source.raw_rel_path:
+        return config.WIKI_ROOT / source.raw_rel_path
     target = raw_dir / source.type / f"{source.source_id}__{source.abs_path.name}"
     target.parent.mkdir(parents=True, exist_ok=True)
     if not target.exists() or config.sha256_file(target) != source.content_hash:

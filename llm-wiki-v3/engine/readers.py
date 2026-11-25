@@ -53,13 +53,15 @@ class Source:
     sensitivity: str
     title: str
     content_hash: str
+    raw_rel_path: str | None = None
 
     def record(self) -> dict:
+        raw_path = self.raw_rel_path or f"raw/{self.type}/{self.source_id}__{Path(self.rel_path).name}"
         return {
             "source_id": self.source_id,
             "type": self.type,
             "path": self.rel_path,
-            "raw_path": f"raw/{self.type}/{self.source_id}__{Path(self.rel_path).name}",
+            "raw_path": raw_path,
             "title": self.title,
             "created_at": self.created_at,
             "author": self.author,

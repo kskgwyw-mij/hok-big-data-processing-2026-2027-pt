@@ -6,9 +6,9 @@ entity_type: technology
 claim_ids:
   - claim_f0092822
   - claim_9e88a2be
+  - claim_aea8344c
   - claim_3eb495fc
   - claim_53496fc3
-  - claim_83148947
   - claim_68d8d358
   - claim_9d2b15fd
   - claim_2ee83bfc
@@ -39,7 +39,7 @@ claim_ids:
   - claim_4c4d2c23
   - claim_64fbf0f7
   - claim_67369049
-  - claim_bc86de96
+  - claim_c8c19737
   - claim_554dceae
   - claim_8b05e9fa
   - claim_54ade2b0
@@ -56,22 +56,74 @@ claim_ids:
   - claim_6a889182
   - claim_b73468f4
   - claim_98cdf12b
+  - claim_9792e5ba
   - claim_718e6f59
   - claim_e467c9d5
   - claim_3eea2cc1
   - claim_42099051
+  - claim_326f6e1b
   - claim_ad8eb4c3
   - claim_719c08d9
   - claim_a6d89a64
   - claim_3be1dead
+  - claim_a5820c48
+  - claim_314a50c8
+  - claim_622ac978
+  - claim_9c74e6c5
+  - claim_404dfda7
+  - claim_9e8e781d
+  - claim_14074667
+  - claim_e8488930
+  - claim_1833931d
+  - claim_a2c72ddb
+  - claim_3e8a2093
+  - claim_6908d589
+  - claim_5ed48f22
+  - claim_4851b5bd
+  - claim_f03d9a5f
+  - claim_547806cd
+  - claim_bdc608a0
+  - claim_1c2fb1ef
+  - claim_cd2cad94
+  - claim_04a71cb7
+  - claim_0a4aca14
+  - claim_aca866f9
+  - claim_6ce918d7
+  - claim_f6716f97
+  - claim_20f01fa4
+  - claim_8335c571
+  - claim_2fdd8cac
+  - claim_806a5d75
   - claim_ac59fce7
-confidence: 0.66
-last_rendered: 2026-11-25T09:51:47Z
+  - claim_cd5f18b6
+  - claim_82a66fcc
+  - claim_5110465b
+  - claim_ffb7f45f
+  - claim_a7647619
+  - claim_45762961
+  - claim_6a15959f
+  - claim_af1b58f3
+  - claim_8701c291
+  - claim_bf6e1a55
+  - claim_bca5c57a
+  - claim_3a1a7f1a
+  - claim_001f29c2
+  - claim_77c05b5b
+  - claim_2deb6546
+  - claim_cc573a04
+  - claim_74fd87ab
+  - claim_80290f63
+confidence: 0.703
+last_rendered: 2026-11-25T12:17:11Z
 sources:
   - src_1a3d69f8
+  - src_1cebb3bb
   - src_41b3a933
   - src_6002d48d
+  - src_68fcf2b9
+  - src_70f9fe3e
   - src_799c8bd7
+  - src_8615b91f
   - src_b289b34c
   - src_b3356305
   - src_b94acce4
@@ -79,56 +131,107 @@ sources:
   - src_c65c80a3
   - src_cecf99ea
   - src_d56cb0d7
+  - src_e258bafb
   - src_f8b034ea
+  - src_fc0bfe80
 ---
 
 # Kafka
 
-Type: technology. Mentioned in 61 claims across 13 topics.
+Type: technology. Mentioned in 109 claims across 19 topics.
 Aliases: Apache Kafka, kafka-python, KafkaProducer, KafkaConsumer, KafkaAdminClient.
 
 ## Claims
 
+- **6 Big Data for AI & production all.** Confidence 0.91 · [[bigdata-foundations|Big Data Foundations]]
+- **Column: Replicas — Meaning: all brokers that keep a copy (here only broker 1).** Confidence 0.90 · [[kafka-cluster|Kafka Cluster]]
+- **Part: E — Topic: Kafka and streaming; Points: 10.** Confidence 0.90 · [[course-exam|Exam]]
+- **Route A: docker exec -it broker /opt/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic cli-demo --from-beginning --formatter-property print.key=true --formatter-property print.partition=true --formatter-property print.offset=true — Route B: kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic cli-demo --from-beginning --formatter-property print.key=true --formatter-property print.partition=true --formatter-property print.offset=true.** Confidence 0.89 · [[kafka-log|Kafka Log]]
+- **In the comparison table, Route A: Stop: docker compose stop (start again: docker compose start), Delete all topics and messages: docker compose down – the next up -d starts empty.** Confidence 0.87 · [[tooling-docker|Docker and Dev Containers]]
 - **Route A (Docker): docker exec -it broker /opt/kafka/bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe --group group-a — Route B (native): kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe --group group-a.** Confidence 0.87 · [[kafka-cluster|Kafka Cluster]]
-- **Column: Replicas — Meaning: all brokers that keep a copy (here only broker 1).** Confidence 0.80 · [[kafka-cluster|Kafka Cluster]]
+- **In the comparison table, Route B: Stop: Ctrl+C in the broker terminal, Delete all topics and messages: python get_kafka.py --reformat (plus --dest … if you used it).** Confidence 0.86 · [[kafka-cluster|Kafka Cluster]]
+- **Japanese (Elementary) * Implementing Big Data solutions with Apache Kafka or Apache Spark.** Confidence 0.85 · [[bigdata-foundations|Big Data Foundations]]
+- **» Purpose: Simplifies real-time data processing by eliminating the batch layer. » Core Idea: A single real-time layer processes all incoming data. » Components: » Stream Processor: Central component for processing data in real-time. » Message Queue: Stores and delivers data streams (e.g., Kafka). » Advantages: » Simpler and less complex compared to Lambda. » Lower operational overhead due to a single processing layer. » Ideal for real-time systems. » Disadvantages: » Limited to systems where real-time processing is sufficient. » Lacks the robustness of batch processing for comprehensive historical analysis.** Confidence 0.84 · [[streaming-architecture|Streaming Architectures]]
+- **Symptom: port is already allocated (9092 or 8080) — Fix: Another Kafka is running: docker ps, stop it – or stop your Route B broker.** Confidence 0.84 · [[kafka-cluster|Kafka Cluster]]
+- **Symptom: ModuleNotFoundError: kafka.vendor.six.moves — Fix: You have the old kafka-python 2.0.2 → pip install -r requirements-local.txt.** Confidence 0.83 · [[python-environments|Python Environments and Reproducibility]]
+- **Broker KAFKA_AUTO_CREATE_TOPICS_ENABLE is false" # you create topics yourself.** Confidence 0.83 · [[kafka-cluster|Kafka Cluster]]
+- **» Apache Kafka is a message queue based on log-structured, append-only storage » Scales to thousands of distributed nodes » Popular for Stream Processing.** Confidence 0.81 · [[kafka-log|Kafka Log]]
+- **✓ What you should see ✗ If it fails Prompt starts with (.venv) · check: Could not open requirements file → you are in session-06/: python -c "import kafka, faker; print(kafka.version)" → 3.x cd.** Confidence 0.81 · [[python-environments|Python Environments and Reproducibility]]
+- **Cd session-06 ; docker compose up -d ; docker compose ps # broker → running.** Confidence 0.80 · [[tooling-docker|Docker and Dev Containers]]
+- **Time: 09:10–10:10 — Block: 1; What: Broker & CLI: topics, partitions, keys, consumer groups, lag, log segments on disk; File: 01_kafka_cli.md.** Confidence 0.80 · [[kafka-consumers|Kafka Consumers and Consumer Groups]]
 - **Open this notebook from the session-06/ folder – it imports kafka_data.py from there.** Confidence 0.78 · [[tooling-kaggle|Kaggle Labs]]
 - **Route B fails if the folder path contains a space (e.g. … Kopie or My Projects). get_kafka.py checks this and stops – then install Kafka somewhere else: python get_kafka.py --dest ~/kafka-course --start.** Confidence 0.78 · [[course-setup|Course Setup]]
-- **Part: E — Topic: Kafka and streaming; Points: 10.** Confidence 0.75 · [[course-exam|Exam]]
+- **» Apache Kafka and Apache Cassandra are examples of streaming data stores. » Apache Kafka is the highway system + traffic logbook for events in motion. » Apache Cassandra is the massive, distributed parking lot + address system for fast, always-on storage.** Confidence 0.77 · [[unfiled|Unfiled Observations]]
+- **» Consumers read data from a topic » They only have to specify the topic name and one broker to connect to, and Kafka will automatically take care of pulling the data from the right brokers » Data is read in order for each partitions.** Confidence 0.77 · [[kafka-log|Kafka Log]]
+- **» Kafka Topics are roughly analogous to SQL Tables » Topics organize related events » Topics are not queryable like SQL tables » You must create consumers or producers e.g. topic logs, topic purchases » Topics consist of append-only logs » All data in a topic is in key-value form » Many configuration options and considerations » Stored in binary format and not string like JSON.** Confidence 0.77 · [[kafka-log|Kafka Log]]
+- **» Kafka stores the offsets at which a consumer group has been reading » The offsets commit live in a Kafka topic named "__consumer_offsets" » When a consumer has processed data received some Kafka, it should be committing the offsets » If a consumer process dies, it will be able to read back from where it left off thanks to consumer offsets!.** Confidence 0.77 · [[kafka-consumers|Kafka Consumers and Consumer Groups]]
 - **Folder: (Session 5 – no folder) — Topic: Stream processing with Kafka – theory: events, append-only logs, topics and partitions, replication, KRaft; Runs on: Kaggle.** Confidence 0.75 · [[kafka-log|Kafka Log]]
+- **» We can create apps which consume data » Consumers retrieve events from Kafka Topic(s) » May consume one or more topics at a time » Keep track of what events have already been seen » Many configuration options and considerations » By default consumers will only consume data that was produced 1st connected to Kafka (historical data not automatically pulled).** Confidence 0.75 · [[kafka-consumers|Kafka Consumers and Consumer Groups]]
 - **File: get_kafka.py — What: Route B: downloads and prepares native Kafka 4.4.0 (standard library only).** Confidence 0.74 · [[course-setup|Course Setup]]
-- **Route A: docker exec -it broker /opt/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic cli-demo --from-beginning --formatter-property print.key=true --formatter-property print.partition=true --formatter-property print.offset=true — Route B: kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic cli-demo --from-beginning --formatter-property print.key=true --formatter-property print.partition=true --formatter-property print.offset=true.** Confidence 0.74 · [[kafka-log|Kafka Log]]
+- **5 Stream processing with Kafka & Spark Velocity.** Confidence 0.74 · [[bigdata-foundations|Big Data Foundations]]
+- **No laptop, no AI – like the exam 6 3 Kafka & streaming 58 P HDFS, MapReduce, Spark 10 P · debrief total 10 P Rotate on the signal: 1 → 2 → … → 6 → 1.** Confidence 0.74 · [[course-exam|Exam]]
 - **Session 6 runs a real Kafka broker on your laptop.** Confidence 0.74 · [[kafka-cluster|Kafka Cluster]]
 - **Experiment 1 – one producer, one consumer.** Confidence 0.73 · [[kafka-consumers|Kafka Consumers and Consumer Groups]]
-- **In the comparison table, Where the CLI tools run: Route A – Docker (most of you): inside the container: docker exec -it broker /opt/kafka/bin/ .sh …, Route B – native Kafka (get_kafka.py): on your laptop: .sh ….** Confidence 0.73 · [[tooling-docker|Docker and Dev Containers]]
+- **Cd session-06 ; python get_kafka.py --start # downloads Kafka 4.4.0 (~130 MB), checks the SHA-512, formats storage, starts the broker.** Confidence 0.72 · [[kafka-cluster|Kafka Cluster]]
 - **Uv init --python 3.12 ; uv add pandas duckdb.** Confidence 0.72 · [[engines-single_machine|Single-Machine Engines]]
 - **Older Kafka versions and many tutorials write --property instead of --reader-property.** Confidence 0.71 · [[kafka-log|Kafka Log]]
+- **✓ What you should see ✓ What you should see ✗ If it fails NAME IMAGE … STATUS A list, maybe empty: [] KafkaTimeoutError: Unable to bootstrap broker apache/kafka:4.4.0 … Up.** Confidence 0.71 · [[kafka-cluster|Kafka Cluster]]
+- **» Brokers are the building blocks of Kafka.** Confidence 0.71 · [[kafka-cluster|Kafka Cluster]]
 - **Disk space: the image download is ~240 MB (docker image rm apache/kafka:4.4.0 removes it); Route B uses ~140 MB in kafka_2.13-4.4.0/ + kafka-data/ – both are ignored by git.** Confidence 0.71 · [[tooling-docker|Docker and Dev Containers]]
+- **Describe how this works in a Kappa architecture and which property of the Kafka topic makes it possible.** Confidence 0.70 · [[streaming-architecture|Streaming Architectures]]
+- **» Kafka 3.x: ApacheZookeeper is used to track cluster state, membership and leadership » Kafka 4.x: Kafka itself tracks cluster state, membership and leadership with Kafka Raft Metadata mode (KRaft).** Confidence 0.70 · [[kafka-cluster|Kafka Cluster]]
+- **09:25 Block 1 · Broker & CLI 01_kafka_cli.md LAB.** Confidence 0.70 · [[kafka-cluster|Kafka Cluster]]
+- **Avro row · binary stored in the file, can evolve Kafka, streams, writing record by record.** Confidence 0.70 · [[data-formats|File Formats]]
+- **» Segment uses Kafka as their routing backbone for analytics events.** Confidence 0.70 · [[kafka-log|Kafka Log]]
+- **10:35 Block 2 · Kafka from Python 02_kafka_python.ipynb LAB.** Confidence 0.70 · [[hdfs-architecture|HDFS]]
+- **» Create new topic „Kafka-arch" docker exec -it broker /opt/kafka/bin/kafka-topics.sh \ --bootstrap-server localhost:9092 \ --create --topic kafka-arch --partitions 1 --replication-factor 1 » Inspect Kafka's on-disk topic folder » Linux path: var/lib/kafka/data » Mac path: /tmp/kafka-logs » List kafka-logs docker exec -it broker bash -lc 'ls -lah /tmp/kafka-logs | head -120' docker exec -it broker bash -lc 'ls -lah /tmp/kafka-logs/kafka-arch-0'.** Confidence 0.70 · [[kafka-log|Kafka Log]]
+- **» Popular Stream Processing tools, all of which share common features, include Confluent KSQL, Kafka Streams, Faust, Spark Structured Streaming, Apache Flink, and Samza.** Confidence 0.70 · [[spark-streaming|Spark Structured Streaming]]
+- **» Data fed piece by piece at generation » „Micro-Batch" directly to analytics platform » Near-Realtime Insights » For Speed and nimbleness » E.g. Kafka, Flink, Storm, Samza » Stream Processing Example: A soda company wants to amplify brand interest after airing a commercial during a sporting event.** Confidence 0.70 · [[spark-streaming|Spark Structured Streaming]]
+- **» What does a serializer do in a Kafka producer, and why does Kafka itself not care whether you send JSON, Avro or CSV? » A fraud detector and a dashboard both need all payment events.** Confidence 0.70 · [[data-formats|File Formats]]
+- **» Uber uses Kafka extensively in their real-time pricing pipeline.** Confidence 0.70 · [[spark-ml|Spark ML]]
+- **» Delete topic docker exec -it broker /opt/kafka/bin/kafka-topics.sh \ --bootstrap-server localhost:9092 \ --delete --topic my-first-topic.** Confidence 0.70 · [[kafka-cluster|Kafka Cluster]]
+- **» Kafka stores all of its data in a directory on the broker disk.** Confidence 0.70 · [[kafka-cluster|Kafka Cluster]]
+- **Leader – broker that handles reads & Replicas – all brokers keeping a Elr / LastKnownElr – new in Kafka Isr – in-sync, fully up-to-date copies writes copy 4, ignore.** Confidence 0.70 · [[kafka-cluster|Kafka Cluster]]
+- **» A Kafka cluster is composed of multiple brokers (servers) » Each broker is identified with its ID (integer) » Each broker contains certain topic partitions » After connecting to any broker (called a bootstrap broker), you will be connected to the entire cluster » A good number to get started is 3 brokers, but some big clusters have over 100 brokers » (Diagram boxes shown: Broker 1, Broker 2, Broker 3).** Confidence 0.70 · [[kafka-log|Kafka Log]]
+- **Kappa Events Kafka log · retained, replayable Stream processor Serving Query one path » One code path – reprocess = replay the log from offset 0 with new code.** Confidence 0.70 · [[kafka-log|Kafka Log]]
+- **» Kafka stores events, not actions or jobs » Data is distributed to multiple nodes by default » Highly scalable with strict data ordering guarantees » Fault-tolerant to node loss due to distributed nature » Created at LinkedIn, now maintained by Confluent as an own product » Streaming data store for Flink, Spark, and Samza ».** Confidence 0.70 · [[spark-execution|Spark Execution Model]]
+- **Route A: add the docker exec prefix to every command. · Source: 01_kafka_cli.md.** Confidence 0.70 · [[tooling-docker|Docker and Dev Containers]]
+- **Remove the image later: docker image rm apache/kafka:4.4.0 · Source: session-06/README.md.** Confidence 0.70 · [[tooling-docker|Docker and Dev Containers]]
+- **Open 02_kafka_python.ipynb from the session-06/ folder · kernel .venv.** Confidence 0.70 · [[python-environments|Python Environments and Reproducibility]]
+- **» Git subfolder „kafka" » Create virtualenv » Install requirements.txt » Run kafka_producer.ipynb » Run kafka_consumer.ipynb » Understand concept of producer & consumer.** Confidence 0.70 · [[kafka-consumers|Kafka Consumers and Consumer Groups]]
+- **» Next step » Kafka Producers send data to a topic » Producers are often built with a client library e.g. Python, Java, etc. » Events may be sent one at a time, or in batches » Many configuration options and considerations.** Confidence 0.70 · [[kafka-producers|Kafka Producers]]
+- **Committed offsets live in __consumer_offsets. · Source: 01_kafka_cli.md.** Confidence 0.70 · [[kafka-consumers|Kafka Consumers and Consumer Groups]]
 - **Kafka only stores bytes (Block 1, the hex dump).** Confidence 0.70 · [[kafka-log|Kafka Log]]
 - **Key and value are just bytes for Kafka. Who turns them back into text or JSON? (→ Block 2: deserializer).** Confidence 0.69 · [[kafka-producers|Kafka Producers]]
+- **» As part of Netflix's Keystone, Kafka handles 500 billions of events a day, 1.3 PB per day, 8m events and 24GB per second in peak hours.** Confidence 0.69 · [[unfiled|Unfiled Observations]]
 - **Library: kafka-python ≥ 3.0 — Why: pure-Python Kafka client (version 2.0.2 from older tutorials does not work on Python 3.12).** Confidence 0.69 · [[python-environments|Python Environments and Reproducibility]]
 - **File: requirements-local.txt — Contains: pandas, Polars, DuckDB, PyArrow, scikit-learn, plots, kafka-python 3.x + Faker (Session 6); Use it for: your laptop (default).** Confidence 0.69 · [[engines-single_machine|Single-Machine Engines]]
-- **Symptom: port is already allocated (9092 or 8080) — Fix: Another Kafka is running: docker ps, stop it – or stop your Route B broker.** Confidence 0.69 · [[kafka-cluster|Kafka Cluster]]
-- **In the comparison table, Route B: Stop: Ctrl+C in the broker terminal, Delete all topics and messages: python get_kafka.py --reformat (plus --dest … if you used it).** Confidence 0.69 · [[kafka-cluster|Kafka Cluster]]
 - **Symptom: Broker refuses to start after changing the Kafka version — Fix: python get_kafka.py --reformat.** Confidence 0.69 · [[kafka-cluster|Kafka Cluster]]
 - **File: 01_kafka_cli.md — What: Block 1 – step by step, both routes.** Confidence 0.69 · [[hdfs-architecture|HDFS]]
 - **File: docker-compose.yml — What: Route A: one Kafka 4.4.0 broker (KRaft) + optional web UI.** Confidence 0.69 · [[kafka-cluster|Kafka Cluster]]
 - **Works on macOS and Linux (and in the Codespace).** Confidence 0.69 · [[python-environments|Python Environments and Reproducibility]]
-- **Folder: session-06/ — Topic: Kafka lab: broker and CLI (01_kafka_cli.md), Python producers and consumers (02_kafka_python.ipynb, producer.py, consumer.py), consumer groups · exam preparation (03_exam_circuit.md, 04_mock_exam.md); Runs on: laptop with Docker or native Kafka (Java 17+).** Confidence 0.69 · [[course-exam|Exam]]
 - **A Kafka message is a key–value pair.** Confidence 0.69 · [[kafka-log|Kafka Log]]
-- **Symptom: ModuleNotFoundError: kafka.vendor.six.moves — Fix: You have the old kafka-python 2.0.2 → pip install -r requirements-local.txt.** Confidence 0.68 · [[python-environments|Python Environments and Reproducibility]]
 - **Symptom: Apple Silicon (M1–M4) — Fix: Nothing special – the image and Kafka run natively.** Confidence 0.68 · [[course-setup|Course Setup]]
 - **File: kafka_data.py — What: fake data: get_registered_user() and keyed events with a per-key sequence number.** Confidence 0.68 · [[course-setup|Course Setup]]
-- **Time: 09:10–10:10 — Block: 1; What: Broker & CLI: topics, partitions, keys, consumer groups, lag, log segments on disk; File: 01_kafka_cli.md.** Confidence 0.67 · [[kafka-consumers|Kafka Consumers and Consumer Groups]]
+- **Folder: session-06/ — Topic: Kafka lab: broker and CLI (01_kafka_cli.md), Python producers and consumers (02_kafka_python.ipynb, producer.py, consumer.py), consumer groups · exam preparation (03_exam_circuit.md, 04_mock_exam.md); Runs on: laptop with Docker or native Kafka (Java 17+).** Confidence 0.67 · [[kafka-consumers|Kafka Consumers and Consumer Groups]]
 - **List all groups (kafka-consumer-groups.sh … --list, Route A with the docker exec … /opt/kafka/bin/ prefix).** Confidence 0.66 · [[kafka-consumers|Kafka Consumers and Consumer Groups]]
+- **Block 2 – From Python object to Kafka bytes.** Confidence 0.66 · [[hdfs-architecture|HDFS]]
+- **Data Partitions for High Throughput.** Confidence 0.66 · [[kafka-log|Kafka Log]]
+- **$ docker --version $ docker pull apache/kafka:4.4.0 $ docker compose version.** Confidence 0.65 · [[tooling-docker|Docker and Dev Containers]]
+- **» Kafka is written on the JVM in Java and Scala » The JVM allows Kafka to target many OS architectures » Kafka has a diverse ecosystem of tools and libraries » Kafka's flexibility has made it pervasive in data work » Kafka's few requirements make it easy to build on.** Confidence 0.65 · [[unfiled|Unfiled Observations]]
+- **Observed on Kafka 4.4.0 (lecturer's Mac) Tirol:first order.** Confidence 0.65 · [[unfiled|Unfiled Observations]]
+- **Path contains a space → python get_kafka.py --dest ~/kafka- Classpath is empty course.** Confidence 0.65 · [[unfiled|Unfiled Observations]]
+- **09:10 Theory recap: Kafka in ~15 min slides 3–7 · Session 5 recap THEORY.** Confidence 0.65 · [[unfiled|Unfiled Observations]]
 - **File: 02_kafka_python.ipynb — What: Block 2 – notebook.** Confidence 0.64 · [[hdfs-architecture|HDFS]]
 - **The .gitignore already excludes data files, virtual environments and caches, as well as the Kafka download and broker data from Session 6 (session-06/kafka_2.13-*/, session-06/kafka-data/).** Confidence 0.63 · [[kafka-cluster|Kafka Cluster]]
-- **Cd session-06 ; docker compose up -d ; docker compose ps # broker → running.** Confidence 0.62 · [[tooling-docker|Docker and Dev Containers]]
 - **Check: python -c "import kafka, faker; print(kafka.version)" → 3.x.** Confidence 0.62 · [[course-setup|Course Setup]]
+- **Optional: Kafka UI, then stop & clean up.** Confidence 0.60 · [[unfiled|Unfiled Observations]]
 - **Update your environment: activate .venv, then pip install -r requirements-local.txt (adds kafka-python 3.x and Faker; the old kafka-python 2.0.2 does not work on Python 3.12).** Confidence 0.60 · [[python-environments|Python Environments and Reproducibility]]
+- **In the comparison table, Where the CLI tools run: Route A – Docker (most of you): inside the container: docker exec -it broker /opt/kafka/bin/ .sh …, Route B – native Kafka (get_kafka.py): on your laptop: .sh ….** Confidence 0.59 · [[tooling-docker|Docker and Dev Containers]]
 - **Kafka also offers exactly-once within Kafka (transactions) – not part of this course.** Confidence 0.59 · [[streaming-architecture|Streaming Architectures]]
 - **The old lab wrote it by hand – kafka-python 3 also ships ready-made ones.** Confidence 0.57 · [[unfiled|Unfiled Observations]]
 - **Next time just run python get_kafka.py --start again.** Confidence 0.57 · [[course-setup|Course Setup]]
-- **What ends up where (both folders are ignored by git): session-06/kafka_2.13-4.4.0/ the Kafka distribution (bin/, config/, libs/) session-06/kafka-data/ the broker's log segments → this is where your messages live on disk.** Confidence 0.57 · [[kafka-cluster|Kafka Cluster]]
+- **What ends up where (both folders are ignored by git): session-06/kafka_2.13-4.4.0/ the Kafka distribution (bin/, config/, libs/) session-06/kafka-data/ the broker's log segments → this is where your messages live on disk.** Confidence 0.57 · [[kafka-log|Kafka Log]]
 - **Broker kafka-ui is # optional web UI, only started with --profile ui.** Confidence 0.56 · [[kafka-cluster|Kafka Cluster]]
 - **The folder must NOT contain a space (the Kafka shell scripts then fail with "Classpath is empty").** Confidence 0.52 · [[unfiled|Unfiled Observations]]
 - **Copy config/server.properties → config/course-server.properties with our data folder, automatic topic creation switched off (you create topics yourself) and small segments (so you can see several segment files in kafka-data/ after a few thousand messages).** Confidence 0.52 · [[kafka-log|Kafka Log]]
@@ -137,10 +240,8 @@ Aliases: Apache Kafka, kafka-python, KafkaProducer, KafkaConsumer, KafkaAdminCli
 - **Kafka consumer for the Session 6 lab (terminal version of kafka_consumer.ipynb).** Confidence 0.50 · [[kafka-consumers|Kafka Consumers and Consumer Groups]]
 - **Kafka producer for the Session 6 lab (terminal version of kafka_producer.ipynb).** Confidence 0.50 · [[kafka-producers|Kafka Producers]]
 - **Export PATH="$PWD/kafka_2.13-4.4.0/bin:$PATH" ; export KDATA="$PWD/kafka-data" ; kafka-topics.sh --version # → 4.4.0.** Confidence 0.49 · [[kafka-log|Kafka Log]]
-- **Cd session-06 ; python get_kafka.py --start # downloads Kafka 4.4.0 (~130 MB), checks the SHA-512, formats storage, starts the broker.** Confidence 0.48 · [[kafka-cluster|Kafka Cluster]]
 - **Apache publishes 'kafka_x.tgz: F5CE BA8A ...' (gpg --print-md style) – strip name and spaces.** Confidence 0.46 · [[unfiled|Unfiled Observations]]
 - **Broker KAFKA_LISTENERS is PLAINTEXT://:19092,PLAINTEXT_HOST://:9092,CONTROLLER://:9093.** Confidence 0.46 · [[kafka-cluster|Kafka Cluster]]
-- **Broker KAFKA_AUTO_CREATE_TOPICS_ENABLE is false" # you create topics yourself.** Confidence 0.46 · [[kafka-cluster|Kafka Cluster]]
 - **Broker KAFKA_LISTENER_SECURITY_PROTOCOL_MAP is CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT.** Confidence 0.46 · [[kafka-cluster|Kafka Cluster]]
 - **Broker KAFKA_ADVERTISED_LISTENERS is PLAINTEXT://broker:19092,PLAINTEXT_HOST://localhost:9092.** Confidence 0.46 · [[kafka-cluster|Kafka Cluster]]
 - **Broker KAFKA_CONTROLLER_QUORUM_VOTERS is 1@localhost:9093.** Confidence 0.46 · [[kafka-cluster|Kafka Cluster]]
@@ -149,17 +250,18 @@ Aliases: Apache Kafka, kafka-python, KafkaProducer, KafkaConsumer, KafkaAdminCli
 - **Python -c "from kafka import KafkaAdminClient; print(KafkaAdminClient(bootstrap_servers='localhost:9092').list_topics())".** Confidence 0.43 · [[kafka-producers|Kafka Producers]]
 - **Kafka calls these two methods when the group is rebalanced.** Confidence 0.42 · [[unfiled|Unfiled Observations]]
 - **Fake data for the Session 6 Kafka lab.** Confidence 0.42 · [[unfiled|Unfiled Observations]]
-- **Kafka-python is pinned as >=3.0,<4.** Confidence 0.41 · [[unfiled|Unfiled Observations]]
+- **Kafka-python is pinned as >=3.0,<4.** Confidence 0.40 · [[unfiled|Unfiled Observations]]
+- **For macOS, Linux, WSL or the Codespace (it has Java 17 but no Docker).** Confidence 0.29 · [[tooling-docker|Docker and Dev Containers]]
 
 ## Related Entities
 
-- [[broker|broker]] (23)
-- [[topic|topic]] (9)
-- [[docker|Docker]] (8)
-- [[faker|Faker]] (4)
-- [[requirements_txt|requirements.txt]] (4)
-- [[kraft|KRaft]] (3)
-- [[python|Python 3.12]] (3)
-- [[kafka_topics_sh|kafka-topics.sh]] (3)
-- [[partition|partition]] (3)
-- [[pip|pip]] (3)
+- [[broker|broker]] (32)
+- [[topic|topic]] (21)
+- [[docker|Docker]] (16)
+- [[partition|partition]] (8)
+- [[requirements_txt|requirements.txt]] (7)
+- [[kafka_topics_sh|kafka-topics.sh]] (6)
+- [[faker|Faker]] (5)
+- [[spark|Spark]] (5)
+- [[offset|offset]] (5)
+- [[venv|venv]] (5)

@@ -285,7 +285,9 @@ def score_topics(text: str, rel_path: str, schema: dict[str, Any]) -> list[tuple
     for topic in schema["topics"]:
         score = 0.0
         for phrase, weight in topic.get("keywords", {}).items():
-            if re.search(r"(?<![a-z0-9])" + re.escape(phrase.lower()) + r"(?![a-z0-9])", lowered):
+            # Slide decks pluralise freely ("Brokers", "Batches"); accept the inflected form.
+            pattern = r"(?<![a-z0-9])" + re.escape(phrase.lower()) + r"(?:e?s|'s)?(?![a-z0-9])"
+            if re.search(pattern, lowered):
                 score += float(weight)
         for hint in topic.get("path_hints", []):
             if rel_path == hint or rel_path.endswith("/" + hint) or rel_path.startswith(hint):

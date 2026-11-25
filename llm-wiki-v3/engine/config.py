@@ -15,8 +15,12 @@ SCHEMA_PATH = WIKI_ROOT / "schema.json"
 
 RAW_DIR = WIKI_ROOT / "raw"
 INBOX_DIR = RAW_DIR / "inbox"
+PRIVATE_RAW_DIR = RAW_DIR / "private"
 OBS_DIR = WIKI_ROOT / "observations"
+PRIVATE_OBS_DIR = OBS_DIR / "private"
 STATE_DIR = WIKI_ROOT / "state"
+PRIVATE_CLAIMS_PATH = STATE_DIR / "private_claims.jsonl"
+PRIVATE_QUESTIONS_PATH = STATE_DIR / "private_questions.jsonl"
 TRANS_DIR = WIKI_ROOT / "transitions"
 GRAPH_DIR = WIKI_ROOT / "graph"
 WIKI_DIR = WIKI_ROOT / "wiki"
@@ -148,10 +152,24 @@ def relative_to_repo(path: Path) -> str:
         return str(path.resolve())
 
 
+def resolve_source_path(rel_path: str) -> Path:
+    """Relative source paths are against the repo root, or the wiki root for raw/ drops."""
+    for base in (REPO_ROOT, WIKI_ROOT):
+        candidate = base / rel_path
+        if candidate.exists():
+            return candidate
+    return REPO_ROOT / rel_path
+
+
 def ensure_dirs() -> None:
     for directory in (
-        WIKI_ROOT, RAW_DIR, INBOX_DIR, OBS_DIR, STATE_DIR, TRANS_DIR, GRAPH_DIR,
+        WIKI_ROOT, RAW_DIR, INBOX_DIR, PRIVATE_RAW_DIR, OBS_DIR, STATE_DIR, TRANS_DIR, GRAPH_DIR,
         WIKI_DIR, RETRIEVAL_DIR, EVALS_DIR, EXPORTS_DIR, REPORTS_DIR, PROMPTS_DIR,
         OBS_DIR / "pending", OBS_DIR / "accepted", OBS_DIR / "rejected", OBS_DIR / "archived",
+        PRIVATE_OBS_DIR,
     ):
         directory.mkdir(parents=True, exist_ok=True)
+
+
+def is_private_sensitivity(sensitivity: str) -> bool:
+    return sensitivity in {"private", "secret"}

@@ -1,1 +1,1 @@
-{"action": "ingest", "actor": "engine", "audit_id": "aud_68394a1695", "details": {"claims": 461, "new_claims": 461, "observations": 618, "questions": 153, "sources": 28}, "timestamp": "2026-11-25T09:51:47Z"}
+{"action": "ingest", "actor": "engine", "audit_id": "aud_d03314b5b1", "details": {"claims": 990, "new_claims": 990, "observations": 1306, "questions": 241, "sources": 39}, "timestamp": "2026-11-25T12:17:10Z"}

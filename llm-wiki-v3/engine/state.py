@@ -49,8 +49,14 @@ class StateStore:
     def claims_path(self) -> Path:
         return config.STATE_DIR / "claims.jsonl"
 
+    @property
+    def private_claims_path(self) -> Path:
+        return config.PRIVATE_CLAIMS_PATH
+
     def load(self) -> "StateStore":
         for row in config.read_jsonl(self.claims_path):
+            self.claims[row["claim_id"]] = row
+        for row in config.read_jsonl(self.private_claims_path):
             self.claims[row["claim_id"]] = row
         for row in config.read_jsonl(config.STATE_DIR / "entities.jsonl"):
             self.entities[row["entity_id"]] = row
@@ -67,7 +73,10 @@ class StateStore:
 
     def save(self) -> None:
         ordered = sorted(self.claims.values(), key=lambda c: (c["topic"], c["claim_key"], c["claim_id"]))
-        config.write_jsonl(self.claims_path, ordered)
+        public = [c for c in ordered if not config.is_private_sensitivity(c.get("privacy", "internal"))]
+        private = [c for c in ordered if config.is_private_sensitivity(c.get("privacy", "internal"))]
+        config.write_jsonl(self.claims_path, public)
+        config.write_jsonl(self.private_claims_path, private)
         config.write_jsonl(config.STATE_DIR / "entities.jsonl",
                            sorted(self.entities.values(), key=lambda e: e["entity_id"]))
         config.write_jsonl(config.STATE_DIR / "relationships.jsonl",
@@ -82,6 +91,7 @@ class StateStore:
             "schema_version": self.schema["schema_version"],
             "generated_at": config.now_iso(),
             "claims": len(self.claims),
+            "claims_private": len(private),
             "entities": len(self.entities),
             "relationships": len(self.relationships),
             "conflicts_open": sum(1 for c in self.conflicts if c.get("status") == "open"),
@@ -159,8 +169,13 @@ class StateStore:
         return nlp.clamp(strength, 0.05, 0.95)
 
     def _match(self, observation: dict[str, Any]) -> tuple[dict[str, Any] | None, float, float]:
-        """Best matching claim, its blended score, and the raw text similarity."""
+        """Best matching claim, its blended score, and the raw text similarity.
+
+        Claims never merge across the privacy boundary: a teacher-only observation
+        cannot attach its evidence to a claim that is published in the wiki.
+        """
         text = observation["claim_text"]
+        private = config.is_private_sensitivity(observation.get("privacy", "internal"))
         best: dict[str, Any] | None = None
         best_score = 0.0
         best_text_similarity = 0.0
@@ -168,6 +183,8 @@ class StateStore:
             if claim["topic"] != observation["topic"]:
                 continue
             if claim["status"] == "superseded":
+                continue
+            if config.is_private_sensitivity(claim.get("privacy", "internal")) != private:
                 continue
             text_similarity = nlp.similarity(text, claim["current_text"])
             score = text_similarity
@@ -419,6 +436,8 @@ class StateStore:
                 report.skipped += 1
                 continue
             self.applied.add(observation["observation_id"])
+            # The source decides the tier; an observation cannot promote itself to public.
+            observation = dict(observation, privacy=source.sensitivity)
             strength = self._observation_strength(observation, source)
             match, score, text_similarity = self._match(observation)
             threshold = self.threshold

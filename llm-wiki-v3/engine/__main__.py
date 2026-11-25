@@ -46,6 +46,8 @@ def main(argv: list[str] | None = None) -> int:
     query_parser.add_argument("text", nargs="+")
     query_parser.add_argument("--limit", type=int, default=8)
     query_parser.add_argument("--json", action="store_true")
+    query_parser.add_argument("--include-private", action="store_true",
+                              help="also search teacher-only claims (never rendered into wiki/)")
 
     review_parser = sub.add_parser("review", help="human override of a claim")
     review_parser.add_argument("action", choices=["approve", "reject", "obsolete", "restore", "merge", "resolve"])
@@ -59,6 +61,8 @@ def main(argv: list[str] | None = None) -> int:
     batch_parser = sub.add_parser("llm-batch", help="export chunks for LLM extraction (prompt contract 13.1)")
     batch_parser.add_argument("--size", type=int, default=6000, help="characters per chunk")
     batch_parser.add_argument("--limit", type=int, default=0, help="max chunks (0 = all)")
+    batch_parser.add_argument("--include-private", action="store_true",
+                              help="also export chunks from teacher-only sources")
 
     apply_parser = sub.add_parser("llm-apply", help="validate and apply LLM observations from a JSONL file")
     apply_parser.add_argument("path")
@@ -93,7 +97,8 @@ def main(argv: list[str] | None = None) -> int:
         print(f"\n{errors} errors, {warnings} warnings · full report: reports/lint_latest.md")
         return 1 if errors else 0
     if args.command == "query":
-        print(ops.query(" ".join(args.text), limit=args.limit, as_json=args.json))
+        print(ops.query(" ".join(args.text), limit=args.limit, as_json=args.json,
+                        include_private=args.include_private))
         return 0
     if args.command == "review":
         print(ops.review(args.action, args.claim_id, second=args.second, note=args.note))
@@ -103,7 +108,7 @@ def main(argv: list[str] | None = None) -> int:
         print(report)
         return 0
     if args.command == "llm-batch":
-        path = llm.export_batch(size=args.size, limit=args.limit)
+        path = llm.export_batch(size=args.size, limit=args.limit, include_private=args.include_private)
         print(f"wrote {path}")
         return 0
     if args.command == "llm-apply":

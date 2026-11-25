@@ -12,10 +12,11 @@ claim_ids:
   - claim_37399599
   - claim_2162a394
   - claim_6e4a6518
+  - claim_51cbe8dd
   - claim_6e6299d7
   - claim_d3d12f30
-confidence: 0.655
-last_rendered: 2026-11-25T09:51:47Z
+confidence: 0.65
+last_rendered: 2026-11-25T12:17:11Z
 sources:
   - src_1a3d69f8
   - src_6494d099
@@ -23,12 +24,13 @@ sources:
   - src_799c8bd7
   - src_8e87808f
   - src_96e79681
+  - src_9e752903
   - src_b3356305
 ---
 
 # VS Code
 
-Type: tool. Mentioned in 10 claims across 6 topics.
+Type: tool. Mentioned in 11 claims across 6 topics.
 Aliases: Jupyter extension.
 
 ## Claims
@@ -38,6 +40,7 @@ Aliases: Jupyter extension.
 - **In VS Code: Ctrl/Cmd + Shift + P → "Python: Select Interpreter" → .venv. In a notebook, pick the kernel .venv (top right).** Confidence 0.79 · [[python-environments|Python Environments and Reproducibility]]
 - **Uv init --python 3.12 ; uv add pandas duckdb.** Confidence 0.72 · [[engines-single_machine|Single-Machine Engines]]
 - **Open 3–4 terminals in VS Code (+ in the terminal panel), activate .venv in each, cd session-06.** Confidence 0.66 · [[python-environments|Python Environments and Reproducibility]]
+- **Each measurement is repeated 3 times and the fastest run counts, because other programs on the machine (VS Code, other notebooks) can disturb a single measurement.** Confidence 0.65 · [[tooling-kaggle|Kaggle Labs]]
 - **Work in the VS Code terminal of the repository folder.** Confidence 0.65 · [[python-environments|Python Environments and Reproducibility]]
 - **Today you work in two places: your own laptop (VS Code) for Labs A–C and Kaggle for Lab D (Spark).** Confidence 0.64 · [[tooling-kaggle|Kaggle Labs]]
 - **Local Docker: Docker Desktop + VS Code extension Dev Containers → "Reopen in Container".** Confidence 0.63 · [[tooling-docker|Docker and Dev Containers]]

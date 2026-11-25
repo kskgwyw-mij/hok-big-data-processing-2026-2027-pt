@@ -21,7 +21,7 @@ def _segment_text(source_id: str, sources: dict[str, dict[str, Any]]) -> str:
     record = sources.get(source_id)
     if not record:
         return ""
-    path = config.REPO_ROOT / record["path"]
+    path = config.resolve_source_path(record["path"])
     if not path.exists():
         raw = config.WIKI_ROOT / record.get("raw_path", "")
         path = raw if raw.exists() else path
@@ -36,12 +36,14 @@ def _segment_text(source_id: str, sources: dict[str, dict[str, Any]]) -> str:
     return "\n".join(segment.raw for segment in readers.read_source(source))
 
 
-def export_batch(size: int = 6000, limit: int = 0) -> Path:
+def export_batch(size: int = 6000, limit: int = 0, include_private: bool = False) -> Path:
     store = state.StateStore(config.load_schema()).load()
     out_dir = config.EXPORTS_DIR / "llm"
     out_dir.mkdir(parents=True, exist_ok=True)
     rows: list[dict[str, Any]] = []
     for source_id, record in sorted(store.sources.items()):
+        if not include_private and config.is_private_sensitivity(record.get("sensitivity", "internal")):
+            continue
         text = _segment_text(source_id, store.sources)
         if not text.strip():
             continue
@@ -119,7 +121,7 @@ def apply_file(path: str) -> str:
     rejected: list[dict[str, str]] = []
     sources: dict[str, readers.Source] = {}
     for source_id, record in store.sources.items():
-        file_path = config.REPO_ROOT / record["path"]
+        file_path = config.resolve_source_path(record["path"])
         sources[source_id] = readers.Source(
             source_id=source_id, rel_path=record["path"], abs_path=file_path,
             type=record.get("type", "readme"), authority=record.get("source_authority", 0.8),

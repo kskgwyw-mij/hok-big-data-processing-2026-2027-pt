@@ -2,13 +2,28 @@
 title: Questions: Spark Execution Model
 type: questions
 topic: spark.execution
-question_count: 18
-last_rendered: 2026-11-25T09:51:47Z
+question_count: 20
+last_rendered: 2026-11-25T12:17:11Z
 ---
 
 # Questions: Spark Execution Model
 
 Prompts extracted from the material. No answers are stored: the state holds claims, not solutions, so these stay open until someone writes a claim with evidence.
+
+## Big Data Processing – Mock exam / Part D – Spark ML and joins
+
+- How many shuffles are in this fragment? What does that tell you about the size of the two tables?
+  - `raw/04_mock_exam.md:105` · exam_prompt
+
+## Big Data Processing – Mock exam / Part B – Spark architecture, HDFS, MapReduce
+
+- B7 (1 P) Is df.count() a transformation or an action?
+  - `raw/04_mock_exam.md:56` · exam_prompt
+
+## General
+
+- Read, transform, plan Task A and Task B Lazy reading · transformations vs. actions · select, filter, A: busiest pickup locations with average fare · B: join the withColumn, groupBy, orderBy · reading the plan zone names – which join does Spark choose?
+  - `raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p34:7` · open_question
 
 ## Session 2 – Apache Spark Fundamentals / Part 6 – Group Work: NYC Taxi Analysis / Task A – Core (everyone)
 
@@ -46,8 +61,6 @@ Prompts extracted from the material. No answers are stored: the state holds clai
   - `session-04/04_spark_fundamentals_and_ml.ipynb#cell-57:3` · exam_prompt
 - A groupBy("PULocationID").count() on 8 partitions: why is a shuffle needed, and what do the two HashAggregate steps in the plan do?
   - `session-04/04_spark_fundamentals_and_ml.ipynb#cell-57:6` · exam_prompt
-- Joining 3 million trips with the 265-row zone table, the plan shows BroadcastHashJoin. Why? What is the benefit compared with a sort-merge join, and what could go wrong if you broadcast a very large table?
-  - `session-04/04_spark_fundamentals_and_ml.ipynb#cell-57:9` · exam_prompt
 
 ## Block 3 – Exam circuit / Station 4 – Spark execution: lazy evaluation and shuffles
 
@@ -60,6 +73,8 @@ Prompts extracted from the material. No answers are stored: the state holds clai
 
 - 4.2 (5 P) A colleague ran .explain() and sends you this physical plan (shortened):
   - `03_exam_circuit-gitdiff.md:156` · exam_prompt
+- (a) Describe in one sentence what the query computes. (1 P) (b) How many shuffles does the plan contain, and which operations cause them? (2 P) (c) Which table is broadcast, and why is that a good choice here? (1 P) (d) What do PushedFilters and ReadSchema tell you about how much data Spark reads? (1 P)
+  - `03_exam_circuit-gitdiff.md:173` · exam_prompt
 
 ## gitdiff / Station 4 – Spark execution: lazy evaluation and shuffles
 
@@ -70,8 +85,3 @@ Prompts extracted from the material. No answers are stored: the state holds clai
 
 - how many partitions and tasks, and how many "waves" of tasks? What happens if the data had only 2 partitions? (a) After lines 1–4, Spark has not processed any trips yet. Why not? Which line starts the actual work? (2 P) (b) Which of lines 2, 3 and 4 is a wide transformation? Explain why it needs a shuffle. (2 P) (c) How many shuffles does this job have, and into how many stages does Spark split it? (1 P)
   - `03_exam_circuit-gitdiff.md:428` · exam_prompt
-
-## Big Data Processing – Mock exam / Part B – Spark architecture, HDFS, MapReduce
-
-- B7 (1 P) Is df.count() a transformation or an action?
-  - `04_mock_exam-gitdiff.md:186` · exam_prompt

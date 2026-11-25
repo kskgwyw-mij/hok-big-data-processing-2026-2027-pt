@@ -2,13 +2,29 @@
 title: Questions: Python Environments and Reproducibility
 type: questions
 topic: python.environments
-question_count: 9
-last_rendered: 2026-11-25T09:51:47Z
+question_count: 12
+last_rendered: 2026-11-25T12:17:11Z
 ---
 
 # Questions: Python Environments and Reproducibility
 
 Prompts extracted from the material. No answers are stored: the state holds claims, not solutions, so these stay open until someone writes a claim with evidence.
+
+## Big Data Processing – Mock exam / Part C – Python environments, file formats, DuckDB
+
+- C3 (2 P) "I use pyenv, so I don't need venv." Explain why this is only half true.
+  - `raw/04_mock_exam.md:68` · exam_prompt
+- C4 (2 P) What is the difference between a requirements.txt with version ranges and a lock file?
+  - `raw/04_mock_exam.md:70` · exam_prompt
+
+## General
+
+- Justify. » Why is .venv/ in .gitignore while requirements.txt is committed?
+  - `raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p14:3` · open_question
+- Most likely cause, and how do you check it? » 25 students, three operating systems, same Python 3.12 in 10 minutes, no admin rights: pyenv + venv or uv?
+  - `raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p14:3` · open_question
+- Java 17+ on macOS, Linux, WSL or Codespace?
+  - `raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p85:11` · open_question
 
 ## Lab A – Python environments: venv, pyenv and uv / The modern shortcut: uv
 
@@ -35,10 +51,3 @@ Prompts extracted from the material. No answers are stored: the state holds clai
 
 - 5.1 (3 P) requirements.txt, a lock file (pip freeze / uv.lock) and a dev container: what does each one pin, and why is the container the strongest guarantee for our Spark labs?
   - `session-06/03_exam_circuit.md:93` · exam_prompt
-
-## Big Data Processing – Mock exam / Part C – Python environments, file formats, DuckDB
-
-- C3 (2 P) "I use pyenv, so I don't need venv." Explain why this is only half true.
-  - `04_mock_exam-gitdiff.md:198` · exam_prompt
-- C4 (2 P) What is the difference between a requirements.txt with version ranges and a lock file?
-  - `04_mock_exam-gitdiff.md:200` · exam_prompt

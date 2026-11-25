@@ -2,13 +2,23 @@
 title: Questions: Single-Machine Engines
 type: questions
 topic: engines.single_machine
-question_count: 8
-last_rendered: 2026-11-25T09:51:47Z
+question_count: 9
+last_rendered: 2026-11-25T12:17:11Z
 ---
 
 # Questions: Single-Machine Engines
 
 Prompts extracted from the material. No answers are stored: the state holds claims, not solutions, so these stay open until someone writes a claim with evidence.
+
+## Big Data Processing – Mock exam / Part C – Python environments, file formats, DuckDB
+
+- C7 (2 P) Polars scan_parquet is lazy. Name the two pushdown optimisations and what each one saves.
+  - `raw/04_mock_exam.md:76` · exam_prompt
+
+## General
+
+- What do you tell them? » 2 GB of data, laptop with 16 GB RAM: Spark, DuckDB or pandas + scikit-learn?
+  - `raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p40:3` · open_question
 
 ## Session 1 – Do you really need a cluster? / The question
 
@@ -38,8 +48,3 @@ Prompts extracted from the material. No answers are stored: the state holds clai
 
 - 2.3 (4 P) Polars scan_parquet(...).filter(...).select(...) vs. pandas read_parquet(...) followed by the same filter and selection. Explain lazy evaluation and the two optimisations projection pushdown and predicate pushdown. Why can pandas not do them?
   - `session-06/03_exam_circuit.md:39` · exam_prompt
-
-## Big Data Processing – Mock exam / Part C – Python environments, file formats, DuckDB
-
-- C7 (2 P) Polars scan_parquet is lazy. Name the two pushdown optimisations and what each one saves.
-  - `04_mock_exam-gitdiff.md:206` · exam_prompt

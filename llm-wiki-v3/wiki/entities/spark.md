@@ -7,8 +7,10 @@ claim_ids:
   - claim_b0dbd1e0
   - claim_87320cd4
   - claim_bcb1bb0e
+  - claim_b6edbda6
+  - claim_e4d61545
   - claim_57adeced
-  - claim_0718eab9
+  - claim_342a7d6c
   - claim_6cd04a4d
   - claim_cefb5f5e
   - claim_bd7417ec
@@ -16,7 +18,7 @@ claim_ids:
   - claim_c84ec78d
   - claim_b0185af6
   - claim_55d3747e
-  - claim_caed1b28
+  - claim_451e86a4
   - claim_8eafee62
   - claim_95fe6516
   - claim_b01c67aa
@@ -27,9 +29,8 @@ claim_ids:
   - claim_e5ed99e6
   - claim_0326b6f6
   - claim_f71118cb
-  - claim_842d6db8
   - claim_f8b8c074
-  - claim_939d0c3c
+  - claim_a8e32092
   - claim_e967acaa
   - claim_2af15809
   - claim_6e4a6518
@@ -37,64 +38,130 @@ claim_ids:
   - claim_abd51c80
   - claim_451b6101
   - claim_f78bd88b
-  - claim_e25a0f01
+  - claim_4560b3b1
   - claim_6fb4e772
   - claim_54363381
-  - claim_53ef90ae
   - claim_d82fc010
   - claim_201c7650
   - claim_0c5c079b
+  - claim_cc6d1116
+  - claim_a5820c48
+  - claim_b9f3ac93
+  - claim_2e363a1d
+  - claim_4eed488d
+  - claim_de8e1515
+  - claim_9ab1d146
+  - claim_16c4ecf8
+  - claim_b50ea8e6
+  - claim_f306a2e9
+  - claim_5b788979
+  - claim_7047dbcd
+  - claim_3a05fc8a
+  - claim_f9980322
+  - claim_71b81c9b
+  - claim_05d87fd6
+  - claim_f132d7b8
+  - claim_a95b3cef
+  - claim_fbb6eaf3
+  - claim_946f39f2
+  - claim_642eadb1
+  - claim_b9ec74c0
+  - claim_07425f5c
+  - claim_9c87b29b
+  - claim_c2c297fb
+  - claim_5584689f
+  - claim_14074667
+  - claim_4851b5bd
   - claim_87ec27e4
-confidence: 0.663
-last_rendered: 2026-11-25T09:51:47Z
+  - claim_633a9dc0
+  - claim_82a66fcc
+  - claim_ffb7f45f
+confidence: 0.694
+last_rendered: 2026-11-25T12:17:11Z
 sources:
   - src_1a3d69f8
+  - src_1cebb3bb
   - src_46087206
   - src_47132aab
   - src_4d7c51b1
+  - src_59b6ded4
   - src_6494d099
+  - src_68fcf2b9
   - src_6e2e5684
+  - src_70f9fe3e
+  - src_8615b91f
   - src_8e87808f
   - src_96e79681
   - src_b3356305
   - src_c65c80a3
+  - src_e258bafb
+  - src_fc0bfe80
 ---
 
 # Spark
 
-Type: technology. Mentioned in 41 claims across 13 topics.
+Type: technology. Mentioned in 72 claims across 15 topics.
 Aliases: Apache Spark, PySpark, SparkSession.
 
 ## Claims
 
-- **Part: B — Topic: Spark architecture, HDFS, MapReduce; Points: 16.** Confidence 0.80 · [[course-exam|Exam]]
-- **Stage boundaries in Spark are always at wide transformations.** Confidence 0.74 · [[spark-architecture|Spark Architecture]]
-- **Part: 1 · Spark fundamentals — What you do: DataFrames, transformations vs. actions, plans, shuffles, joins; Data: NYC taxi January 2024, Parquet (~3 M trips).** Confidence 0.73 · [[course-dataset|NYC Yellow Taxi Dataset]]
+- **Part: B — Topic: Spark architecture, HDFS, MapReduce; Points: 16.** Confidence 0.92 · [[course-exam|Exam]]
+- **To share data, use Parquet. To share models across languages/tools there are formats such as ONNX (and Spark has its own model.save() – you will see it in Lab D).** Confidence 0.87 · [[data-formats|File Formats]]
+- **Japanese (Elementary) * Implementing Big Data solutions with Apache Kafka or Apache Spark.** Confidence 0.85 · [[bigdata-foundations|Big Data Foundations]]
+- **BIG DATA PROCESSING - SESSION 4 Virutal Environments, data formats Foundations PySpark and Spark ML.** Confidence 0.84 · [[bigdata-foundations|Big Data Foundations]]
+- **Create → New Notebook → File → Import Notebook → upload this .ipynb.** Confidence 0.84 · [[tooling-kaggle|Kaggle Labs]]
+- **Part: 1 · Spark fundamentals — What you do: DataFrames, transformations vs. actions, plans, shuffles, joins; Data: NYC taxi January 2024, Parquet (~3 M trips).** Confidence 0.84 · [[spark-execution|Spark Execution Model]]
+- **» SparkContext and SparkSessions have different purposes and functionalities » SparkContext is low-level, while SparkSession is higher-level » SparkSession simplifies interaction and supports structured data processing » SparkContext is still supported for backward compatibility » SparkSession is the recommended entry point for Spark applications » Why was SparkSession introduced? » It simplifies the API by combining SQLContext, HiveContext, and SparkContext into one object. » It supports both RDDs and DataFrames in a more user-friendly way. » SparkContext is still available inside SparkSession, but you should use SparkSession instead for modern Spark applications.** Confidence 0.81 · [[spark-architecture|Spark Architecture]]
+- **In the comparison table, Runs as: DuckDB: library in your process, SQLite: library in your process, PostgreSQL: server, Spark: cluster (or local).** Confidence 0.81 · [[data-duckdb|DuckDB]]
+- **Part: B — Topic: Spark architecture, HDFS, MapReduce; Points: 16.** Confidence 0.80 · [[hdfs-architecture|HDFS]]
+- **Lab: D — Topic: Spark fundamentals (Session 2) + Spark ML; Where: Kaggle; File: 04_spark_fundamentals_and_ml.ipynb.** Confidence 0.79 · [[tooling-kaggle|Kaggle Labs]]
+- **Runs on Kaggle – no Java setup on your laptop needed.** Confidence 0.77 · [[tooling-kaggle|Kaggle Labs]]
+- **No (requires SQLContext) Yes (native support) Supports DataSets No Yes Preferred Approach Deprecated Use SparkSession.** Confidence 0.77 · [[spark-architecture|Spark Architecture]]
+- **Read.csv on Kaggle count() on 12.7 M rows In .explain(), find ReadSchema and PushedFilters – Spark reads only what the plan [__ seconds] [__ seconds] needs.** Confidence 0.77 · [[data-formats|File Formats]]
+- **What does Pipeline.fit() return? » 3 × 2 parameter grid, numFolds = 5: how many models are trained? » Your teammate wants to pickle.dump() the Spark PipelineModel.** Confidence 0.76 · [[spark-ml|Spark ML]]
+- **04_spark_fundamentals_and_ml.ipynb · Part 0 should show "✓ converted" – if not, run it now.** Confidence 0.76 · [[unfiled|Unfiled Observations]]
+- **Pandas 2 vs. 3 side by side · 10 min PySpark (≈ 400 MB) runs on Kaggle today –> install it at home.** Confidence 0.75 · [[engines-single_machine|Single-Machine Engines]]
+- **Stage boundaries in Spark are always at wide transformations.** Confidence 0.74 · [[spark-execution|Spark Execution Model]]
+- **5 Stream processing with Kafka & Spark Velocity.** Confidence 0.74 · [[bigdata-foundations|Big Data Foundations]]
+- **» Optimized Execution: » Schema information enables query optimization and predicate pushdowns. » Faster and more efficient data processing. » Ease of Use: » High-level, SQL-like interface for data interaction. » Simplified compared to complex RDD transformations. » Integration with Ecosystem: » Seamless integration with Spark's ecosystem (Spark SQL, MLlib, GraphX). » Leverage various libraries and functionalities.** Confidence 0.74 · [[engines-single_machine|Single-Machine Engines]]
+- **» What is Spark? » Open-source big data processing framework. » Provides in-memory computing for faster data processing. » Advantages » 100x faster than Hadoop for certain workloads. » Supports multiple languages: Scala, Java, Python, R. » Suitable for real-time stream processing and batch processing.** Confidence 0.74 · [[bigdata-foundations|Big Data Foundations]]
+- **3 Spark performance: shuffles, joins, skew Volume.** Confidence 0.74 · [[spark-execution|Spark Execution Model]]
+- **» Represents the connection to a » Introduced in Spark 2.0 Spark cluster » Unified entry point for interacting with Spark » Coordinates task execution across the cluster » Combines functionalities of SparkContext, SQLContext, » Entry point in earlier versions of HiveContext, and Streaming Spark (1.x) Context » Supports multiple programming languages (Scala, Java, Python, R).** Confidence 0.74 · [[spark-architecture|Spark Architecture]]
+- **No laptop, no AI – like the exam 6 3 Kafka & streaming 58 P HDFS, MapReduce, Spark 10 P · debrief total 10 P Rotate on the signal: 1 → 2 → … → 6 → 1.** Confidence 0.74 · [[course-exam|Exam]]
 - **Part: 0 · Setup — What you do: Java + PySpark, download data, start Spark, convert a 2 GB CSV – run it before the break; Data: –.** Confidence 0.73 · [[data-formats|File Formats]]
+- **Folder: session-02/ — Topic: Apache Spark fundamentals: SparkSession, transformations vs. actions, plans, shuffles, joins; Runs on: dev container or a laptop with Java 17.** Confidence 0.72 · [[spark-execution|Spark Execution Model]]
 - **Folder: session-04/ — Topic: Reproducible Python (venv, pyenv, uv), CSV vs. pickle vs. Parquet, DuckDB as a database file, Spark fundamentals + Spark ML; Runs on: laptop (Labs A–C) · Kaggle (Lab D).** Confidence 0.72 · [[data-formats|File Formats]]
-- **Folder: session-02/ — Topic: Apache Spark fundamentals: SparkSession, transformations vs. actions, plans, shuffles, joins; Runs on: dev container or a laptop with Java 17.** Confidence 0.72 · [[spark-architecture|Spark Architecture]]
+- **» Built-in Optimization: » Leveraging Spark's Catalyst optimizer for advanced optimizations. » Predicate pushdown, constant folding, loop unrolling. » Interoperability: » Easily convert to/from other data formats (e.g., Pandas DataFrames). » Seamless integration with other data processing tools.** Confidence 0.70 · [[engines-single_machine|Single-Machine Engines]]
+- **Parquet column · binary typed, also nested analytics, data lakes, Spark, DuckDB, Polars.** Confidence 0.70 · [[engines-single_machine|Single-Machine Engines]]
+- **» Fully supported for backward » Recommended entry point since compatibility Spark 2.0 » Use in specific scenarios or with » Provides a higher-level API and libraries/APIs reliant on it better integration with latest Spark features.** Confidence 0.70 · [[spark-ml|Spark ML]]
+- **» Explicit creation to interact with » Recommended entry point since Spark cluster Spark 2.0 » Creates RDDs, applies » Unified entry point that transformations, manages cluster manages SparkContext resources internally » Simplifies interaction with Spark » Offers higher-level API for structured data processing using DataFrames and Datasets.** Confidence 0.70 · [[spark-execution|Spark Execution Model]]
+- **» Popular Stream Processing tools, all of which share common features, include Confluent KSQL, Kafka Streams, Faust, Spark Structured Streaming, Apache Flink, and Samza.** Confidence 0.70 · [[spark-streaming|Spark Structured Streaming]]
+- **BIG DATA PROCESSING - SESSION 3 Big Data Architectures & Apache Spark.** Confidence 0.70 · [[bigdata-foundations|Big Data Foundations]]
+- **» Backbone of data processing in Spark » Distributed, fault-tolerant, and parallelizable data structure » Efficiently process large data-sets across a cluster » Key Characteristics: immutable, distributed, resilient, lazily evaluated, fault- tolerant.** Confidence 0.70 · [[python-execution|Python Execution Model]]
+- **» Kafka stores events, not actions or jobs » Data is distributed to multiple nodes by default » Highly scalable with strict data ordering guarantees » Fault-tolerant to node loss due to distributed nature » Created at LinkedIn, now maintained by Confluent as an own product » Streaming data store for Flink, Spark, and Samza ».** Confidence 0.70 · [[spark-execution|Spark Execution Model]]
 - **Always stop the SparkSession when you are done.** Confidence 0.70 · [[spark-architecture|Spark Architecture]]
 - **In the comparison table, Keeps dtypes: CSV: no, pickle: yes, Parquet: yes.** Confidence 0.69 · [[data-formats|File Formats]]
-- **In the comparison table, Runs as: DuckDB: library in your process, SQLite: library in your process, PostgreSQL: server, Spark: cluster (or local).** Confidence 0.69 · [[data-duckdb|DuckDB]]
 - **Component: SparkSession — Role: The single entry point to all Spark functionality since Spark 2.0.** Confidence 0.69 · [[spark-architecture|Spark Architecture]]
 - **In the comparison table, Storage layout: DuckDB: columnar, SQLite: row, PostgreSQL: row, Spark: files (Parquet/Delta).** Confidence 0.69 · [[data-formats|File Formats]]
+- **Spark fundamentals on 3 million trips.** Confidence 0.69 · [[course-dataset|NYC Yellow Taxi Dataset]]
+- **Spark broadcasts automatically below spark.sql.autoBroadcastJoinThreshold – 10 MB by default.** Confidence 0.69 · [[unfiled|Unfiled Observations]]
+- **» Level 2: Distributed Compute up to 1-2 TB, Spark/Big Query/Snowflake/ Databricks.** Confidence 0.69 · [[unfiled|Unfiled Observations]]
 - **Your turn (5 min): complete haversine_km – the straight-line distance between pickup and dropoff – using only pyspark.sql.functions (F.radians, F.sin, F.cos, F.asin, F.sqrt).** Confidence 0.69 · [[spark-execution|Spark Execution Model]]
 - **PySpark is a Python front end for a Java engine (the JVM).** Confidence 0.68 · [[spark-execution|Spark Execution Model]]
 - **That is the moment for a database server (PostgreSQL) or, for really big data, a lakehouse with Spark.** Confidence 0.68 · [[bigdata-foundations|Big Data Foundations]]
-- **Where: Kaggle – free notebooks in the browser — What runs there: Apache Spark and Spark ML (no Java setup on your laptop).** Confidence 0.68 · [[course-setup|Course Setup]]
 - **File: requirements.txt — Contains: the above + PySpark 4.0 and Delta Lake (needs Java 17+); Use it for: the dev container, or a laptop with Java 17 installed.** Confidence 0.68 · [[python-environments|Python Environments and Reproducibility]]
 - **FileScan parquet at the bottom — this is always where Spark starts (bottom to top).** Confidence 0.67 · [[data-formats|File Formats]]
-- **Lab: D — Topic: Spark fundamentals (Session 2) + Spark ML; Where: Kaggle; File: 04_spark_fundamentals_and_ml.ipynb.** Confidence 0.67 · [[tooling-kaggle|Kaggle Labs]]
 - **Spark 4 runs in ANSI mode by default: a division by zero stops the job instead of returning NULL. try_divide returns NULL instead.** Confidence 0.67 · [[spark-architecture|Spark Architecture]]
 - **HashAggregate appears twice: once for a partial aggregation (per partition, before shuffle) and once for a final merge (after shuffle). This is a standard Spark optimisation.** Confidence 0.66 · [[spark-execution|Spark Execution Model]]
-- **To share data, use Parquet. To share models across languages/tools there are formats such as ONNX (and Spark has its own model.save() – you will see it in Lab D).** Confidence 0.66 · [[data-formats|File Formats]]
+- **2 Apache Spark fundamentals Volume.** Confidence 0.66 · [[bigdata-foundations|Big Data Foundations]]
+- **Feature Spark 1.x Spark 2.x.** Confidence 0.66 · [[spark-ml|Spark ML]]
+- **» Dataframes in Apache Spark: Powerful abstraction for distributed and structured data » DataFrame Structure: Similar to table in a relational database (rows and columns) » Schema information: Enables query optimization and others.** Confidence 0.65 · [[unfiled|Unfiled Observations]]
 - **A Codespace has 8 GB RAM and effectively one physical CPU core: fine for learning Spark, not for speed comparisons.** Confidence 0.65 · [[python-environments|Python Environments and Reproducibility]]
-- **Settings → Phone verification – without it, notebooks cannot use the internet (we need it to install PySpark).** Confidence 0.65 · [[course-setup|Course Setup]]
 - **Check available memory – run the cell below (works on Linux, macOS and Windows). You need ≥ 4.5 GB available before starting Spark.** Confidence 0.65 · [[spark-architecture|Spark Architecture]]
+- **Settings → Phone verification – without it, notebooks cannot use the internet (we need it to install PySpark).** Confidence 0.65 · [[tooling-kaggle|Kaggle Labs]]
 - **Today you work in two places: your own laptop (VS Code) for Labs A–C and Kaggle for Lab D (Spark).** Confidence 0.64 · [[tooling-kaggle|Kaggle Labs]]
 - **We train a small model that predicts the trip duration in minutes (the same task we will scale up with Spark later).** Confidence 0.63 · [[bigdata-foundations|Big Data Foundations]]
 - **Spark therefore has its own format: a folder with JSON metadata and Parquet files.** Confidence 0.63 · [[data-formats|File Formats]]
-- **Spark builds one combined logical plan and optimises it.** Confidence 0.63 · [[spark-execution|Spark Execution Model]]
 - **On the slides you saw Spark's architecture: Driver, Executors, SparkSession, RDDs, DataFrames, and the Catalyst Optimizer.** Confidence 0.63 · [[spark-architecture|Spark Architecture]]
 - **A DataFrame is Spark's primary data abstraction since Spark 2.0.** Confidence 0.63 · [[spark-architecture|Spark Architecture]]
 - **Every DataFrame has a plan. df.explain() shows you how Spark intends to execute a query.** Confidence 0.63 · [[spark-architecture|Spark Architecture]]
@@ -103,6 +170,8 @@ Aliases: Apache Spark, PySpark, SparkSession.
 - **The same content (plus Spark ML) is in session-04/04_spark_fundamentals_and_ml.ipynb, which runs on Kaggle.** Confidence 0.61 · [[tooling-kaggle|Kaggle Labs]]
 - **Name two situations where a single machine is not enough, even with DuckDB. → That is where Spark (next session) comes in.** Confidence 0.61 · [[engines-single_machine|Single-Machine Engines]]
 - **Requirements-local.txt = everything except Spark.** Confidence 0.61 · [[python-environments|Python Environments and Reproducibility]]
+- **Mac Pip Install PySpark.** Confidence 0.60 · [[unfiled|Unfiled Observations]]
+- **Apache Spark - Mac Brew Install.** Confidence 0.60 · [[unfiled|Unfiled Observations]]
 - **Run the cells from the top. The first cell installs Java 17 and PySpark if Kaggle does not have them.** Confidence 0.60 · [[tooling-kaggle|Kaggle Labs]]
 - **Task B – join and show Hint: the zone table is small (~265 rows). What join strategy do you expect Spark to pick? YOUR CODE.** Confidence 0.58 · [[spark-architecture|Spark Architecture]]
 - **Spark's optimizer (Session 2) does exactly the same thing.** Confidence 0.58 · [[python-execution|Python Execution Model]]
@@ -111,13 +180,13 @@ Aliases: Apache Spark, PySpark, SparkSession.
 
 ## Related Entities
 
-- [[kaggle|Kaggle]] (7)
-- [[parquet|Parquet]] (7)
-- [[duckdb|DuckDB]] (5)
-- [[spark_ml|Spark ML]] (5)
+- [[kaggle|Kaggle]] (10)
+- [[parquet|Parquet]] (8)
+- [[duckdb|DuckDB]] (7)
+- [[spark_ml|Spark ML]] (7)
+- [[big_data|Big Data]] (5)
+- [[kafka|Kafka]] (5)
+- [[topic|topic]] (5)
 - [[dev_container|Dev container]] (4)
-- [[topic|topic]] (4)
-- [[delta_lake|Delta Lake]] (3)
-- [[requirements_txt|requirements.txt]] (3)
-- [[shuffle|shuffle]] (3)
-- [[csv|CSV]] (2)
+- [[pickle|Pickle]] (4)
+- [[shuffle|shuffle]] (4)

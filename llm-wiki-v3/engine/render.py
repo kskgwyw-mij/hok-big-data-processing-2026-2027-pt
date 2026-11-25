@@ -19,6 +19,7 @@ class RenderReport:
     entities_rendered: int = 0
     questions_rendered: int = 0
     skipped_unchanged: int = 0
+    private_withheld: int = 0
 
 
 def topic_slug(topic_id: str) -> str:
@@ -382,6 +383,12 @@ def render_index(
         f"{len(questions)} prompts are collected in the question pages."
     )
     body.append("")
+    if stats.get("withheld_private"):
+        body.append(
+            f"{stats['withheld_private']} claims come from teacher-only sources and are withheld from this wiki. "
+            "They stay queryable with `python3 -m engine query --include-private`."
+        )
+        body.append("")
     body.append("The wiki is a view. The source of truth is `raw/`, `observations/`, `state/` and `transitions/`.")
     body.append("")
     body.append("## Topics")
@@ -465,7 +472,17 @@ def write_page(relative_path: str, content: str) -> bool:
 def render_all(store, questions: list[dict[str, Any]], now: str | None = None) -> RenderReport:
     now = now or config.now_iso()
     report = RenderReport()
-    claims = list(store.claims.values())
+    private = sum(1 for claim in store.claims.values()
+                  if config.is_private_sensitivity(claim.get("privacy", "internal")))
+    report.private_withheld += private
+    claims = [
+        claim for claim in store.claims.values()
+        if not config.is_private_sensitivity(claim.get("privacy", "internal"))
+    ]
+    questions = [
+        question for question in questions
+        if not config.is_private_sensitivity(question.get("privacy", "internal"))
+    ]
     by_topic: dict[str, list[dict[str, Any]]] = {}
     for claim in claims:
         by_topic.setdefault(claim["topic"], []).append(claim)
@@ -526,7 +543,15 @@ def render_all(store, questions: list[dict[str, Any]], now: str | None = None) -
         if write_page("wiki/questions/index.md", "\n".join(lines)):
             report.pages.append("wiki/questions/index.md")
 
-    index_content = render_index(store.schema, claims, questions, store.sources, store.stats(), now)
+    public_sources = {
+        source_id: record for source_id, record in store.sources.items()
+        if not config.is_private_sensitivity(record.get("sensitivity", "internal"))
+    }
+    stats = dict(store.stats())
+    stats["claims"] = len(claims)
+    stats["sources"] = len(public_sources)
+    stats["withheld_private"] = private
+    index_content = render_index(store.schema, claims, questions, public_sources, stats, now)
     if write_page("index.md", index_content):
         report.pages.append("index.md")
 

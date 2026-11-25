@@ -3,12 +3,31 @@ title: Questions: File Formats
 type: questions
 topic: data.formats
 question_count: 22
-last_rendered: 2026-11-25T09:51:47Z
+last_rendered: 2026-11-25T12:17:11Z
 ---
 
 # Questions: File Formats
 
 Prompts extracted from the material. No answers are stored: the state holds claims, not solutions, so these stay open until someone writes a claim with evidence.
+
+## Big Data Processing – Mock exam / Part A – Foundations
+
+- A6 (4 P) Your team has an 8 GB Parquet dataset (one year of trips) and laptops with 16 GB RAM and 8 cores. A colleague wants to rent a Spark cluster for the weekly report. Argue for or against it: name a single-machine tool you would try first and why it can work, two reasons why distributed systems are harder, and one situation in which the cluster would be justified.
+  - `raw/04_mock_exam.md:33` · exam_prompt
+
+## Big Data Processing – Mock exam / Part C – Python environments, file formats, DuckDB
+
+- C1 (1 P) Which of these formats are columnar: CSV, JSON, Avro, Parquet, ORC?
+  - `raw/04_mock_exam.md:64` · exam_prompt
+- C2 (1 P) Which row-oriented binary format with an embedded schema is commonly used for Kafka events?
+  - `raw/04_mock_exam.md:66` · exam_prompt
+- C5 (2 P) Why is it dangerous to load a pickle file from an unknown source?
+  - `raw/04_mock_exam.md:72` · exam_prompt
+
+## General
+
+- » Name three disadvantages of CSV you measured in Lab B, each with your number. » Which of CSV, pickle and Parquet keep category and nullable-integer dtypes?
+  - `raw/20261031-FH-Kufstein-Big Data-Processing-4.pdf#p21:3` · open_question
 
 ## Session 2 – Apache Spark Fundamentals / Exit Ticket – Individual, no AI
 
@@ -65,11 +84,6 @@ Prompts extracted from the material. No answers are stored: the state holds clai
 - (2 P) What does a serializer do in a Kafka producer, and why does Kafka itself not care whether you send JSON, Avro or CSV?
   - `session-06/02_kafka_python.ipynb#cell-23:49` · exam_prompt
 
-## Block 3 – Exam circuit / Station 1 – Do you need a cluster?
-
-- 1.3 (4 P) Two jobs, one laptop with 8 cores: (a) download 300 Parquet files from a web server, (b) compute a feature with a pure-Python loop over 50 million rows. For each job: threads or processes? Justify with the GIL.
-  - `session-06/03_exam_circuit.md:22` · exam_prompt
-
 ## Block 3 – Exam circuit / Station 2 – File formats and engines
 
 - 2.1 (2 P) Sort into row-oriented and column-oriented: CSV, JSON, Avro, Parquet, ORC. Which one is typical for writing events record by record to Kafka?
@@ -84,17 +98,3 @@ Prompts extracted from the material. No answers are stored: the state holds clai
 
 - 4.3 (3 P) A 2 GB CSV file, spark.sql.files.maxPartitionBytes = 128 MB, a machine with 4 cores. About @@ -0,0 +1,127 @@
   - `03_exam_circuit-gitdiff.md:301` · exam_prompt
-
-## Big Data Processing – Mock exam / Part A – Foundations
-
-- A6 (4 P) Your team has an 8 GB Parquet dataset (one year of trips) and laptops with 16 GB RAM and 8 cores. A colleague wants to rent a Spark cluster for the weekly report. Argue for or against it: name a single-machine tool you would try first and why it can work, two reasons why distributed systems are harder, and one situation in which the cluster would be justified.
-  - `04_mock_exam-gitdiff.md:163` · exam_prompt
-
-## Big Data Processing – Mock exam / Part C – Python environments, file formats, DuckDB
-
-- C1 (1 P) Which of these formats are columnar: CSV, JSON, Avro, Parquet, ORC?
-  - `04_mock_exam-gitdiff.md:194` · exam_prompt
-- C2 (1 P) Which row-oriented binary format with an embedded schema is commonly used for Kafka events?
-  - `04_mock_exam-gitdiff.md:196` · exam_prompt
-- C5 (2 P) Why is it dangerous to load a pickle file from an unknown source?
-  - `04_mock_exam-gitdiff.md:202` · exam_prompt

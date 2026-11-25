@@ -1,17 +1,19 @@
 {
-  "claims": 461,
+  "claims": 990,
   "edge_types": {
-    "compares_with": 7,
-    "has": 4,
-    "is_a": 1,
-    "mentions": 679,
-    "produces": 3,
-    "requires": 5,
-    "runs_on": 3,
-    "uses": 3
+    "compares_with": 9,
+    "contested_by": 4,
+    "has": 10,
+    "is_a": 3,
+    "mentions": 1300,
+    "produces": 6,
+    "replaces": 1,
+    "requires": 7,
+    "runs_on": 4,
+    "uses": 6
   },
-  "edges": 705,
-  "entities": 74,
-  "generated_at": "2026-11-25T09:51:47Z",
-  "nodes": 535
+  "edges": 1350,
+  "entities": 88,
+  "generated_at": "2026-11-25T12:17:11Z",
+  "nodes": 1078
 }

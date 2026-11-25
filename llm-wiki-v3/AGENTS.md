@@ -14,7 +14,13 @@ If a page and the state disagree, the state wins and the page is stale: re-rende
 ## Source rules
 
 - Never edit or delete files in `raw/`. They are the audit trail.
-- New material goes into `raw/inbox/`, then `python3 -m engine ingest`.
+- New material goes into `raw/` (anywhere except the registered type folders) or `raw/private/`, then
+  `python3 -m engine ingest`. Files under `raw/` are ingested in place; only `raw/inbox/` files are
+  copied into `raw/<type>/`.
+- Teacher material — answer keys and solutions — is private by rule: it matches
+  `schema.json → privacy.private_patterns`. It is ingested, stored in `observations/private/` and
+  `state/private_claims.jsonl`, and never rendered into `wiki/`. Do not "fix" a page by adding a
+  solution quote; if the material belongs in the wiki, the classification is wrong, not the filter.
 - Every source gets a `source_id`, a content hash, an authority from `schema.json` and a date from git
   (falling back to mtime).
 - A source whose hash changes triggers a full rebuild of derived state. That is intended: incremental

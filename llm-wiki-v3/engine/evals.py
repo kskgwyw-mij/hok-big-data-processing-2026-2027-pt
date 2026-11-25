@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
@@ -216,6 +217,47 @@ def faithfulness_eval(store: state.StateStore) -> tuple[dict[str, Any], list[tup
             "superseded_as_current": superseded_as_current}, checks
 
 
+def _normalise(text: str) -> str:
+    """Letters and digits only: markdown formatting must not mask a match."""
+    return re.sub(r"[^a-z0-9]+", "", text.lower())
+
+
+def privacy_leaks(
+    store: state.StateStore, probe_chars: int = 80, wiki_dir: Path | None = None
+) -> list[str]:
+    """Private claim text that reached wiki/ without already existing in public material.
+
+    A teacher answer that restates a public sentence is not a leak; the same words are
+    already on the page from their own public source. Only text unique to the private
+    tier counts.
+    """
+    private = [claim for claim in store.claims.values()
+               if config.is_private_sensitivity(claim.get("privacy", "internal"))]
+    if not private:
+        return []
+    public: list[str] = []
+    for claim in store.claims.values():
+        if config.is_private_sensitivity(claim.get("privacy", "internal")):
+            continue
+        public.append(_normalise(claim["current_text"]))
+        public.extend(_normalise(entry["span"]) for entry in claim.get("evidence", []))
+    for question in config.read_jsonl(config.STATE_DIR / "questions.jsonl"):
+        public.append(_normalise(question.get("text", "")))
+    corpus = " ".join(public)
+    pages = " ".join(
+        _normalise(page.read_text(encoding="utf-8"))
+        for page in (wiki_dir or config.WIKI_DIR).rglob("*.md")
+    )
+    leaks: list[str] = []
+    for claim in private:
+        probe = _normalise(claim["current_text"])[:probe_chars]
+        if len(probe) < 24 or probe in corpus:
+            continue
+        if probe in pages:
+            leaks.append(claim["claim_id"])
+    return leaks
+
+
 def governance_eval(store: state.StateStore) -> list[tuple[str, bool, str]]:
     checks: list[tuple[str, bool, str]] = []
     checks.append(("audit log is written", bool(store.audit) or bool(config.read_jsonl(config.TRANS_DIR / "audit_log.jsonl")),
@@ -234,9 +276,15 @@ def governance_eval(store: state.StateStore) -> list[tuple[str, bool, str]]:
         if config.sha256_file(raw_path) != record["hash"].replace("sha256:", ""):
             raw_missing += 1
     checks.append(("raw copies match their recorded hash", raw_missing == 0, f"mismatches={raw_missing}"))
-    private_shared = [c for c in store.claims.values() if c.get("privacy") in {"private", "secret"}]
-    checks.append(("no private claims are rendered into shared pages", not private_shared,
-                   f"private claims={len(private_shared)}"))
+    private_claims = [c for c in store.claims.values()
+                      if config.is_private_sensitivity(c.get("privacy", "internal"))]
+    leaks = privacy_leaks(store)
+    checks.append(("no private-only text appears in a rendered page", not leaks,
+                   f"private claims={len(private_claims)} leaks={len(leaks)}"))
+    public_ids = {row["claim_id"] for row in config.read_jsonl(config.STATE_DIR / "claims.jsonl")}
+    mixed = [claim["claim_id"] for claim in private_claims if claim["claim_id"] in public_ids]
+    checks.append(("private claims are stored apart from public claims", not mixed,
+                   f"mixed={len(mixed)}"))
     return checks
 
 

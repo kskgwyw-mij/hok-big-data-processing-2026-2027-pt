@@ -11,7 +11,7 @@ claim_ids:
   - claim_91ea9d3f
   - claim_c49f3c07
 confidence: 0.651
-last_rendered: 2026-11-25T09:51:47Z
+last_rendered: 2026-11-25T12:17:11Z
 sources:
   - src_467d2d1e
   - src_47132aab

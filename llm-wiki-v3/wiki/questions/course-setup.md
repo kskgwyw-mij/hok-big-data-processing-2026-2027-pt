@@ -3,7 +3,7 @@ title: Questions: Course Setup
 type: questions
 topic: course.setup
 question_count: 1
-last_rendered: 2026-11-25T09:51:47Z
+last_rendered: 2026-11-25T12:17:11Z
 ---
 
 # Questions: Course Setup

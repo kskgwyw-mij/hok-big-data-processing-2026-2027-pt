@@ -11,10 +11,10 @@ entity_ids:
   - ent_apple_silicon
   - ent_linux
   - ent_projects
-  - ent_spark
-  - ent_apache_spark
   - ent_code
   - ent_dev_container
+  - ent_docker_compose
+  - ent_faker
 claim_ids:
   - claim_09f8595a
   - claim_eb2fc0b8
@@ -25,7 +25,6 @@ claim_ids:
   - claim_26edcb72
   - claim_c4138824
   - claim_b0a1193e
-  - claim_caed1b28
   - claim_9d914236
   - claim_80dcb37a
   - claim_3189156b
@@ -35,7 +34,6 @@ claim_ids:
   - claim_c4c36174
   - claim_ba1a8d00
   - claim_a9842723
-  - claim_53ef90ae
   - claim_add9e91e
   - claim_594a2300
   - claim_8b538216
@@ -46,16 +44,16 @@ claim_ids:
   - claim_d7d4bf6d
   - claim_e467c9d5
   - claim_4e0c1eb8
-  - claim_805d7c98
-confidence: 0.636
+confidence: 0.627
 status: active
-last_rendered: 2026-11-25T09:51:47Z
+last_rendered: 2026-11-25T12:17:11Z
 sources:
   - src_1a3d69f8
   - src_41b3a933
   - src_46087206
   - src_467d2d1e
   - src_6494d099
+  - src_8615b91f
   - src_8e87808f
   - src_b3356305
   - src_cecf99ea
@@ -64,7 +62,7 @@ review_required: false
 
 # Course Setup
 
-Rendered from 31 claims and 8 sources. Median confidence 0.64; 21 active, 0 disputed, 0 superseded.
+Rendered from 28 claims and 9 sources. Median confidence 0.63; 19 active, 0 disputed, 0 superseded.
 
 ## Current Understanding
 
@@ -126,16 +124,6 @@ Evidence: `session-06/README.md:60` — “For macOS, Linux, WSL or the Codespac
 Confidence 0.57 · candidate · 1 source
 Evidence: `session-06/README.md:67` — “Leave that terminal open – Ctrl+C stops the broker. Next time just run python get_kafka.py --start again.”
 
-### Big data processing fh kufstein
-
-**Where: Kaggle – free notebooks in the browser — What runs there: Apache Spark and Spark ML (no Java setup on your laptop).**
-Confidence 0.68 · active · 1 source
-Evidence: `README.md:8` — “Kaggle – free notebooks in the browser | Apache Spark and Spark ML (no Java setup on your laptop)”
-
-**Git pull ; python get_data.py --months 2 # Windows: py -3.12 get_data.py --months 2.**
-Confidence 0.44 · candidate · 1 source
-Evidence: `README.md:22` — “git pull ; python get_data.py --months 2 # Windows: py -3.12 get_data.py --months 2”
-
 ### Kafka lab
 
 **Route B fails if the folder path contains a space (e.g. … Kopie or My Projects). get_kafka.py checks this and stops – then install Kafka somewhere else: python get_kafka.py --dest ~/kafka-course --start.**
@@ -149,8 +137,8 @@ Evidence: `README.md:121` — “Your Python code connects to localhost:9092. If
 ### Newest course material
 
 **On GitHub: open your fork → Sync fork.**
-Confidence 0.51 · candidate · 3 sources · when: after "Sync fork" on GitHub
-Evidence: `session-04/README.md:39` — “On GitHub: open your fork → Sync fork. Then on your laptop:”
+Confidence 0.80 · active · 4 sources · when: after "Sync fork" on GitHub
+Evidence: `raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf#p86:3` — “GitHub: open your fork → Sync fork, then in your repo folder: ✓ What you should see 1 session-06/ with docker-compose.yml, producer.py, $ cd hok-big-data-processing-2026-2027-pt $ git pull…”
 
 **Git clone https://github.com/ /hok-big-data-processing-2026-2027-pt.git # first time only ; cd hok-big-data-processing-2026-2027-pt ; git pull # every session.**
 Confidence 0.48 · candidate · 1 source
@@ -161,6 +149,12 @@ Evidence: `session-04/README.md:40` — “git clone https://github.com/ /hok-bi
 **Codespaces: on your fork Code → Codespaces → Create codespace on main; ~3 min for the first build.**
 Confidence 0.60 · candidate · 1 source · when: for the first build
 Evidence: `README.md:92` — “- Codespaces: on your fork Code → Codespaces → Create codespace on main; ~3 min for the first build. Stop it when you are done (github.com/codespaces → ⋯ → Stop) – otherwise it uses up…”
+
+### Big data processing fh kufstein
+
+**Git pull ; python get_data.py --months 2 # Windows: py -3.12 get_data.py --months 2.**
+Confidence 0.44 · candidate · 1 source
+Evidence: `README.md:22` — “git pull ; python get_data.py --months 2 # Windows: py -3.12 get_data.py --months 2”
 
 ### Create virtual environment
 
@@ -198,23 +192,11 @@ Evidence: `README.md:26` — “get_data.py uses only the Python standard librar
 Confidence 0.86 · active · 2 sources
 Evidence: `README.md:36` — “VS Code + extensions Python and Jupyter | code.visualstudio.com | code.visualstudio.com | code.visualstudio.com”
 
-### Kaggle account
-
-**Settings → Phone verification – without it, notebooks cannot use the internet (we need it to install PySpark).**
-Confidence 0.65 · active · 1 source
-Evidence: `session-04/README.md:55` — “2. Settings → Phone verification – without it, notebooks cannot use the internet (we need it to install PySpark).”
-
 ### Lab saving data models csv
 
 **Needs data/yellow_tripdata_2024-01.parquet (python get_data.py --months 2).**
 Confidence 0.61 · active · 1 source
 Evidence: `session-04/02_file_formats_and_pickle.ipynb#cell-0:3` — “Runs locally in VS Code with your .venv kernel (Lab A). Needs data/yellow_tripdata_2024-01.parquet (python get_data.py --months 2).”
-
-### Laptop cannot run route
-
-**Everything in Blocks 3 and 4 needs only paper.**
-Confidence 0.68 · active · 1 source
-Evidence: `session-06/README.md:84` — “No problem: pair up with a neighbour whose broker runs. You type on their laptop in Block 1 and run consumer.py on theirs in Block 2. Everything in Blocks 3 and 4 needs only paper.…”
 
 ### Newest material update environment
 
@@ -236,19 +218,20 @@ Evidence: `session-04/01_python_environments.md:49` — “py --list # all Pytho
 | `session-06/get_kafka.py` | code | 0.80 | 1 | 2026-11-11 |
 | `session-01/01_do_you_need_a_cluster.ipynb` | notebook | 0.86 | 1 | 2026-10-28 |
 | `get_data.py` | code | 0.80 | 1 | 2026-10-28 |
-| `session-04/README.md` | readme | 0.85 | 10 | 2026-10-28 |
+| `session-04/README.md` | readme | 0.85 | 9 | 2026-10-28 |
+| `raw/20261113-FH-Kufstein-Big Data-Processing-6.pdf` | lecture_note | 0.92 | 1 | 2026-11-25 |
 | `session-04/02_file_formats_and_pickle.ipynb` | notebook | 0.86 | 1 | 2026-10-28 |
-| `README.md` | readme | 0.85 | 9 | 2026-11-11 |
-| `session-06/README.md` | readme | 0.85 | 12 | 2026-11-11 |
+| `README.md` | readme | 0.85 | 8 | 2026-11-11 |
+| `session-06/README.md` | readme | 0.85 | 11 | 2026-11-11 |
 
 ## Related Pages
 
-- [[python-environments|Python Environments and Reproducibility]] (32 shared entities)
-- [[tooling-docker|Docker and Dev Containers]] (26 shared entities)
-- [[spark-architecture|Spark Architecture]] (19 shared entities)
-- [[engines-single_machine|Single-Machine Engines]] (18 shared entities)
-- [[tooling-kaggle|Kaggle Labs]] (14 shared entities)
-- [[unfiled|Unfiled Observations]] (14 shared entities)
+- [[python-environments|Python Environments and Reproducibility]] (29 shared entities)
+- [[tooling-docker|Docker and Dev Containers]] (27 shared entities)
+- [[unfiled|Unfiled Observations]] (25 shared entities)
+- [[engines-single_machine|Single-Machine Engines]] (16 shared entities)
+- [[spark-architecture|Spark Architecture]] (16 shared entities)
+- [[kafka-log|Kafka Log]] (15 shared entities)
 
 ## Open Questions
 
@@ -264,4 +247,4 @@ Evidence: `session-04/01_python_environments.md:49` — “py --list # all Pytho
 - 2026-11-25: new_claim on `claim_e467c9d5`
 - 2026-11-25: new_claim on `claim_4e0c1eb8`
 - 2026-11-25: evidence_attached on `claim_64fbf0f7` (0.78 → 0.78)
-- 2026-11-25: new_claim on `claim_805d7c98`
+- 2026-11-25: support_update on `claim_26edcb72` (0.51 → 0.80)

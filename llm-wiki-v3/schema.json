@@ -25,6 +25,19 @@
     {"id": "runs_on", "inverse": "hosts"},
     {"id": "defines", "inverse": "defined_by"}
   ],
+  "privacy": {
+    "description": "Sources matching these patterns are private: ingested and queryable, never rendered into wiki/ and never committed. The repository rule is 'teacher material (solutions) - never commit'.",
+    "private_patterns": [
+      "*MODEL_ANSWERS*",
+      "*_SOLUTION*",
+      "*model_answers*",
+      "raw/private/*",
+      "*/teacher/*"
+    ],
+    "private_dir": "raw/private",
+    "public_sensitivity": "internal",
+    "private_sensitivity": "private"
+  },
   "decay_profiles": {
     "architecture_decision": {"half_life_days": 730, "description": "Slow. Design choices that stay valid for years."},
     "concept": {"half_life_days": 540, "description": "Slow. Definitions and mental models."},

@@ -16,7 +16,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from engine import extract, index, llm, nlp, readers, render, state  # noqa: E402
+from engine import evals, extract, index, llm, nlp, readers, render, state  # noqa: E402
 from engine.readers import Segment, Source  # noqa: E402
 
 SCHEMA = json.loads((Path(__file__).resolve().parent.parent / "schema.json").read_text(encoding="utf-8"))
@@ -455,6 +455,56 @@ class PipelineTests(unittest.TestCase):
             results = hybrid.search("committed offset consumer group", limit=3)
             self.assertTrue(results)
             self.assertIn("offset", results[0]["claim"]["current_text"].lower())
+
+
+class PrivacyTests(unittest.TestCase):
+    """Teacher material is queryable, never published."""
+
+    def _two_tier_store(self, public_text: str, private_text: str) -> state.StateStore:
+        store = state.StateStore(SCHEMA)
+        public = make_source(Path("a.md"), "src_a")
+        private = make_source(Path("teacher/answers.md"), "src_b")
+        private.sensitivity = "private"
+        store.apply_observations([observation("kafka.log.topic", public_text)], {"src_a": public})
+        store.apply_observations(
+            [observation("kafka.log.topic", private_text, source_id="src_b", locator="teacher/answers.md:1")],
+            {"src_b": private},
+        )
+        return store
+
+    def test_private_observation_does_not_join_a_public_claim(self) -> None:
+        store = self._two_tier_store("A topic is split into partitions.", "A topic is split into partitions.")
+        public = [c for c in store.claims.values() if c["privacy"] == "internal"]
+        private = [c for c in store.claims.values() if c["privacy"] == "private"]
+        self.assertEqual(len(public), 1)
+        self.assertEqual(len(private), 1)
+        self.assertNotEqual(public[0]["claim_id"], private[0]["claim_id"])
+        self.assertTrue(all(entry["locator"].startswith("src_a.md") for entry in public[0]["evidence"]))
+        self.assertTrue(all(entry["locator"].startswith("teacher/") for entry in private[0]["evidence"]))
+
+    def test_leak_detector_catches_private_only_text(self) -> None:
+        store = self._two_tier_store(
+            "A topic is split into partitions.",
+            "The answer key says brokers replicate partitions.",
+        )
+        private = next(c for c in store.claims.values() if c["privacy"] == "private")
+        with tempfile.TemporaryDirectory() as tmp:
+            page_dir = Path(tmp) / "wiki"
+            page_dir.mkdir(parents=True)
+            (page_dir / "page.md").write_text(
+                "The answer key says brokers replicate partitions.\n", encoding="utf-8"
+            )
+            self.assertEqual(evals.privacy_leaks(store, wiki_dir=page_dir), [private["claim_id"]])
+
+    def test_shared_sentence_is_not_a_leak(self) -> None:
+        store = self._two_tier_store("A topic is split into partitions.", "A topic is split into partitions.")
+        with tempfile.TemporaryDirectory() as tmp:
+            page_dir = Path(tmp) / "wiki"
+            page_dir.mkdir(parents=True)
+            (page_dir / "page.md").write_text(
+                "Evidence: **A topic is split into partitions.**\n", encoding="utf-8"
+            )
+            self.assertEqual(evals.privacy_leaks(store, wiki_dir=page_dir), [])
 
 
 if __name__ == "__main__":

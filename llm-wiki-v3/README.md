@@ -33,14 +33,20 @@ python3 -m engine rebuild
 ```
 
 `ingest` is incremental: unchanged sources are skipped, a changed source triggers a rebuild of the
-derived state, and new files in `raw/inbox/` are added. It is idempotent — running it twice changes nothing.
+derived state, and new files anywhere under `raw/` are added. It is idempotent — running it twice
+changes nothing.
 
-## Adding the lecture PDFs
+## Adding new material
+
+Drop files into `raw/` — the root of the drop zone or `raw/private/` — then:
 
 ```bash
-cp ~/Downloads/lecture-07.pdf llm-wiki-v3/raw/inbox/
 cd llm-wiki-v3 && python3 -m engine ingest
 ```
+
+Files under `raw/` are ingested **in place**: they are already the immutable copy, so nothing is
+copied again. That is what makes 145 MB of lecture decks affordable. (`raw/inbox/` still works the
+old way: files there are copied into `raw/<type>/`.)
 
 PDF text is extracted with `pdftotext` (poppler). Pages become `#p1`, `#p2`, … locators, so evidence
 points at a page instead of a line. Scanned PDFs without a text layer produce an explicit
@@ -49,6 +55,34 @@ points at a page instead of a line. Scanned PDFs without a text layer produce an
 Set `lecture_note` authority in `schema.json` (default 0.92, above notebooks and READMEs) if your notes
 should outweigh the existing material.
 
+## Private and public knowledge
+
+Teacher material — answer keys and solutions — is ingested but never published. A file is private when
+it matches `schema.json → privacy.private_patterns` (`*MODEL_ANSWERS*`, `*_SOLUTION*`, `raw/private/*`).
+
+| | Public | Private |
+|---|---|---|
+| Sources | `raw/…` | matching a private pattern |
+| Observations | `observations/accepted/` | `observations/private/` |
+| Claims | `state/claims.jsonl` | `state/private_claims.jsonl` |
+| Questions | `state/questions.jsonl` | `state/private_questions.jsonl` |
+| Rendered into `wiki/` | yes | **never** |
+| Queryable | yes | only with `--include-private` |
+| Exported by `llm-batch` | yes | only with `--include-private` |
+| Committed to git | yes | no (`.gitignore`) |
+
+The two tiers never merge: the same sentence in a public slide and a private answer key produces two
+claims, because the private one must not drag teacher evidence onto a published claim. `query` hides
+private claims by default and marks them `**Teacher-only:**` when you ask for them:
+
+```bash
+python3 -m engine query "why do threads not speed up CPU-bound Python" --include-private
+```
+
+Two checks enforce this: `lint` reports `privacy_leak` if text unique to the private tier appears in
+`wiki/`, and `privacy_split` if a private claim is stored in the public file. Both are covered by
+`tests/test_engine.py` — including a case that must still catch a real leak.
+
 ## Layout
 
 | Path | Meaning |
@@ -56,10 +90,12 @@ should outweigh the existing material.
 | `schema.json` | The human-owned ontology: topics, entity gazetteer, decay profiles, source authority, thresholds |
 | `engine/` | The pipeline (stdlib only, Python 3.10+) |
 | `raw/<type>/` | Immutable copies of every ingested source, named `<source_id>__<file>` |
-| `raw/inbox/` | Drop new PDFs/markdown here |
+| `raw/` (root), `raw/private/` | Drop zone: ingested in place, never copied |
+| `raw/inbox/` | Legacy drop zone: files here are copied into `raw/<type>/` |
 | `observations/accepted/` | Structured observations after filtering |
 | `observations/rejected/` | What was dropped and why (`code_fragment`, `fragment_or_lead_in`, …) |
 | `state/claims.jsonl` | Current belief per claim: probability, status, evidence, conditions |
+| `state/private_claims.jsonl` | Teacher-only claims; gitignored, never rendered |
 | `state/unresolved_conflicts.jsonl` | Contradictions awaiting human review |
 | `transitions/transitions.jsonl` | Append-only log of every belief change |
 | `transitions/audit_log.jsonl` | Ingest, decay, review, LLM-apply events |
@@ -115,6 +151,9 @@ python3 -m engine llm-batch --size 6000        # exports/llm/chunks.jsonl + prom
 python3 -m engine llm-apply exports/llm/answers.jsonl
 ```
 
+`llm-batch` exports public sources only; add `--include-private` if you are running the extraction
+yourself and the answers may contain teacher material.
+
 Every answer is checked against the contract: required fields, valid stance, confidence in range, and
 an evidence span that must occur verbatim in the source. Rejected rows are reported, never guessed at.
 Accepted rows go through the same belief updater with `extractor.model` set to the external model.
@@ -132,13 +171,20 @@ Each action writes a `human_override` transition and re-renders affected pages.
 
 ## What this corpus actually produced
 
-- 99 pages: 21 topic pages, 57 entity pages, 21 question pages, plus the index.
-- 328 active / 131 candidate / 2 archived claims, 0 disputed, 0 superseded, 0 open conflicts.
-- 25 unfiled claims (lint warnings) — mostly one-liners from `session-06/get_kafka.py` and the
-  `session-03`/`session-05` stubs, which are placeholders pointing to external material.
-- No real contradiction or supersession in this material. The mechanisms are exercised by the eval
-  fixtures instead of being faked on real content: see `engine/evals.py → state_cases`.
-- Retrieval eval: recall@5 0.850, recall@10 0.938, MRR 0.707 on 80 evidence→claim queries.
+39 sources (28 from the repository, 6 lecture decks, 1 public mock exam, 4 teacher-only documents)
+→ 1,306 observations → 990 claims, 89 of them private.
+
+- 121 pages: 23 topic pages, 75 entity pages, 22 question pages, plus the index.
+- 839 active / 146 candidate / 2 archived / 2 disputed / 1 stale; 0 superseded, 4 open conflicts.
+- 194 unfiled claims (lint warnings) — mostly slide one-liners and bullets that name no keyword.
+  `unfiled` is a real answer, not a bug.
+- The 4 open conflicts are heuristic false positives from the lecture decks: a two-word slide heading
+  ("Global Interpreter Lock (GIL).") counted as a negated restatement of a full sentence, and slide
+  "Route A / Route B" labels where one mentions "no Docker". They are surfaced as disputed with a
+  caveat, never silently resolved; `engine review resolve` closes them by hand.
+- Retrieval eval: recall@5 0.838, recall@10 0.850, MRR 0.648 on 80 evidence→claim queries — slightly
+  below the 28-source run (0.850 / 0.938 / 0.707) because 990 claims compete for 10 slots.
+
 
 ## Known limits
 
@@ -158,6 +204,12 @@ Each action writes a `human_override` transition and re-renders affected pages.
   merging is decided by text similarity, not by key equality. Lint reports same-key clusters as
   `same_key_multiple_claims` for human review.
 - **Raw sources are copied, never moved.** `rebuild` wipes derived state only; `raw/` survives, including
-  copies of sources you later deleted from the repository.
+  copies of sources you later deleted from the repository. Files dropped into `raw/` itself are ingested
+  in place instead: re-copying 145 MB of decks would only duplicate them.
+- **The privacy boundary is structural, not a filter on output.** Private sources match
+  `privacy.private_patterns`; their observations, claims and questions live in separate files, and the
+  belief updater refuses to match a private observation against a public claim. Rendering only ever sees
+  public state, so a leak requires the ingest to have classified the file wrong — which is why
+  `lint` and `eval` both re-check the rendered pages for private-only text.
 - **Rendered pages keep their `last_rendered` timestamp** only when content actually changed, so
   re-running `render` produces no diff.
